@@ -436,7 +436,7 @@ def RECEIVE_MESSAGE(op):
 					if sender in creator or sender in owner or sender in admin or sender in staff:
 						cl.sendReplyMessage(reply,receiver,commands())
 						cl.sendReplyMessage(reply,receiver,"Note:\nFor Multi Command\nMust Use & Between First and Second Command\nExample Below:\nHelp & Speed")
-				elif uwew == "reboot":
+				elif uwew == "รี":
 					if sender in creator or sender in owner or sender in admin or sender in staff:
 						cl.sendReplyMessage(reply,receiver,"「 Please Wait... 」")
 						settings["restartPoint"] = receiver
@@ -447,25 +447,25 @@ def RECEIVE_MESSAGE(op):
 							a.removeAllMessages(op.param2)
 						for u in Botslist:
 							u.sendReplyMessage(reply,receiver,"「 All Chat Cleared 」")
-				elif uwew == "respon":
+				elif uwew == "b":
 					if sender in creator or sender in owner or sender in admin or sender in staff:
 						cl.sendReplyMessage(reply,receiver,"「 {} 」".format(resp1))
 						ki.sendReplyMessage(reply,receiver,"「 {} 」".format(resp2))
 						kk.sendReplyMessage(reply,receiver,"「 {} 」".format(resp3))
 						kc.sendReplyMessage(reply,receiver,"「 {} 」".format(resp4))
 						km.sendReplyMessage(reply,receiver,"「 {} 」".format(resp5))
-				elif uwew == "speed":
+				elif uwew == "spb":
 					if sender in creator or sender in owner or sender in admin or sender in staff:
 						cl.sendReplyMessage(reply,receiver,logspeed())
 						ki.sendReplyMessage(reply,receiver,logspeed())
 						kk.sendReplyMessage(reply,receiver,logspeed())
 						kc.sendReplyMessage(reply,receiver,logspeed())
 						km.sendReplyMessage(reply,receiver,logspeed())
-				elif uwew == "byeall":
+				elif uwew == "bye":
 					if sender in creator or sender in owner or sender in admin or sender in staff:
 						for bot in Botslist:
 							bot.leaveGroup(receiver)
-				elif uwew == "inviteall":
+				elif uwew == "ivb":
 					if sender in creator or sender in owner or sender in admin or sender in staff:
 						try:
 							cl.inviteIntoGroup(receiver, [Amid,Bmid,Cmid,Dmid])
@@ -484,7 +484,7 @@ def RECEIVE_MESSAGE(op):
 								G = cl.getGroup(receiver)
 								G.preventedJoinByTicket = True
 								cl.updateGroup(G)
-				elif uwew == "blacklist" or uwew == "banlist":
+				elif uwew == "blacklist" or uwew == "bc":
 					if sender in creator or sender in owner or sender in admin or sender in staff:
 						if len(status["blacklist"]) > 0:
 							h = [a for a in status["blacklist"]]
@@ -500,7 +500,7 @@ def RECEIVE_MESSAGE(op):
 								sendMention(to, msgas, h[aa*20:(aa+1)*20])
 						else:
 							cl.sendReplyMessage(reply,receiver,"「 Doesn't Have Any Blacklist User -_- 」")
-				elif uwew == "clearban":
+				elif uwew == "cb":
 					if sender in creator or sender in owner or sender in admin or sender in staff:
 						if len(status["blacklist"]) > 0:
 							cl.sendReplyMessage(reply,receiver, "「 {} User Cleared 」".format(len(status["blacklist"])))
@@ -745,45 +745,45 @@ def RECEIVE_MESSAGE(op):
 							cl.sendReplyMessage(reply,receiver,"「 Lock Group 」\n" + uwew)
 				elif uwew.startswith("checkbot"):
 					if sender in creator or sender in owner or sender in admin or sender in staff:
-						try:cl.inviteIntoGroup(to, ["u3529bce86ebac075d621966ef16486f3"]);has = "OK"
+						try:cl.inviteIntoGroup(to, [mid]);has = "OK"
 						except:has = "NOT"
-						try:cl.kickoutFromGroup(to, ["u3529bce86ebac075d621966ef16486f3"]);has1 = "OK"
+						try:cl.kickoutFromGroup(to, [mid]);has1 = "OK"
 						except:has1 = "NOT"
 						if has == "OK":sil = "Normal~"
 						else:sil = "Down!"
 						if has1 == "OK":sil1 = "Normal~"
 						else:sil1 = "Down!"
 						cl.sendReplyMessage(reply, receiver, "「 Bots Status 」\n • Invite : {}\n • Kick : {}".format(sil1,sil))
-						try:ki.inviteIntoGroup(to, ["u7d4e23945e41b5274455b95ffd8af1f1"]);has = "OK"
+						try:ki.inviteIntoGroup(to, [Amid]);has = "OK"
 						except:has = "NOT"
-						try:ki.kickoutFromGroup(to, ["u7d4e23945e41b5274455b95ffd8af1f1"]);has1 = "OK"
+						try:ki.kickoutFromGroup(to, [Amid]);has1 = "OK"
 						except:has1 = "NOT"
 						if has == "OK":sil = "Normal~"
 						else:sil = "Down!"
 						if has1 == "OK":sil1 = "Normal~"
 						else:sil1 = "Down!"
 						ki.sendReplyMessage(reply, receiver, "「 Bots Status 」\n • Invite : {}\n • Kick : {}".format(sil1,sil))
-						try:kk.inviteIntoGroup(to, ["u6c88002aed5c104ad6c4c878d89d7d07"]);has = "OK"
+						try:kk.inviteIntoGroup(to, [Bmid]);has = "OK"
 						except:has = "NOT"
-						try:kk.kickoutFromGroup(to, ["u6c88002aed5c104ad6c4c878d89d7d07"]);has1 = "OK"
+						try:kk.kickoutFromGroup(to, [Bmid]);has1 = "OK"
 						except:has1 = "NOT"
 						if has == "OK":sil = "Normal~"
 						else:sil = "Down!"
 						if has1 == "OK":sil1 = "Normal~"
 						else:sil1 = "Down!"
 						kk.sendReplyMessage(reply, receiver, "「 Bots Status 」\n • Invite : {}\n • Kick : {}".format(sil1,sil))
-						try:kc.inviteIntoGroup(to, ["u1b227c131d7829e69956c06ff6db572c"]);has = "OK"
+						try:kc.inviteIntoGroup(to, [Cmid]);has = "OK"
 						except:has = "NOT"
-						try:kc.kickoutFromGroup(to, ["u1b227c131d7829e69956c06ff6db572c"]);has1 = "OK"
+						try:kc.kickoutFromGroup(to, [Cmid]);has1 = "OK"
 						except:has1 = "NOT"
 						if has == "OK":sil = "Normal~"
 						else:sil = "Down!"
 						if has1 == "OK":sil1 = "Normal~"
 						else:sil1 = "Down!"
 						kc.sendReplyMessage(reply, receiver, "「 Bots Status 」\n • Invite : {}\n • Kick : {}".format(sil1,sil))
-						try:km.inviteIntoGroup(to, ["udc7333bc03689e1eb494e4db5907e4f3"]);has = "OK"
+						try:km.inviteIntoGroup(to, [Dmid]);has = "OK"
 						except:has = "NOT"
-						try:km.kickoutFromGroup(to, ["udc7333bc03689e1eb494e4db5907e4f3"]);has1 = "OK"
+						try:km.kickoutFromGroup(to, [Dmid]);has1 = "OK"
 						except:has1 = "NOT"
 						if has == "OK":sil = "Normal~"
 						else:sil = "Down!"
@@ -983,7 +983,7 @@ def RECEIVE_MESSAGE(op):
 								a.sendReplyMessage(reply,receiver,"「 Profile Picture 」\nPlease Send Picture You Want To Use")
 					else:
 						cl.sendReplyMessage(reply,receiver,"「 Profile Picture 」\nAccess Limited For Owner Only -_-")
-				elif uwew.startswith("kick"):
+				elif uwew.startswith("bk"):
 					if sender in creator or sender in owner or sender in admin or sender in staff:
 						key = eval(msg.contentMetadata["MENTION"])
 						key["MENTIONEES"][0]["M"]
