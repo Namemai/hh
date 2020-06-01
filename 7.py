@@ -1144,7 +1144,7 @@ def RECEIVE_MESSAGE(op):
 							a.sendReplyMessage(reply,receiver,"「 Status Message 」\nAccess Limited For Owner Only -_-")
 				elif uwew.startswith("changepict:"):
 					if sender in creator or sender in owner:
-						spl = uwew.replace("changepict:","")
+						spl = uwew.replace("อัพ","")
 						if spl == "1":
 							settings["sentinelPict"][mid] = True
 							cl.sendReplyMessage(reply,receiver,"「 Profile Picture 」\nPlease Send Picture You Want To Use")
@@ -1160,12 +1160,15 @@ def RECEIVE_MESSAGE(op):
 						if spl == "5":
 							settings["sentinelPict"][Dmid] = True
 							km.sendReplyMessage(reply,receiver,"「 Profile Picture 」\nPlease Send Picture You Want To Use")
-						if spl == "all":
+						if spl == "รูป":
 							settings["sentinelPict"][mid] = True
 							settings["sentinelPict"][Amid] = True
 							settings["sentinelPict"][Bmid] = True
 							settings["sentinelPict"][Cmid] = True
 							settings["sentinelPict"][Dmid] = True
+							settings["sentinelPict"][K5mid] = True
+							settings["sentinelPict"][K6mid] = True
+							settings["sentinelPict"][K7mid] = True
 							for a in Botslist:
 								a.sendReplyMessage(reply,receiver,"「 Profile Picture 」\nPlease Send Picture You Want To Use")
 					else:
