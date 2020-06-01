@@ -256,143 +256,143 @@ def lockqr(grup):
                                     pass
 
 def backup(grup, target):
-    try:
-        ki.inviteIntoGroup(grup, [target])
-        if target == mid:
-           cl.acceptGroupInvitation(grup)
-        if target == Bmid:
-           kk.acceptGroupInvitation(grup)
-        if target == Cmid:
-           kc.acceptGroupInvitation(grup)
-        if target == Dmid:
-           km.acceptGroupInvitation(grup)
-        if target == K5mid:
-           k5.acceptGroupInvitation(grup)
-        if target == K6mid:
-           k6.acceptGroupInvitation(grup)
-        if target == K7mid:
-           k7.acceptGroupInvitation(grup)
-       except:
-           try:
-               kk.inviteIntoGroup(grup, [target])
-               if target == mid:
-                  cl.acceptGroupInvitation(grup)
-               if target == Amid:
-                  ki.acceptGroupInvitation(grup)
-               if target == Cmid:
-                  kc.acceptGroupInvitation(grup)
-               if target == Dmid:
-                  km.acceptGroupInvitation(grup)
-               if target == K5mid:
-                  k5.acceptGroupInvitation(grup)
-               if target == K6mid:
-                  k6.acceptGroupInvitation(grup)
-               if target == K7mid:
-                  k7.acceptGroupInvitation(grup)
-              except:
-                  try:
-                      kc.inviteIntoGroup(grup, [target])
-                      if target == mid:
-                         cl.acceptGroupInvitation(grup)
-                      if target == Amid:
-                         ki.acceptGroupInvitation(grup)
-                      if target == Bmid:
-                         kk.acceptGroupInvitation(grup)
-                      if target == Dmid:
-                         km.acceptGroupInvitation(grup)
-                      if target == K5mid:
-                         k5.acceptGroupInvitation(grup)
-                      if target == K6mid:
-                         k6.acceptGroupInvitation(grup)
-                      if target == K7mid:
-                         k7.acceptGroupInvitation(grup)
-                     except:
-                         try:
-                             km.inviteIntoGroup(grup, [target])
-                             if target == mid:
-                                cl.acceptGroupInvitation(grup)
-                             if target == Amid:
-                                ki.acceptGroupInvitation(grup)
-                             if target == Bmid:
-                                kk.acceptGroupInvitation(grup)
-                             if target == Cmid:
-                                kc.acceptGroupInvitation(grup)
-                             if target == K5mid:
-                                k5.acceptGroupInvitation(grup)
-                             if target == K6mid:
-                                k6.acceptGroupInvitation(grup)
-                             if target == K7mid:
-                                k7.acceptGroupInvitation(grup)
-                            except:
-                                try:
-                                    k5.inviteIntoGroup(grup, [target])
-                                    if target == mid:
-                                       cl.acceptGroupInvitation(grup)
-                                    if target == Amid:
-                                       ki.acceptGroupInvitation(grup)
-                                    if target == Bmid:
-                                       kk.acceptGroupInvitation(grup)
-                                    if target == Cmid:
-                                       kc.acceptGroupInvitation(grup)
-                                    if target == Dmid:
-                                       km.acceptGroupInvitation(grup)
-                                    if target == K6mid:
-                                       k6.acceptGroupInvitation(grup)
-                                    if target == K7mid:
-                                       k7.acceptGroupInvitation(grup)
-                                   except:
-                                       try:
-                                           k6.inviteIntoGroup(grup, [target])
-                                           if target == mid:
-                                              cl.acceptGroupInvitation(grup)
-                                           if target == Amid:
-                                              ki.acceptGroupInvitation(grup)
-                                           if target == Bmid:
-                                              kk.acceptGroupInvitation(grup)
-                                           if target == Cmid:
-                                              kc.acceptGroupInvitation(grup)
-                                           if target == Dmid:
-                                              km.acceptGroupInvitation(grup)
-                                           if target == K5mid:
-                                              k5.acceptGroupInvitation(grup)
-                                           if target == K7mid:
-                                              k7.acceptGroupInvitation(grup)
-                                          except:
-                                              try:
-                                                  k7.inviteIntoGroup(grup, [target])
-                                                  if target == mid:
-                                                     cl.acceptGroupInvitation(grup)
-                                                  if target == Amid:
-                                                     ki.acceptGroupInvitation(grup)
-                                                  if target == Bmid:
-                                                     kk.acceptGroupInvitation(grup)
-                                                  if target == Cmid:
-                                                     kc.acceptGroupInvitation(grup)
-                                                  if target == Dmid:
-                                                     km.acceptGroupInvitation(grup)
-                                                  if target == K5mid:
-                                                     k5.acceptGroupInvitation(grup)
-                                                  if target == K6mid:
-                                                     k6.acceptGroupInvitation(grup)
-                                                 except:
-                                                     try:
-                                                         cl.inviteIntoGroup(grup, [target])
-                                                         if target == Amid:
-                                                            ki.acceptGroupInvitation(grup)
-                                                         if target == Bmid:
-                                                            kk.acceptGroupInvitation(grup)
-                                                         if target == Cmid:
-                                                            kc.acceptGroupInvitation(grup)
-                                                         if target == Dmid:
-                                                            km.acceptGroupInvitation(grup)
-                                                         if target == K5mid:
-                                                            k5.acceptGroupInvitation(grup)
-                                                         if target == K6mid:
-                                                            k6.acceptGroupInvitation(grup)
-                                                         if target == K7mid:
-                                                            k7.acceptGroupInvitation(grup)
-                                                        except:
-                                                            pass
+	try:
+		ki.inviteIntoGroup(grup, [target])
+		if target == mid:
+			cl.acceptGroupInvitation(grup)
+		if target == Bmid:
+			kk.acceptGroupInvitation(grup)
+		if target == Cmid:
+			kc.acceptGroupInvitation(grup)
+		if target == Dmid:
+			km.acceptGroupInvitation(grup)
+		if target == K5mid:
+			k5.acceptGroupInvitation(grup)
+		if target == K6mid:
+			k6.acceptGroupInvitation(grup)
+		if target == K7mid:
+			k7.acceptGroupInvitation(grup)
+	except:
+		try:
+			kk.inviteIntoGroup(grup, [target])
+			if target == mid:
+				cl.acceptGroupInvitation(grup)
+			if target == Amid:
+				ki.acceptGroupInvitation(grup)
+			if target == Cmid:
+				kc.acceptGroupInvitation(grup)
+			if target == Dmid:
+				km.acceptGroupInvitation(grup)
+			if target == K5mid:
+				k5.acceptGroupInvitation(grup)
+			if target == K6mid:
+				k6.acceptGroupInvitation(grup)
+			if target == K7mid:
+				k7.acceptGroupInvitation(grup)
+		except:
+			try:
+				kc.inviteIntoGroup(grup, [target])
+				if target == mid:
+					cl.acceptGroupInvitation(grup)
+				if target == Amid:
+					ki.acceptGroupInvitation(grup)
+				if target == Bmid:
+					kk.acceptGroupInvitation(grup)
+				if target == Dmid:
+					km.acceptGroupInvitation(grup)
+				if target == K5mid:
+					k5.acceptGroupInvitation(grup)
+				if target == K6mid:
+					k6.acceptGroupInvitation(grup)
+				if target == K7mid:
+					k7.acceptGroupInvitation(grup)
+			except:
+				try:
+					km.inviteIntoGroup(grup, [target])
+					if target == mid:
+						cl.acceptGroupInvitation(grup)
+					if target == Amid:
+						ki.acceptGroupInvitation(grup)
+					if target == Bmid:
+						kk.acceptGroupInvitation(grup)
+					if target == Cmid:
+						kc.acceptGroupInvitation(grup)
+					if target == K5mid:
+						k5.acceptGroupInvitation(grup)
+					if target == K6mid:
+						k6.acceptGroupInvitation(grup)
+					if target == K7mid:
+						k7.acceptGroupInvitation(grup)
+				except:
+					try:
+						k5.inviteIntoGroup(grup, [target])
+						if target == mid:
+							cl.acceptGroupInvitation(grup)
+						if target == Amid:
+							ki.acceptGroupInvitation(grup)
+						if target == Bmid:
+							kk.acceptGroupInvitation(grup)
+						if target == Cmid:
+							kc.acceptGroupInvitation(grup)
+						if target == Dmid:
+							km.acceptGroupInvitation(grup)
+						if target == K6mid:
+							k6.acceptGroupInvitation(grup)
+						if target == K7mid:
+							k7.acceptGroupInvitation(grup)
+					except:
+						try:
+							k6.inviteIntoGroup(grup, [target])
+							if target == mid:
+								cl.acceptGroupInvitation(grup)
+							if target == Amid:
+								ki.acceptGroupInvitation(grup)
+							if target == Bmid:
+								kk.acceptGroupInvitation(grup)
+							if target == Cmid:
+								kc.acceptGroupInvitation(grup)
+							if target == Dmid:
+								km.acceptGroupInvitation(grup)
+							if target == K5mid:
+								k5.acceptGroupInvitation(grup)
+							if target == K7mid:
+								k7.acceptGroupInvitation(grup)
+						except:
+							try:
+								k7.inviteIntoGroup(grup, [target])
+								if target == mid:
+									cl.acceptGroupInvitation(grup)
+								if target == Amid:
+									ki.acceptGroupInvitation(grup)
+								if target == Bmid:
+									kk.acceptGroupInvitation(grup)
+								if target == Cmid:
+									kc.acceptGroupInvitation(grup)
+								if target == Dmid:
+									km.acceptGroupInvitation(grup)
+								if target == K5mid:
+									k5.acceptGroupInvitation(grup)
+								if target == K6mid:
+									k6.acceptGroupInvitation(grup)
+							except:
+								try:
+									cl.inviteIntoGroup(grup, [target])
+									if target == Amid:
+										ki.acceptGroupInvitation(grup)
+									if target == Bmid:
+										kk.acceptGroupInvitation(grup)
+									if target == Cmid:
+										kc.acceptGroupInvitation(grup)
+									if target == Dmid:
+										km.acceptGroupInvitation(grup)
+									if target == K5mid:
+										k5.acceptGroupInvitation(grup)
+									if target == K6mid:
+										k6.acceptGroupInvitation(grup)
+									if target == K7mid:
+										k7.acceptGroupInvitation(grup)
+								except:
+									pass
 
 def invite(grup, target):
     try:
