@@ -55,5 +55,5 @@ class Config(object):
         if appType:
             self.APP_TYPE = appType
             self.APP_VER = self.APP_VERSION[self.APP_TYPE] if self.APP_TYPE in self.APP_VERSION else self.APP_VERSION['DEFAULT']
-        self.APP_NAME = '%s\t%s\t%s\t%s' % (self.APP_TYPE, self.APP_VER, self.SYSTEM_NAME, self.SYSTEM_VER)
-        self.USER_AGENT = 'Line/%s' % self.APP_VER
+        self.APP_NAME = 'CHROMEOS\t2.1.0\tCHROMEOS\t10.0.0'
+        self.USER_AGENT = 'Line/8.9.0'
