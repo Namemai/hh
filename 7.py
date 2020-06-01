@@ -249,177 +249,177 @@ def lockqr(grup):
                                 except:
                                     pass
 
-def backup(grup, Bots):
+def backup(grup, target):
 	try:
-		ki.inviteIntoGroup(grup, Bots)
-		if Bots == mid:
+		ki.inviteIntoGroup(grup, [target])
+		if target == mid:
 			cl.acceptGroupInvitation(grup)
-		if Bots == Bmid:
+		if target == Bmid:
 			kk.acceptGroupInvitation(grup)
-		if Bots == Cmid:
+		if target == Cmid:
 			kc.acceptGroupInvitation(grup)
-		if Bots == Dmid:
+		if target == Dmid:
 			km.acceptGroupInvitation(grup)
-		if Bots == K5mid:
+		if target == K5mid:
 			k5.acceptGroupInvitation(grup)
-		if Bots == K6mid:
+		if target == K6mid:
 			k6.acceptGroupInvitation(grup)
-		if Bots == K7mid:
+		if target == K7mid:
 			k7.acceptGroupInvitation(grup)
 	except:
 		try:
-			kk.inviteIntoGroup(grup, Bots)
-			if Bots == mid:
+			kk.inviteIntoGroup(grup, [target])
+			if target == mid:
 				cl.acceptGroupInvitation(grup)
-			if Bots == Amid:
+			if target == Amid:
 				ki.acceptGroupInvitation(grup)
-			if Bots == Cmid:
+			if target == Cmid:
 				kc.acceptGroupInvitation(grup)
-			if Bots == Dmid:
+			if target == Dmid:
 				km.acceptGroupInvitation(grup)
-			if Bots == K5mid:
+			if target == K5mid:
 				k5.acceptGroupInvitation(grup)
-			if Bots == K6mid:
+			if target == K6mid:
 				k6.acceptGroupInvitation(grup)
-			if Bots == K7mid:
+			if target == K7mid:
 				k7.acceptGroupInvitation(grup)
 		except:
 			try:
-				kc.inviteIntoGroup(grup, Bots)
-				if Bots == mid:
+				kc.inviteIntoGroup(grup, [target])
+				if target == mid:
 					cl.acceptGroupInvitation(grup)
-				if Bots == Amid:
+				if target == Amid:
 					ki.acceptGroupInvitation(grup)
-				if Bots == Bmid:
+				if target == Bmid:
 					kk.acceptGroupInvitation(grup)
-				if Bots == Dmid:
+				if target == Dmid:
 					km.acceptGroupInvitation(grup)
-				if Bots == K5mid:
+				if target == K5mid:
 					k5.acceptGroupInvitation(grup)
-				if Bots == K6mid:
+				if target == K6mid:
 					k6.acceptGroupInvitation(grup)
-				if Bots == K7mid:
+				if target == K7mid:
 					k7.acceptGroupInvitation(grup)
 			except:
 				try:
-					km.inviteIntoGroup(grup, Bots)
-					if Bots == mid:
+					km.inviteIntoGroup(grup, [target])
+					if target == mid:
 						cl.acceptGroupInvitation(grup)
-					if Bots == Amid:
+					if target == Amid:
 						ki.acceptGroupInvitation(grup)
-					if Bots == Bmid:
+					if target == Bmid:
 						kk.acceptGroupInvitation(grup)
-					if Bots == Cmid:
+					if target == Cmid:
 						kc.acceptGroupInvitation(grup)
-					if Bots == K5mid:
+					if target == K5mid:
 						k5.acceptGroupInvitation(grup)
-					if Bots == K6mid:
+					if target == K6mid:
 						k6.acceptGroupInvitation(grup)
-					if Bots == K7mid:
+					if target == K7mid:
 						k7.acceptGroupInvitation(grup)
 				except:
 					try:
-						k5.inviteIntoGroup(grup, Bots)
-						if Bots == mid:
+						k5.inviteIntoGroup(grup, [target])
+						if target == mid:
 							cl.acceptGroupInvitation(grup)
-						if Bots == Amid:
+						if target == Amid:
 							ki.acceptGroupInvitation(grup)
-						if Bots == Bmid:
+						if target == Bmid:
 							kk.acceptGroupInvitation(grup)
-						if Bots == Cmid:
+						if target == Cmid:
 							kc.acceptGroupInvitation(grup)
-						if Bots == Dmid:
+						if target == Dmid:
 							km.acceptGroupInvitation(grup)
-						if Bots == K6mid:
+						if target == K6mid:
 							k6.acceptGroupInvitation(grup)
-						if Bots == K7mid:
+						if target == K7mid:
 							k7.acceptGroupInvitation(grup)
 					except:
 						try:
-							k6.inviteIntoGroup(grup, Bots)
-							if Bots == mid:
+							k6.inviteIntoGroup(grup, [target])
+							if target == mid:
 								cl.acceptGroupInvitation(grup)
-							if Bots == Amid:
+							if target == Amid:
 								ki.acceptGroupInvitation(grup)
-							if Bots == Bmid:
+							if target == Bmid:
 								kk.acceptGroupInvitation(grup)
-							if Bots == Cmid:
+							if target == Cmid:
 								kc.acceptGroupInvitation(grup)
-							if Bots == Dmid:
+							if target == Dmid:
 								km.acceptGroupInvitation(grup)
-							if Bots == K5mid:
+							if target == K5mid:
 								k5.acceptGroupInvitation(grup)
-							if Bots == K7mid:
+							if target == K7mid:
 								k7.acceptGroupInvitation(grup)
 						except:
 							try:
-								k7.inviteIntoGroup(grup, Bots)
-								if Bots == mid:
+								k7.inviteIntoGroup(grup, [target])
+								if target == mid:
 									cl.acceptGroupInvitation(grup)
-								if Bots == Amid:
+								if target == Amid:
 									ki.acceptGroupInvitation(grup)
-								if Bots == Bmid:
+								if target == Bmid:
 									kk.acceptGroupInvitation(grup)
-								if Bots == Cmid:
+								if target == Cmid:
 									kc.acceptGroupInvitation(grup)
-								if Bots == Dmid:
+								if target == Dmid:
 									km.acceptGroupInvitation(grup)
-								if Bots == K5mid:
+								if target == K5mid:
 									k5.acceptGroupInvitation(grup)
-								if Bots == K6mid:
+								if target == K6mid:
 									k6.acceptGroupInvitation(grup)
 							except:
 								try:
-									cl.inviteIntoGroup(grup, Bots)
-									if Bots == Amid:
+									cl.inviteIntoGroup(grup, [target])
+									if target == Amid:
 										ki.acceptGroupInvitation(grup)
-									if Bots == Bmid:
+									if target == Bmid:
 										kk.acceptGroupInvitation(grup)
-									if Bots == Cmid:
+									if target == Cmid:
 										kc.acceptGroupInvitation(grup)
-									if Bots == Dmid:
+									if target == Dmid:
 										km.acceptGroupInvitation(grup)
-									if Bots == K5mid:
+									if target == K5mid:
 										k5.acceptGroupInvitation(grup)
-									if Bots == K6mid:
+									if target == K6mid:
 										k6.acceptGroupInvitation(grup)
-									if Bots == K7mid:
+									if target == K7mid:
 										k7.acceptGroupInvitation(grup)
 								except:
 									pass
 
-def invite(grup, Bots):
+def invite(grup, target):
     try:
         ki.findAndAddContactsByMid(target)
-        ki.inviteIntoGroup(grup, Bots)
+        ki.inviteIntoGroup(grup, [target])
     except:
         try:
             kk.findAndAddContactsByMid(target)
-            kk.inviteIntoGroup(grup, Bots)
+            kk.inviteIntoGroup(grup, [target])
         except:
             try:
                 kc.findAndAddContactsByMid(target)
-                kc.inviteIntoGroup(grup, Bots)
+                kc.inviteIntoGroup(grup, [target])
             except:
                 try:
                     km.findAndAddContactsByMid(target)
-                    km.inviteIntoGroup(grup, Bots)
+                    km.inviteIntoGroup(grup, [target])
                 except:
                     try:
                         k5.findAndAddContactsByMid(target)
-                        k5.inviteIntoGroup(grup, Bots)
+                        k5.inviteIntoGroup(grup, [target])
                     except:
                         try:
                             k6.findAndAddContactsByMid(target)
-                            k6.inviteIntoGroup(grup, Bots)
+                            k6.inviteIntoGroup(grup, [target])
                         except:
                             try:
                                 k7.findAndAddContactsByMid(target)
-                                k7.inviteIntoGroup(grup, Bots)
+                                k7.inviteIntoGroup(grup, [target])
                             except:
                                 try:
                                     cl.findAndAddContactsByMid(target)
-                                    cl.inviteIntoGroup(grup, Bots)
+                                    cl.inviteIntoGroup(grup, [target])
                                 except:
                                     pass
 
