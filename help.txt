@@ -2,7 +2,8 @@
 ┣ {key}Help
 ┣ {key}b
 ┣ {key}รี
-┣ {key}Inb
+┣ {key}ลบแชท
+┣ {key}Ivb
 ┣ {key}Bye
 ┣ {key}Bc
 ┣ {key}Cb
@@ -10,7 +11,7 @@
 ┣ {key}View Bots
 ┣ {key}View Access
 ┣ {key}Cek
-┣ {key}อัพรูป
+┣ {key}อัพ รูป
 ┣ {key}sp
 ┣ {key}ชื่อ/ชื่อทั้งหมด 「 Name 」
 ┣ {key}bk 「 Mention 」
