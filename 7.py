@@ -1455,7 +1455,7 @@ async def cerberusRun():
 									uwew35 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
 									uwew36 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 									uwew37 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									uwew38 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									uwew38 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
 								except:
 									pass
 						if op.param3 in Amid:
@@ -1468,7 +1468,7 @@ async def cerberusRun():
 									uwew41 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
 									uwew42 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 									uwew43 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									uwew44 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									uwew44 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
 								except:
 									pass
 						if op.param3 in Bmid:
@@ -1481,7 +1481,7 @@ async def cerberusRun():
 									uwew47 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
 									uwew48 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 									uwew49 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									uwew50 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									uwew50 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
 								except:
 									pass
 						if op.param3 in Cmid:
@@ -1494,7 +1494,7 @@ async def cerberusRun():
 									uwew53 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
 									uwew54 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 									uwew55 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									uwew56 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									uwew56 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
 								except:
 									pass
 						if op.param3 in Dmid:
@@ -1507,7 +1507,7 @@ async def cerberusRun():
 									uwew59 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
 									uwew60 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 									uwew61 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									uwew62 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									uwew62 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
 								except:
 									pass
 						if op.param3 in K5mid:
@@ -1520,7 +1520,7 @@ async def cerberusRun():
 									uwew65 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
 									uwew66 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 									uwew67 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									uwew68 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									uwew68 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
 								except:
 									pass
 						if op.param3 in K6mid:
@@ -1533,7 +1533,7 @@ async def cerberusRun():
 									uwew71 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
 									uwew72 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 									uwew73 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									uwew74 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									uwew74 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
 								except:
 									pass
 						if op.param3 in K7mid:
@@ -1546,7 +1546,7 @@ async def cerberusRun():
 									uwew77 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
 									uwew78 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 									uwew79 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									uwew80 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									uwew80 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
 								except:
 									pass
 					if op.type == 32:
@@ -1572,7 +1572,7 @@ async def cerberusRun():
 									uwew89 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
 									uwew90 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 									uwew91 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									uwew92 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									uwew92 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
 								except:
 									pass
 						if op.param3 == Amid:
@@ -1585,7 +1585,7 @@ async def cerberusRun():
 									uwew95 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
 									uwew96 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 									uwew97 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									uwew98 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									uwew98 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
 								except:
 									pass
 						if op.param3 == Bmid:
@@ -1598,7 +1598,7 @@ async def cerberusRun():
 									uwew101 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
 									uwew102 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 									uwew103 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									uwew104 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									uwew104 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
 								except:
 									pass
 						if op.param3 == Cmid:
@@ -1611,7 +1611,7 @@ async def cerberusRun():
 									uwew107 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
 									uwew108 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 									uwew109 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									uwew110 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									uwew110 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
 								except:
 									pass
 						if op.param3 == Dmid:
@@ -1624,7 +1624,7 @@ async def cerberusRun():
 									uwew113 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
 									uwew114 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 									uwew115 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									uwew116 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									uwew116 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
 								except:
 									pass
 						if op.param3 == K5mid:
@@ -1637,7 +1637,7 @@ async def cerberusRun():
 									uwew119 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
 									uwew120 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 									uwew121 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									uwew122 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									uwew122 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
 								except:
 									pass
 						if op.param3 == K6mid:
@@ -1650,7 +1650,7 @@ async def cerberusRun():
 									uwew125 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
 									uwew126 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 									uwew127 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									uwew128 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									uwew128 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
 								except:
 									pass
 						if op.param3 == K7mid:
@@ -1663,7 +1663,7 @@ async def cerberusRun():
 									uwew131 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
 									uwew132 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 									uwew133 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									uwew134 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									uwew134 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
 								except:
 									pass
 					if op.type == 26:
