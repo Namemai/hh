@@ -488,7 +488,7 @@ def RECEIVE_MESSAGE(op):
 				elif uwew == "ivb":
 					if sender in creator or sender in owner or sender in admin or sender in staff:
 						try:
-							cl.inviteIntoGroup(receiver, [Amid,Bmid,Cmid,Dmid,K5mid,K6mid,K7mid])
+							cl.inviteIntoGroup(receiver, [Amid,Bmid,Cmid,Dmid,K5mid])
 							ki.acceptGroupInvitation(receiver)
 							kk.acceptGroupInvitation(receiver)
 							kc.acceptGroupInvitation(receiver)
