@@ -518,30 +518,45 @@ def RECEIVE_MESSAGE(op):
 		if msg.contentType == 1:
 			if sender in creator or sender in owner:
 				if mid in settings["sentinelPict"]:
-					path = cl.downloadObjectMsg(msg.id)
+					path0 = cl.downloadObjectMsg(msg.id)
 					del settings["sentinelPict"][mid]
-					cl.updateProfilePicture(path)
+					cl.updateProfilePicture(path0)
 					cl.sendReplyMessage(reply,receiver,"「 Profile Picture 」\nSuccess Change Profile Picture")
 				if Amid in settings["sentinelPict"]:
-					path = ki.downloadObjectMsg(msg.id)
+					path1 = ki.downloadObjectMsg(msg.id)
 					del settings["sentinelPict"][Amid]
-					ki.updateProfilePicture(path)
+					ki.updateProfilePicture(path1)
 					ki.sendReplyMessage(reply,receiver,"「 Profile Picture 」\nSuccess Change Profile Picture")
 				if Bmid in settings["sentinelPict"]:
-					path = kk.downloadObjectMsg(msg.id)
+					path2 = kk.downloadObjectMsg(msg.id)
 					del settings["sentinelPict"][Bmid]
-					kk.updateProfilePicture(path)
+					kk.updateProfilePicture(path2)
 					kk.sendReplyMessage(reply,receiver,"「 Profile Picture 」\nSuccess Change Profile Picture")
 				if Cmid in settings["sentinelPict"]:
-					path = kc.downloadObjectMsg(msg.id)
+					path3 = kc.downloadObjectMsg(msg.id)
 					del settings["sentinelPict"][Cmid]
-					kc.updateProfilePicture(path)
+					kc.updateProfilePicture(path3)
 					kc.sendReplyMessage(reply,receiver,"「 Profile Picture 」\nSuccess Change Profile Picture")
 				if Dmid in settings["sentinelPict"]:
-					path = km.downloadObjectMsg(msg.id)
+					path4 = km.downloadObjectMsg(msg.id)
 					del settings["sentinelPict"][Dmid]
-					km.updateProfilePicture(path)
+					km.updateProfilePicture(path4)
 					km.sendReplyMessage(reply,receiver,"「 Profile Picture 」\nSuccess Change Profile Picture")
+				if K5mid in settings["sentinelPict"]:
+					path5 = k5.downloadObjectMsg(msg.id)
+					del settings["sentinelPict"][K5mid]
+					k5.updateProfilePicture(path5)
+					k5.sendReplyMessage(reply,receiver,"「 Profile Picture 」\nSuccess Change Profile Picture")
+				if K6mid in settings["sentinelPict"]:
+					path6 = k6.downloadObjectMsg(msg.id)
+					del settings["sentinelPict"][K6mid]
+					k6.updateProfilePicture(path6)
+					k6.sendReplyMessage(reply,receiver,"「 Profile Picture 」\nSuccess Change Profile Picture")
+				if K7mid in settings["sentinelPict"]:
+					path5 = k7.downloadObjectMsg(msg.id)
+					del settings["sentinelPict"][K7mid]
+					k7.updateProfilePicture(path7)
+					k7.sendReplyMessage(reply,receiver,"「 Profile Picture 」\nSuccess Change Profile Picture")
 		if msg.contentType == 0:
 			if text is None:
 				return
@@ -552,7 +567,6 @@ def RECEIVE_MESSAGE(op):
 				if uwew == "help":
 					if sender in creator or sender in owner or sender in admin or sender in staff:
 						cl.sendReplyMessage(reply,receiver,commands())
-						cl.sendReplyMessage(reply,receiver,"Note:\nFor Multi Command\nMust Use & Between First and Second Command\nExample Below:\nHelp & Speed")
 				elif uwew == "รี":
 					if sender in creator or sender in owner or sender in admin or sender in staff:
 						cl.sendReplyMessage(reply,receiver,"「 Please Wait... 」")
