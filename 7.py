@@ -89,7 +89,7 @@ def backupData():
 		pass
 
 def restartProgram():
-	print('####==== PROGRAM RESTARTED ====####')
+	print('####==== ระบบเริ่มทำงาน ====####')
 	backupData()
 	python = sys.executable
 	os.execl(python, python, *sys.argv)
@@ -932,14 +932,14 @@ def RECEIVE_MESSAGE(op):
 						if has1 == "OK":sil1 = "OK.✔"
 						else:sil1 = "Down!"
 						k7.sendReplyMessage(reply, receiver, "「 Bots Status 」\n • Invite : {}\n • Kick : {}".format(sil1,sil))
-				elif uwew.startswith("ชื่อ "):
+				elif uwew.startswith("ชื่อ0 "):
 					if sender in creator or sender in owner:
 						sep = text.split(" ")
 						name = text.replace(sep[0] + " ","")
 						if len(name) <= 99999999:
-							dname = cl.getProfile()
-							dname.displayName = name
-							cl.updateProfile(dname)
+							dname0 = cl.getProfile()
+							dname0.displayName = name
+							cl.updateProfile(dname0)
 							cl.sendReplyMessage(reply,receiver,"「 Display Name 」\nDisplay Name Changed To {}".format(str(name)))
 					else:
 						cl.sendReplyMessage(reply,receiver,"「 Display Name 」\nAccess Limited For Owner Only -_-")
@@ -948,9 +948,9 @@ def RECEIVE_MESSAGE(op):
 						sep = text.split(" ")
 						name = text.replace(sep[0] + " ","")
 						if len(name) <= 99999999:
-							dname = ki.getProfile()
-							dname.displayName = name
-							ki.updateProfile(dname)
+							dname1 = ki.getProfile()
+							dname1.displayName = name
+							ki.updateProfile(dname1)
 							ki.sendReplyMessage(reply,receiver,"「 Display Name 」\nDisplay Name Changed To {}".format(str(name)))
 					else:
 						ki.sendReplyMessage(reply,receiver,"「 Display Name 」\nAccess Limited For Owner Only -_-")
@@ -959,9 +959,9 @@ def RECEIVE_MESSAGE(op):
 						sep = text.split(" ")
 						name = text.replace(sep[0] + " ","")
 						if len(name) <= 99999999:
-							dname = kk.getProfile()
-							dname.displayName = name
-							kk.updateProfile(dname)
+							dname2 = kk.getProfile()
+							dname2.displayName = name
+							kk.updateProfile(dname2)
 							kk.sendReplyMessage(reply,receiver,"「 Display Name 」\nDisplay Name Changed To {}".format(str(name)))
 					else:
 						kk.sendReplyMessage(reply,receiver,"「 Display Name 」\nAccess Limited For Owner Only -_-")
@@ -970,9 +970,9 @@ def RECEIVE_MESSAGE(op):
 						sep = text.split(" ")
 						name = text.replace(sep[0] + " ","")
 						if len(name) <= 99999999:
-							dname = kc.getProfile()
-							dname.displayName = name
-							kc.updateProfile(dname)
+							dname3 = kc.getProfile()
+							dname3.displayName = name
+							kc.updateProfile(dname3)
 							kc.sendReplyMessage(reply,receiver,"「 Display Name 」\nDisplay Name Changed To {}".format(str(name)))
 					else:
 						kc.sendReplyMessage(reply,receiver,"「 Display Name 」\nAccess Limited For Owner Only -_-")
@@ -981,9 +981,9 @@ def RECEIVE_MESSAGE(op):
 						sep = text.split(" ")
 						name = text.replace(sep[0] + " ","")
 						if len(name) <= 99999999:
-							dname = km.getProfile()
-							dname.displayName = name
-							km.updateProfile(dname)
+							dname4 = km.getProfile()
+							dname4.displayName = name
+							km.updateProfile(dname4)
 							km.sendReplyMessage(reply,receiver,"「 Display Name 」\nDisplay Name Changed To {}".format(str(name)))
 					else:
 						km.sendReplyMessage(reply,receiver,"「 Display Name 」\nAccess Limited For Owner Only -_-")
@@ -992,9 +992,9 @@ def RECEIVE_MESSAGE(op):
 						sep = text.split(" ")
 						name = text.replace(sep[0] + " ","")
 						if len(name) <= 99999999:
-							dname = k5.getProfile()
-							dname.displayName = name
-							k5.updateProfile(dname)
+							dname5 = k5.getProfile()
+							dname5.displayName = name
+							k5.updateProfile(dname5)
 							k5.sendReplyMessage(reply,receiver,"「 Display Name 」\nDisplay Name Changed To {}".format(str(name)))
 					else:
 						k5.sendReplyMessage(reply,receiver,"「 Display Name 」\nAccess Limited For Owner Only -_-")
@@ -1003,9 +1003,9 @@ def RECEIVE_MESSAGE(op):
 						sep = text.split(" ")
 						name = text.replace(sep[0] + " ","")
 						if len(name) <= 99999999:
-							dname = k6.getProfile()
-							dname.displayName = name
-							k6.updateProfile(dname)
+							dname6 = k6.getProfile()
+							dname6.displayName = name
+							k6.updateProfile(dname6)
 							k6.sendReplyMessage(reply,receiver,"「 Display Name 」\nDisplay Name Changed To {}".format(str(name)))
 					else:
 						k6.sendReplyMessage(reply,receiver,"「 Display Name 」\nAccess Limited For Owner Only -_-")
@@ -1014,9 +1014,9 @@ def RECEIVE_MESSAGE(op):
 						sep = text.split(" ")
 						name = text.replace(sep[0] + " ","")
 						if len(name) <= 99999999:
-							dname = k7.getProfile()
-							dname.displayName = name
-							k7.updateProfile(dname)
+							dname7 = k7.getProfile()
+							dname7.displayName = name
+							k7.updateProfile(dname7)
 							k7.sendReplyMessage(reply,receiver,"「 Display Name 」\nDisplay Name Changed To {}".format(str(name)))
 					else:
 						k7.sendReplyMessage(reply,receiver,"「 Display Name 」\nAccess Limited For Owner Only -_-")
@@ -1060,106 +1060,161 @@ def RECEIVE_MESSAGE(op):
 					else:
 						for a in Botslist:
 							a.sendReplyMessage(reply,receiver,"「 Display Name 」\nAccess Limited For Owner Only -_-")
-				elif uwew.startswith("changebio:1 "):
+				elif uwew.startswith("ตัส0 "):
 					if sender in creator or sender in owner:
 						sep = text.split(" ")
 						name = text.replace(sep[0] + " ","")
 						if len(name) <= 99999999:
-							bio = cl.getProfile()
-							bio.statusMessage = name
-							cl.updateProfile(bio)
+							bio0 = cl.getProfile()
+							bio0.statusMessage = name
+							cl.updateProfile(bio0)
 							cl.sendReplyMessage(reply,receiver,"「 Status Message 」\nStatus Message Changed To {}".format(str(name)))
 					else:
 						cl.sendReplyMessage(reply,receiver,"「 Status Message 」\nAccess Limited For Owner Only -_-")
-				elif uwew.startswith("changebio:2 "):
+				elif uwew.startswith("ตัส1 "):
 					if sender in creator or sender in owner:
 						sep = text.split(" ")
 						name = text.replace(sep[0] + " ","")
 						if len(name) <= 99999999:
-							bio = ki.getProfile()
-							bio.statusMessage = name
-							ki.updateProfile(bio)
+							bio1 = ki.getProfile()
+							bio1.statusMessage = name
+							ki.updateProfile(bio1)
 							ki.sendReplyMessage(reply,receiver,"「 Status Message 」\nStatus Message Changed To {}".format(str(name)))
 					else:
 						ki.sendReplyMessage(reply,receiver,"「 Status Message 」\nAccess Limited For Owner Only -_-")
-				elif uwew.startswith("changebio:3 "):
+				elif uwew.startswith("ตัส2 "):
 					if sender in creator or sender in owner:
 						sep = text.split(" ")
 						name = text.replace(sep[0] + " ","")
 						if len(name) <= 99999999:
-							bio = kk.getProfile()
-							bio.statusMessage = name
-							kk.updateProfile(bio)
+							bio2 = kk.getProfile()
+							bio2.statusMessage = name
+							kk.updateProfile(bio2)
 							kk.sendReplyMessage(reply,receiver,"「 Status Message 」\nStatus Message Changed To {}".format(str(name)))
 					else:
 						kk.sendReplyMessage(reply,receiver,"「 Status Message 」\nAccess Limited For Owner Only -_-")
-				elif uwew.startswith("changebio:4 "):
+				elif uwew.startswith("ตัส3 "):
 					if sender in creator or sender in owner:
 						sep = text.split(" ")
 						name = text.replace(sep[0] + " ","")
 						if len(name) <= 99999999:
-							bio = kc.getProfile()
-							bio.statusMessage = name
-							kc.updateProfile(bio)
+							bio3 = kc.getProfile()
+							bio3.statusMessage = name
+							kc.updateProfile(bio3)
 							kc.sendReplyMessage(reply,receiver,"「 Status Message 」\nStatus Message Changed To {}".format(str(name)))
 					else:
 						kc.sendReplyMessage(reply,receiver,"「 Status Message 」\nAccess Limited For Owner Only -_-")
-				elif uwew.startswith("changebio:5 "):
+				elif uwew.startswith("ตัส4 "):
 					if sender in creator or sender in owner:
 						sep = text.split(" ")
 						name = text.replace(sep[0] + " ","")
 						if len(name) <= 99999999:
-							bio = km.getProfile()
-							bio.statusMessage = name
-							km.updateProfile(bio)
+							bio4 = km.getProfile()
+							bio4.statusMessage = name
+							km.updateProfile(bio4)
 							km.sendReplyMessage(reply,receiver,"「 Status Message 」\nStatus Message Changed To {}".format(str(name)))
 					else:
 						km.sendReplyMessage(reply,receiver,"「 Status Message 」\nAccess Limited For Owner Only -_-")
-				elif uwew.startswith("changebio:all "):
+				elif uwew.startswith("ตัส5 "):
 					if sender in creator or sender in owner:
 						sep = text.split(" ")
 						name = text.replace(sep[0] + " ","")
 						if len(name) <= 99999999:
-							bio1 = cl.getProfile()
-							bio1.statusMessage = name
-							cl.updateProfile(bio1)
-							cl.sendReplyMessage(reply,receiver,"「 Status Message 」\nStatus Message Changed To {}".format(str(name)))
-							bio2 = ki.getProfile()
-							bio2.statusMessage = name
-							ki.updateProfile(bio2)
-							ki.sendReplyMessage(reply,receiver,"「 Status Message 」\nStatus Message Changed To {}".format(str(name)))
-							bio3 = kk.getProfile()
-							bio3.statusMessage = name
-							kk.sendReplyMessage(reply,receiver,"「 Status Message 」\nStatus Message Changed To {}".format(str(name)))
-							bio4 = kc.getProfile()
-							bio4.statusMessage = name
-							kc.updateProfile(bio4)
-							kc.sendReplyMessage(reply,receiver,"「 Status Message 」\nStatus Message Changed To {}".format(str(name)))
-							bio5 = km.getProfile()
+							bio5 = k5.getProfile()
 							bio5.statusMessage = name
-							km.updateProfile(bio5)
+							k5.updateProfile(bio5)
+							k5.sendReplyMessage(reply,receiver,"「 Status Message 」\nStatus Message Changed To {}".format(str(name)))
+					else:
+						k5.sendReplyMessage(reply,receiver,"「 Status Message 」\nAccess Limited For Owner Only -_-")
+				elif uwew.startswith("ตัส6 "):
+					if sender in creator or sender in owner:
+						sep = text.split(" ")
+						name = text.replace(sep[0] + " ","")
+						if len(name) <= 99999999:
+							bio6 = k6.getProfile()
+							bio6.statusMessage = name
+							k6.updateProfile(bio6)
+							k6.sendReplyMessage(reply,receiver,"「 Status Message 」\nStatus Message Changed To {}".format(str(name)))
+					else:
+						k6.sendReplyMessage(reply,receiver,"「 Status Message 」\nAccess Limited For Owner Only -_-")
+				elif uwew.startswith("ตัส7 "):
+					if sender in creator or sender in owner:
+						sep = text.split(" ")
+						name = text.replace(sep[0] + " ","")
+						if len(name) <= 99999999:
+							bio7 = k7.getProfile()
+							bio7.statusMessage = name
+							k7.updateProfile(bio7)
+							k7.sendReplyMessage(reply,receiver,"「 Status Message 」\nStatus Message Changed To {}".format(str(name)))
+					else:
+						k7.sendReplyMessage(reply,receiver,"「 Status Message 」\nAccess Limited For Owner Only -_-")
+				elif uwew.startswith("ตัสทั้งหมด "):
+					if sender in creator or sender in owner:
+						sep = text.split(" ")
+						name = text.replace(sep[0] + " ","")
+						if len(name) <= 99999999:
+							bio0 = cl.getProfile()
+							bio0.statusMessage = name
+							cl.updateProfile(bio0)
+							cl.sendReplyMessage(reply,receiver,"「 Status Message 」\nStatus Message Changed To {}".format(str(name)))
+							bio1 = ki.getProfile()
+							bio1.statusMessage = name
+							ki.updateProfile(bio1)
+							ki.sendReplyMessage(reply,receiver,"「 Status Message 」\nStatus Message Changed To {}".format(str(name)))
+							bio2 = kk.getProfile()
+							bio2.statusMessage = name
+							kk.updateProfile(bio2)
+							kk.sendReplyMessage(reply,receiver,"「 Status Message 」\nStatus Message Changed To {}".format(str(name)))
+							bio3 = kc.getProfile()
+							bio3.statusMessage = name
+							kc.updateProfile(bio3)
+							kc.sendReplyMessage(reply,receiver,"「 Status Message 」\nStatus Message Changed To {}".format(str(name)))
+							bio4 = km.getProfile()
+							bio4.statusMessage = name
+							km.updateProfile(bio4)
 							km.sendReplyMessage(reply,receiver,"「 Status Message 」\nStatus Message Changed To {}".format(str(name)))
+							bio5 = k5.getProfile()
+							bio5.statusMessage = name
+							k5.updateProfile(bio5)
+							k5.sendReplyMessage(reply,receiver,"「 Status Message 」\nStatus Message Changed To {}".format(str(name)))
+							bio6 = k6.getProfile()
+							bio6.statusMessage = name
+							k6.updateProfile(bio6)
+							k6.sendReplyMessage(reply,receiver,"「 Status Message 」\nStatus Message Changed To {}".format(str(name)))
+							bio7 = k7.getProfile()
+							bio7.statusMessage = name
+							k7.updateProfile(bio7)
+							k7.sendReplyMessage(reply,receiver,"「 Status Message 」\nStatus Message Changed To {}".format(str(name)))
 					else:
 						for a in Botslist:
 							a.sendReplyMessage(reply,receiver,"「 Status Message 」\nAccess Limited For Owner Only -_-")
 				elif uwew.startswith("อัพ"):
 					if sender in creator or sender in owner:
 						spl = uwew.replace("อัพ","")
-						if spl == "1":
+						if spl == "0":
 							settings["sentinelPict"][mid] = True
 							cl.sendReplyMessage(reply,receiver,"「 Profile Picture 」\nPlease Send Picture You Want To Use")
-						if spl == "2":
+						if spl == "1":
 							settings["sentinelPict"][Amid] = True
 							ki.sendReplyMessage(reply,receiver,"「 Profile Picture 」\nPlease Send Picture You Want To Use")
-						if spl == "3":
+						if spl == "2":
 							settings["sentinelPict"][Bmid] = True
 							kk.sendReplyMessage(reply,receiver,"「 Profile Picture 」\nPlease Send Picture You Want To Use")
-						if spl == "4":
+						if spl == "3":
 							settings["sentinelPict"][Cmid] = True
 							kc.sendReplyMessage(reply,receiver,"「 Profile Picture 」\nPlease Send Picture You Want To Use")
-						if spl == "5":
+						if spl == "4":
 							settings["sentinelPict"][Dmid] = True
 							km.sendReplyMessage(reply,receiver,"「 Profile Picture 」\nPlease Send Picture You Want To Use")
+						if spl == "5":
+							settings["sentinelPict"][K5mid] = True
+							k5.sendReplyMessage(reply,receiver,"「 Profile Picture 」\nPlease Send Picture You Want To Use")
+						if spl == "6":
+							settings["sentinelPict"][K6mid] = True
+							k6.sendReplyMessage(reply,receiver,"「 Profile Picture 」\nPlease Send Picture You Want To Use")
+						if spl == "7":
+							settings["sentinelPict"][K7mid] = True
+							k7.sendReplyMessage(reply,receiver,"「 Profile Picture 」\nPlease Send Picture You Want To Use")
 						if spl == "รูป":
 							settings["sentinelPict"][mid] = True
 							settings["sentinelPict"][Amid] = True
