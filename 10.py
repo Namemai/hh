@@ -42,7 +42,7 @@ k7 = LINE("kzo13145@eoopy.com","mai065558mai")
 print('==== UNIT 7 READY ! ====')
 k8 = LINE("trk27266@bcaoo.com","mai065558mai")
 print('==== UNIT 8 READY ! ====')
-k9 = LINE("gqt94015@zzrgg.com","mai065558mai"
+k9 = LINE("gqt94015@zzrgg.com","mai065558mai")
 print('==== UNIT 9 READY ! ====')
 k10 = LINE("bmq25838@eoopy.com","mai065558mai")
 print('==== UNIT 10 READY ! ====')
