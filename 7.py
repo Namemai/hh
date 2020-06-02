@@ -180,10 +180,7 @@ def kick(grup, target):
                             try:
                                 k7.kickoutFromGroup(grup, [target])
                             except:
-                                try:
-                                    cl.kickoutFromGroup(grup, [target])
-                                except:
-                                    pass
+                                pass
 
 def cancel(grup, target):
     try:
@@ -207,10 +204,7 @@ def cancel(grup, target):
                             try:
                                 k7.cancelGroupInvitation(grup, [target])
                             except:
-                                try:
-                                    cl.cancelGroupInvitation(grup, [target])
-                                except:
-                                    pass
+                                pass
 
 def lockqr(grup):
     try:
@@ -375,24 +369,7 @@ def backup(grup, target):
 								if target == K6mid:
 									k6.acceptGroupInvitation(grup)
 							except:
-								try:
-									cl.inviteIntoGroup(grup, [target])
-									if target == Amid:
-										ki.acceptGroupInvitation(grup)
-									if target == Bmid:
-										kk.acceptGroupInvitation(grup)
-									if target == Cmid:
-										kc.acceptGroupInvitation(grup)
-									if target == Dmid:
-										km.acceptGroupInvitation(grup)
-									if target == K5mid:
-										k5.acceptGroupInvitation(grup)
-									if target == K6mid:
-										k6.acceptGroupInvitation(grup)
-									if target == K7mid:
-										k7.acceptGroupInvitation(grup)
-								except:
-									pass
+								pass
 
 def invite(grup, target):
     try:
