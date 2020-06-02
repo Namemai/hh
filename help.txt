@@ -1,5 +1,6 @@
 ┏━━━━━━━━
 ┣ {key}Help
+┣ {key}Sp
 ┣ {key}b
 ┣ {key}รี
 ┣ {key}ลบแชท
@@ -11,9 +12,9 @@
 ┣ {key}View Bots
 ┣ {key}View Access
 ┣ {key}Cek
-┣ {key}อัพ รูป
-┣ {key}sp
-┣ {key}ชื่อ/ชื่อทั้งหมด 「 Name 」
+┣ {key}อัพรูป
+┣ {key}ตัส0-7/ตัสทั้งหมด 「 Name 」
+┣ {key}ชื่อ0-7/ชื่อทั้งหมด 「 Name 」
 ┣ {key}bk 「 Mention 」
 ┣ {key}Add Owner 「 Mention 」
 ┣ {key}Add Admin 「 Mention 」
