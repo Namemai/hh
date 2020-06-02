@@ -1689,5 +1689,5 @@ async def cerberusRun():
 				traceback.print_exc()
 				logError(error)
 if __name__ == '__main__':
-	print('####==== PROGRAM STARTED ====####')
+	print('####==== ระบบเริ่มทำงาน ====####')
 	threading.Thread(target=loop.run_until_complete(cerberusRun())).start()
