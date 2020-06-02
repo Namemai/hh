@@ -24,15 +24,15 @@ from datetime import datetime
 # Auth Token : LINE("authtoken")
 # Primary Token : LINE("primary",appName='IOS\t8.17.0\tUwewww\t11.2.5')
 programStart = time.time()
-cl = LINE("navow52399@dfb55.com","mai065558mai")
+cl = LINE("06555mai@gmail.com","mai06555mai")
 print('==== UNIT หลัก READY ! ====')
-ki = LINE("fys06809@bcaoo.com","pass1234")
+ki = LINE("navow52399@dfb55.com","mai065558mai")
 print('==== UNIT 1 READY ! ====')
 kk = LINE("qfc90397@eoopy.com","mai065558mai")
 print('==== UNIT 2 READY ! ====')
-kc = LINE("ridipor398@lerwfv.com","mai065558mai")
+kc = LINE("ptd55528@eoopy.com","pass1234")
 print('==== UNIT 3 READY ! ====')
-km = LINE("kipat42233@dffwer.com","mai065558mai")
+km = LINE("raq88539@zzrgg.com","pass1234")
 print('==== UNIT 4 READY ! ====')
 k5 = LINE("ayo74173@zzrgg.com","pass1234")
 print('==== UNIT 5 READY ! ====')
@@ -166,10 +166,7 @@ def kick(grup, target):
                     try:
                         k5.kickoutFromGroup(grup, [target])
                     except:
-                        try:
-                            cl.kickoutFromGroup(grup, [target])
-                        except:
-                            pass
+                        tpass
 
 def cancel(grup, target):
     try:
@@ -187,10 +184,7 @@ def cancel(grup, target):
                     try:
                         k5.cancelGroupInvitation(grup, [target])
                     except:
-                        try:
-                            cl.cancelGroupInvitation(grup, [target])
-                        except:
-                            pass
+                        pass
 
 def lockqr(grup):
     try:
@@ -291,20 +285,7 @@ def backup(grup, target):
 						if target == Dmid:
 							km.acceptGroupInvitation(grup)
 					except:
-						try:
-							cl.inviteIntoGroup(grup, [target])
-							if target == Amid:
-								ki.acceptGroupInvitation(grup)
-							if target == Bmid:
-								kk.acceptGroupInvitation(grup)
-							if target == Cmid:
-								kc.acceptGroupInvitation(grup)
-							if target == Dmid:
-								km.acceptGroupInvitation(grup)
-							if target == K5mid:
-								k5.acceptGroupInvitation(grup)
-						except:
-							pass
+						pass
 def invite(grup, target):
     try:
         ki.findAndAddContactsByMid(target)
@@ -326,11 +307,7 @@ def invite(grup, target):
                         k5.findAndAddContactsByMid(target)
                         k5.inviteIntoGroup(grup, [target])
                     except:
-                        try:
-                            cl.findAndAddContactsByMid(target)
-                            cl.inviteIntoGroup(grup, [target])
-                        except:
-                            pass
+                        pass
 
 def blacklist(target):
 	try:
