@@ -40,6 +40,12 @@ k6 = LINE("yokavad938@qortu.com","mai065558mai")
 print('==== UNIT 6 READY ! ====')
 k7 = LINE("gasamix553@tashjw.com","mai065558mai")
 print('==== UNIT 7 READY ! ====')
+k8 = LINE("gasamix553@tashjw.com","mai065558mai")
+print('==== UNIT 8 READY ! ====')
+k9 = LINE("gasamix553@tashjw.com","mai065558mai")
+print('==== UNIT 9 READY ! ====')
+k10 = LINE("gasamix553@tashjw.com","mai065558mai")
+print('==== UNIT 10 READY ! ====')
 print ('\n\nALL UNIT READY !')
 
 mid = cl.getProfile().mid
@@ -50,7 +56,10 @@ Dmid = km.getProfile().mid
 K5mid = k5.getProfile().mid
 K6mid = k6.getProfile().mid
 K7mid = k7.getProfile().mid
-KAC = [ki,kk,kc,km,k5,k6,k7]
+K8mid = k8.getProfile().mid
+K9mid = k9.getProfile().mid
+K10mid = k10.getProfile().mid
+KAC = [ki,kk,kc,km,k5,k6,k7,k8,k9,k10]
 
 loop = asyncio.get_event_loop()
 status = livejson.File('status.json', True, False, 4)
@@ -61,8 +70,8 @@ owner = status["owner"]
 admin = status["admin"]
 staff = status["staff"]
 mybots = status["mybots"]
-Bots = [mid,Amid,Bmid,Cmid,Dmid,K5mid,K6mid,K7mid]
-Botslist = [cl,ki,kk,kc,km,k5,k6,k7]
+Bots = [mid,Amid,Bmid,Cmid,Dmid,K5mid,K6mid,K7mid,K8mid,K9mid,K10mid]
+Botslist = [cl,ki,kk,kc,km,k5,k6,k7,k8,k9,k10]
 resp0 = cl.getProfile().displayName
 resp1 = ki.getProfile().displayName
 resp2 = kk.getProfile().displayName
@@ -71,6 +80,9 @@ resp4 = km.getProfile().displayName
 resp5 = k5.getProfile().displayName
 resp6 = k6.getProfile().displayName
 resp7 = k7.getProfile().displayName
+resp8 = k8.getProfile().displayName
+resp9 = k9.getProfile().displayName
+resp10 = k10.getProfile().displayName
 
 for uwew in Botslist:
 	for uwewww in Bots:
@@ -181,9 +193,18 @@ def kick(grup, target):
                                 k7.kickoutFromGroup(grup, [target])
                             except:
                                 try:
-                                    cl.kickoutFromGroup(grup, [target])
+                                    k8.kickoutFromGroup(grup, [target])
                                 except:
-                                    pass
+                                    try:
+                                        k9.kickoutFromGroup(grup, [target])
+                                    except:
+                                        try:
+                                            k10.kickoutFromGroup(grup, [target])
+                                        except:
+                                            try:
+                                                cl.kickoutFromGroup(grup, [target])
+                                            except:
+                                                pass
 
 def cancel(grup, target):
     try:
@@ -208,9 +229,18 @@ def cancel(grup, target):
                                 k7.cancelGroupInvitation(grup, [target])
                             except:
                                 try:
-                                    cl.cancelGroupInvitation(grup, [target])
+                                    k8.cancelGroupInvitation(grup, [target])
                                 except:
-                                    pass
+                                    try:
+                                        k9.cancelGroupInvitation(grup, [target])
+                                    except:
+                                        try:
+                                            k10.cancelGroupInvitation(grup, [target])
+                                        except:
+                                            try:
+                                                cl.cancelGroupInvitation(grup, [target])
+                                            except:
+                                                pass
 
 def lockqr(grup):
     try:
@@ -249,11 +279,26 @@ def lockqr(grup):
                                 k7.updateGroup(G)
                             except:
                                 try:
-                                    G = cl.getGroup(grup)
+                                    G = k8.getGroup(grup)
                                     G.preventedJoinByTicket = True
-                                    cl.updateGroup(G)
+                                    k8.updateGroup(G)
                                 except:
-                                    pass
+                                    try:
+                                        G = k9.getGroup(grup)
+                                        G.preventedJoinByTicket = True
+                                        k9.updateGroup(G)
+                                    except:
+                                        try:
+                                            G = k10.getGroup(grup)
+                                            G.preventedJoinByTicket = True
+                                            k10.updateGroup(G)
+                                        except:
+                                            try:
+                                                G = cl.getGroup(grup)
+                                                G.preventedJoinByTicket = True
+                                                cl.updateGroup(G)
+                                            except:
+                                                pass
 
 def backup(grup, target):
 	try:
@@ -272,6 +317,12 @@ def backup(grup, target):
 			k6.acceptGroupInvitation(grup)
 		if target == K7mid:
 			k7.acceptGroupInvitation(grup)
+		if target == K8mid:
+			k8.acceptGroupInvitation(grup)
+		if target == K9mid:
+			k9.acceptGroupInvitation(grup)
+		if target == K10mid:
+			k10.acceptGroupInvitation(grup)
 	except:
 		try:
 			kk.inviteIntoGroup(grup, [target])
@@ -289,6 +340,12 @@ def backup(grup, target):
 				k6.acceptGroupInvitation(grup)
 			if target == K7mid:
 				k7.acceptGroupInvitation(grup)
+			if target == K8mid:
+				k8.acceptGroupInvitation(grup)
+			if target == K9mid:
+				k9.acceptGroupInvitation(grup)
+			if target == K10mid:
+				k10.acceptGroupInvitation(grup)
 		except:
 			try:
 				kc.inviteIntoGroup(grup, [target])
@@ -306,6 +363,12 @@ def backup(grup, target):
 					k6.acceptGroupInvitation(grup)
 				if target == K7mid:
 					k7.acceptGroupInvitation(grup)
+				if target == K8mid:
+					k8.acceptGroupInvitation(grup)
+				if target == K9mid:
+					k9.acceptGroupInvitation(grup)
+				if target == K10mid:
+					k10.acceptGroupInvitation(grup)
 			except:
 				try:
 					km.inviteIntoGroup(grup, [target])
@@ -323,6 +386,12 @@ def backup(grup, target):
 						k6.acceptGroupInvitation(grup)
 					if target == K7mid:
 						k7.acceptGroupInvitation(grup)
+					if target == K8mid:
+						k8.acceptGroupInvitation(grup)
+					if target == K9mid:
+						k9.acceptGroupInvitation(grup)
+					if target == K10mid:
+						k10.acceptGroupInvitation(grup)
 				except:
 					try:
 						k5.inviteIntoGroup(grup, [target])
@@ -340,6 +409,12 @@ def backup(grup, target):
 							k6.acceptGroupInvitation(grup)
 						if target == K7mid:
 							k7.acceptGroupInvitation(grup)
+						if target == K8mid:
+							k8.acceptGroupInvitation(grup)
+						if target == K9mid:
+							k9.acceptGroupInvitation(grup)
+						if target == K10mid:
+							k10.acceptGroupInvitation(grup)
 					except:
 						try:
 							k6.inviteIntoGroup(grup, [target])
@@ -357,6 +432,12 @@ def backup(grup, target):
 								k5.acceptGroupInvitation(grup)
 							if target == K7mid:
 								k7.acceptGroupInvitation(grup)
+							if target == K8mid:
+								k8.acceptGroupInvitation(grup)
+							if target == K9mid:
+								k9.acceptGroupInvitation(grup)
+							if target == K10mid:
+								k10.acceptGroupInvitation(grup)
 						except:
 							try:
 								k7.inviteIntoGroup(grup, [target])
@@ -374,9 +455,17 @@ def backup(grup, target):
 									k5.acceptGroupInvitation(grup)
 								if target == K6mid:
 									k6.acceptGroupInvitation(grup)
+								if target == K8mid:
+									k8.acceptGroupInvitation(grup)
+								if target == K9mid:
+									k9.acceptGroupInvitation(grup)
+								if target == K10mid:
+									k10.acceptGroupInvitation(grup)
 							except:
 								try:
-									cl.inviteIntoGroup(grup, [target])
+									k8.inviteIntoGroup(grup, [target])
+									if target == mid:
+										cl.acceptGroupInvitation(grup)
 									if target == Amid:
 										ki.acceptGroupInvitation(grup)
 									if target == Bmid:
@@ -391,8 +480,81 @@ def backup(grup, target):
 										k6.acceptGroupInvitation(grup)
 									if target == K7mid:
 										k7.acceptGroupInvitation(grup)
+									if target == K9mid:
+										k9.acceptGroupInvitation(grup)
+									if target == K10mid:
+										k10.acceptGroupInvitation(grup)
 								except:
-									pass
+                                                                        try:
+	                                                                        k9.inviteIntoGroup(grup, [target])
+	                                                                        if target == mid:
+	                                                                                cl.acceptGroupInvitation(grup)
+	                                                                        if target == Amid:
+	                                                                                ki.acceptGroupInvitation(grup)
+	                                                                        if target == Bmid:
+	                                                                                kk.acceptGroupInvitation(grup)
+	                                                                        if target == Cmid:
+	                                                                                kc.acceptGroupInvitation(grup)
+	                                                                        if target == Dmid:
+	                                                                                km.acceptGroupInvitation(grup)
+	                                                                        if target == K5mid:
+	                                                                                k5.acceptGroupInvitation(grup)
+	                                                                        if target == K6mid:
+	                                                                                k6.acceptGroupInvitation(grup)
+	                                                                        if target == K7mid:
+	                                                                                k7.acceptGroupInvitation(grup)
+	                                                                        if target == K8mid:
+	                                                                                k8.acceptGroupInvitation(grup)
+	                                                                        if target == K10mid:
+	                                                                                k10.acceptGroupInvitation(grup)
+                                                                        except:
+                                                                                try:
+	                                                                                k10.inviteIntoGroup(grup, [target])
+	                                                                                if target == mid:
+	                                                                                        cl.acceptGroupInvitation(grup)
+	                                                                                if target == Amid:
+	                                                                                        ki.acceptGroupInvitation(grup)
+	                                                                                if target == Bmid:
+	                                                                                        kk.acceptGroupInvitation(grup)
+	                                                                                if target == Cmid:
+	                                                                                        kc.acceptGroupInvitation(grup)
+	                                                                                if target == Dmid:
+	                                                                                        km.acceptGroupInvitation(grup)
+	                                                                                if target == K5mid:
+	                                                                                        k5.acceptGroupInvitation(grup)
+	                                                                                if target == K6mid:
+	                                                                                        k6.acceptGroupInvitation(grup)
+	                                                                                if target == K7mid:
+	                                                                                        k7.acceptGroupInvitation(grup)
+	                                                                                if target == K8mid:
+	                                                                                        k8.acceptGroupInvitation(grup)
+	                                                                                if target == K9mid:
+	                                                                                        k9.acceptGroupInvitation(grup)
+                                                                                except:
+                                                                                        try:
+	                                                                                        cl.inviteIntoGroup(grup, [target])
+	                                                                                        if target == Amid:
+	                                                                                                ki.acceptGroupInvitation(grup)
+	                                                                                        if target == Bmid:
+	                                                                                                kk.acceptGroupInvitation(grup)
+	                                                                                        if target == Cmid:
+	                                                                                                kc.acceptGroupInvitation(grup)
+	                                                                                        if target == Dmid:
+	                                                                                                km.acceptGroupInvitation(grup)
+	                                                                                        if target == K5mid:
+	                                                                                                k5.acceptGroupInvitation(grup)
+	                                                                                        if target == K6mid:
+	                                                                                                k6.acceptGroupInvitation(grup)
+	                                                                                        if target == K7mid:
+	                                                                                                k7.acceptGroupInvitation(grup)
+	                                                                                        if target == K8mid:
+	                                                                                                k8.acceptGroupInvitation(grup)
+	                                                                                        if target == K9mid:
+	                                                                                                k9.acceptGroupInvitation(grup)
+	                                                                                        if target == K10mid:
+	                                                                                                k10.acceptGroupInvitation(grup)
+                                                                                        except:
+	                                                                                        pass
 
 def invite(grup, target):
     try:
@@ -424,10 +586,22 @@ def invite(grup, target):
                                 k7.inviteIntoGroup(grup, [target])
                             except:
                                 try:
-                                    cl.findAndAddContactsByMid(target)
-                                    cl.inviteIntoGroup(grup, [target])
+                                    k8.findAndAddContactsByMid(target)
+                                    k8.inviteIntoGroup(grup, [target])
                                 except:
-                                    pass
+                                    try:
+                                        k9.findAndAddContactsByMid(target)
+                                        k9.inviteIntoGroup(grup, [target])
+                                    except:
+                                        try:
+                                            k10.findAndAddContactsByMid(target)
+                                            k10.inviteIntoGroup(grup, [target])
+                                        except:
+                                            try:
+                                                cl.findAndAddContactsByMid(target)
+                                                cl.inviteIntoGroup(grup, [target])
+                                            except:
+                                                pass
 
 def blacklist(target):
 	try:
@@ -471,6 +645,21 @@ def logspeed():
 	return "「 Bots Speed 」\n • Took : %.3fms\n • Taken: %.5f" % (get_profile_took,get_profile_time)
 	get_profile_time_start = time.time()
 	get_profile = k7.getProfile()
+	get_profile_time = time.time() - get_profile_time_start
+	get_profile_took = time.time() - get_profile_time_start
+	return "「 Bots Speed 」\n • Took : %.3fms\n • Taken: %.5f" % (get_profile_took,get_profile_time)
+	get_profile_time_start = time.time()
+	get_profile = k8.getProfile()
+	get_profile_time = time.time() - get_profile_time_start
+	get_profile_took = time.time() - get_profile_time_start
+	return "「 Bots Speed 」\n • Took : %.3fms\n • Taken: %.5f" % (get_profile_took,get_profile_time)
+	get_profile_time_start = time.time()
+	get_profile = k9.getProfile()
+	get_profile_time = time.time() - get_profile_time_start
+	get_profile_took = time.time() - get_profile_time_start
+	return "「 Bots Speed 」\n • Took : %.3fms\n • Taken: %.5f" % (get_profile_took,get_profile_time)
+	get_profile_time_start = time.time()
+	get_profile = k10.getProfile()
 	get_profile_time = time.time() - get_profile_time_start
 	get_profile_took = time.time() - get_profile_time_start
 	return "「 Bots Speed 」\n • Took : %.3fms\n • Taken: %.5f" % (get_profile_took,get_profile_time)
@@ -563,6 +752,21 @@ def RECEIVE_MESSAGE(op):
 					del settings["sentinelPict"][K7mid]
 					k7.updateProfilePicture(path7)
 					k7.sendReplyMessage(reply,receiver,"「 Profile Picture 」\nSuccess Change Profile Picture")
+				if K8mid in settings["sentinelPict"]:
+					path8 = k8.downloadObjectMsg(msg.id)
+					del settings["sentinelPict"][K8mid]
+					k8.updateProfilePicture(path8)
+					k8.sendReplyMessage(reply,receiver,"「 Profile Picture 」\nSuccess Change Profile Picture")
+				if K9mid in settings["sentinelPict"]:
+					path9 = k9.downloadObjectMsg(msg.id)
+					del settings["sentinelPict"][K9mid]
+					k9.updateProfilePicture(path9)
+					k9.sendReplyMessage(reply,receiver,"「 Profile Picture 」\nSuccess Change Profile Picture")
+				if K10mid in settings["sentinelPict"]:
+					path10 = k10.downloadObjectMsg(msg.id)
+					del settings["sentinelPict"][K10mid]
+					k10.updateProfilePicture(path10)
+					k10.sendReplyMessage(reply,receiver,"「 Profile Picture 」\nSuccess Change Profile Picture")
 		if msg.contentType == 0:
 			if text is None:
 				return
@@ -593,6 +797,9 @@ def RECEIVE_MESSAGE(op):
 						k5.sendReplyMessage(reply,receiver,"「 {} 」".format(resp5))
 						k6.sendReplyMessage(reply,receiver,"「 {} 」".format(resp6))
 						k7.sendReplyMessage(reply,receiver,"「 {} 」".format(resp7))
+						k8.sendReplyMessage(reply,receiver,"「 {} 」".format(resp8))
+						k9.sendReplyMessage(reply,receiver,"「 {} 」".format(resp9))
+						k10.sendReplyMessage(reply,receiver,"「 {} 」".format(resp10))
 				elif uwew == "sp":
 					if sender in creator or sender in owner or sender in admin or sender in staff:
 						ki.sendReplyMessage(reply,receiver,logspeed())
@@ -602,6 +809,9 @@ def RECEIVE_MESSAGE(op):
 						k5.sendReplyMessage(reply,receiver,logspeed())
 						k6.sendReplyMessage(reply,receiver,logspeed())
 						k7.sendReplyMessage(reply,receiver,logspeed())
+						k8.sendReplyMessage(reply,receiver,logspeed())
+						k9.sendReplyMessage(reply,receiver,logspeed())
+						k10.sendReplyMessage(reply,receiver,logspeed())
 				elif uwew == "bye":
 					if sender in creator or sender in owner or sender in admin or sender in staff:
 						for bot in Botslist:
@@ -609,7 +819,7 @@ def RECEIVE_MESSAGE(op):
 				elif uwew == "ivb":
 					if sender in creator or sender in owner or sender in admin or sender in staff:
 						try:
-							cl.inviteIntoGroup(receiver, [Amid,Bmid,Cmid,Dmid,K5mid,K6mid,K7mid])
+							cl.inviteIntoGroup(receiver, [Amid,Bmid,Cmid,Dmid,K5mid,K6mid,K7mid,K8mid,K9mid,K10mid])
 							ki.acceptGroupInvitation(receiver)
 							kk.acceptGroupInvitation(receiver)
 							kc.acceptGroupInvitation(receiver)
@@ -617,6 +827,9 @@ def RECEIVE_MESSAGE(op):
 							k5.acceptGroupInvitation(receiver)
 							k6.acceptGroupInvitation(receiver)
 							k7.acceptGroupInvitation(receiver)
+							k8.acceptGroupInvitation(receiver)
+							k9.acceptGroupInvitation(receiver)
+							k10.acceptGroupInvitation(receiver)
 						except TalkException as talk_error:
 							if talk_error.code == 35:
 								G = cl.getGroup(receiver)
@@ -952,6 +1165,33 @@ def RECEIVE_MESSAGE(op):
 						if has1 == "OK":sil1 = "OK.✔"
 						else:sil1 = "Down!"
 						k7.sendReplyMessage(reply, receiver, "「 Bots Status 」\n • Invite : {}\n • Kick : {}".format(sil1,sil))
+						try:k8.inviteIntoGroup(to, [K8mid]);has = "OK"
+						except:has = "NOT"
+						try:k8.kickoutFromGroup(to, [K8mid]);has1 = "OK"
+						except:has1 = "NOT"
+						if has == "OK":sil = "OK.✔"
+						else:sil = "Down!"
+						if has1 == "OK":sil1 = "OK.✔"
+						else:sil1 = "Down!"
+						k8.sendReplyMessage(reply, receiver, "「 Bots Status 」\n • Invite : {}\n • Kick : {}".format(sil1,sil))
+						try:k9.inviteIntoGroup(to, [K9mid]);has = "OK"
+						except:has = "NOT"
+						try:k9.kickoutFromGroup(to, [K9mid]);has1 = "OK"
+						except:has1 = "NOT"
+						if has == "OK":sil = "OK.✔"
+						else:sil = "Down!"
+						if has1 == "OK":sil1 = "OK.✔"
+						else:sil1 = "Down!"
+						k9.sendReplyMessage(reply, receiver, "「 Bots Status 」\n • Invite : {}\n • Kick : {}".format(sil1,sil))
+						try:k10.inviteIntoGroup(to, [K10mid]);has = "OK"
+						except:has = "NOT"
+						try:k10.kickoutFromGroup(to, [K10mid]);has1 = "OK"
+						except:has1 = "NOT"
+						if has == "OK":sil = "OK.✔"
+						else:sil = "Down!"
+						if has1 == "OK":sil1 = "OK.✔"
+						else:sil1 = "Down!"
+						k10.sendReplyMessage(reply, receiver, "「 Bots Status 」\n • Invite : {}\n • Kick : {}".format(sil1,sil))
 				elif uwew.startswith("ชื่อ0 "):
 					if sender in creator or sender in owner:
 						sep = text.split(" ")
@@ -1040,6 +1280,39 @@ def RECEIVE_MESSAGE(op):
 							k7.sendReplyMessage(reply,receiver,"「 Display Name 」\nDisplay Name Changed To {}".format(str(name)))
 					else:
 						k7.sendReplyMessage(reply,receiver,"「 Display Name 」\nAccess Limited For Owner Only -_-")
+				elif uwew.startswith("ชื่อ8 "):
+					if sender in creator or sender in owner:
+						sep = text.split(" ")
+						name = text.replace(sep[0] + " ","")
+						if len(name) <= 99999999:
+							dname8 = k8.getProfile()
+							dname8.displayName = name
+							k8.updateProfile(dname8)
+							k8.sendReplyMessage(reply,receiver,"「 Display Name 」\nDisplay Name Changed To {}".format(str(name)))
+					else:
+						k8.sendReplyMessage(reply,receiver,"「 Display Name 」\nAccess Limited For Owner Only -_-")
+				elif uwew.startswith("ชื่อ9 "):
+					if sender in creator or sender in owner:
+						sep = text.split(" ")
+						name = text.replace(sep[0] + " ","")
+						if len(name) <= 99999999:
+							dname9 = k9.getProfile()
+							dname9.displayName = name
+							k9.updateProfile(dname9)
+							k9.sendReplyMessage(reply,receiver,"「 Display Name 」\nDisplay Name Changed To {}".format(str(name)))
+					else:
+						k9.sendReplyMessage(reply,receiver,"「 Display Name 」\nAccess Limited For Owner Only -_-")
+				elif uwew.startswith("ชื่อ10 "):
+					if sender in creator or sender in owner:
+						sep = text.split(" ")
+						name = text.replace(sep[0] + " ","")
+						if len(name) <= 99999999:
+							dname10 = k10.getProfile()
+							dname7.displayName = name
+							k10.updateProfile(dname10)
+							k10.sendReplyMessage(reply,receiver,"「 Display Name 」\nDisplay Name Changed To {}".format(str(name)))
+					else:
+						k10.sendReplyMessage(reply,receiver,"「 Display Name 」\nAccess Limited For Owner Only -_-")
 				elif uwew.startswith("ชื่อทั้งหมด "):
 					if sender in creator or sender in owner:
 						sep = text.split(" ")
@@ -1077,6 +1350,18 @@ def RECEIVE_MESSAGE(op):
 							dname7.displayName = name
 							k7.updateProfile(dname7)
 							k7.sendReplyMessage(reply,receiver,"「 Display Name 」\nDisplay Name Changed To {}".format(str(name)))
+							dname8 = k8.getProfile()
+							dname8.displayName = name
+							k8.updateProfile(dname8)
+							k8.sendReplyMessage(reply,receiver,"「 Display Name 」\nDisplay Name Changed To {}".format(str(name)))
+							dname9 = k9.getProfile()
+							dname9.displayName = name
+							k9.updateProfile(dname9)
+							k9.sendReplyMessage(reply,receiver,"「 Display Name 」\nDisplay Name Changed To {}".format(str(name)))
+							dname10 = k10.getProfile()
+							dname10.displayName = name
+							k10.updateProfile(dname10)
+							k10.sendReplyMessage(reply,receiver,"「 Display Name 」\nDisplay Name Changed To {}".format(str(name)))
 					else:
 						for a in Botslist:
 							a.sendReplyMessage(reply,receiver,"「 Display Name 」\nAccess Limited For Owner Only -_-")
@@ -1168,6 +1453,39 @@ def RECEIVE_MESSAGE(op):
 							k7.sendReplyMessage(reply,receiver,"「 Status Message 」\nStatus Message Changed To {}".format(str(name)))
 					else:
 						k7.sendReplyMessage(reply,receiver,"「 Status Message 」\nAccess Limited For Owner Only -_-")
+				elif uwew.startswith("ตัส8 "):
+					if sender in creator or sender in owner:
+						sep = text.split(" ")
+						name = text.replace(sep[0] + " ","")
+						if len(name) <= 99999999:
+							bio8 = k8.getProfile()
+							bio8.statusMessage = name
+							k8.updateProfile(bio8)
+							k8.sendReplyMessage(reply,receiver,"「 Status Message 」\nStatus Message Changed To {}".format(str(name)))
+					else:
+						k8.sendReplyMessage(reply,receiver,"「 Status Message 」\nAccess Limited For Owner Only -_-")
+				elif uwew.startswith("ตัส9 "):
+					if sender in creator or sender in owner:
+						sep = text.split(" ")
+						name = text.replace(sep[0] + " ","")
+						if len(name) <= 99999999:
+							bio9 = k9.getProfile()
+							bio9.statusMessage = name
+							k9.updateProfile(bio9)
+							k9.sendReplyMessage(reply,receiver,"「 Status Message 」\nStatus Message Changed To {}".format(str(name)))
+					else:
+						k9.sendReplyMessage(reply,receiver,"「 Status Message 」\nAccess Limited For Owner Only -_-")
+				elif uwew.startswith("ตัส10 "):
+					if sender in creator or sender in owner:
+						sep = text.split(" ")
+						name = text.replace(sep[0] + " ","")
+						if len(name) <= 99999999:
+							bio10 = k10.getProfile()
+							bio10.statusMessage = name
+							k10.updateProfile(bio10)
+							k10.sendReplyMessage(reply,receiver,"「 Status Message 」\nStatus Message Changed To {}".format(str(name)))
+					else:
+						k10.sendReplyMessage(reply,receiver,"「 Status Message 」\nAccess Limited For Owner Only -_-")
 				elif uwew.startswith("ตัสทั้งหมด "):
 					if sender in creator or sender in owner:
 						sep = text.split(" ")
@@ -1205,6 +1523,18 @@ def RECEIVE_MESSAGE(op):
 							bio7.statusMessage = name
 							k7.updateProfile(bio7)
 							k7.sendReplyMessage(reply,receiver,"「 Status Message 」\nStatus Message Changed To {}".format(str(name)))
+							bio8 = k8.getProfile()
+							bio8.statusMessage = name
+							k8.updateProfile(bio8)
+							k8.sendReplyMessage(reply,receiver,"「 Status Message 」\nStatus Message Changed To {}".format(str(name)))
+							bio9 = k9.getProfile()
+							bio9.statusMessage = name
+							k9.updateProfile(bio9)
+							k9.sendReplyMessage(reply,receiver,"「 Status Message 」\nStatus Message Changed To {}".format(str(name)))
+							bio10 = k10.getProfile()
+							bio10.statusMessage = name
+							k10.updateProfile(bio10)
+							k10.sendReplyMessage(reply,receiver,"「 Status Message 」\nStatus Message Changed To {}".format(str(name)))
 					else:
 						for a in Botslist:
 							a.sendReplyMessage(reply,receiver,"「 Status Message 」\nAccess Limited For Owner Only -_-")
@@ -1235,6 +1565,15 @@ def RECEIVE_MESSAGE(op):
 						if spl == "7":
 							settings["sentinelPict"][K7mid] = True
 							k7.sendReplyMessage(reply,receiver,"「 Profile Picture 」\nPlease Send Picture You Want To Use")
+						if spl == "8":
+							settings["sentinelPict"][K8mid] = True
+							k8.sendReplyMessage(reply,receiver,"「 Profile Picture 」\nPlease Send Picture You Want To Use")
+						if spl == "9":
+							settings["sentinelPict"][K9mid] = True
+							k9.sendReplyMessage(reply,receiver,"「 Profile Picture 」\nPlease Send Picture You Want To Use")
+						if spl == "10":
+							settings["sentinelPict"][K10mid] = True
+							k10.sendReplyMessage(reply,receiver,"「 Profile Picture 」\nPlease Send Picture You Want To Use")
 						if spl == "รูป":
 							settings["sentinelPict"][mid] = True
 							settings["sentinelPict"][Amid] = True
@@ -1244,6 +1583,9 @@ def RECEIVE_MESSAGE(op):
 							settings["sentinelPict"][K5mid] = True
 							settings["sentinelPict"][K6mid] = True
 							settings["sentinelPict"][K7mid] = True
+							settings["sentinelPict"][K8mid] = True
+							settings["sentinelPict"][K9mid] = True
+							settings["sentinelPict"][K10mid] = True
 							for a in Botslist:
 								a.sendReplyMessage(reply,receiver,"「 Profile Picture 」\nPlease Send Picture You Want To Use")
 					else:
@@ -1407,6 +1749,30 @@ async def cerberusRun():
 									k7.acceptGroupInvitation(op.param1)
 									sendMention(op.param1,"Sorry @!,\nI Will Leave Because You Doesn't Have Access -_-",[op.param2])
 									k7.leaveGroup(op.param1)
+						if K8mid in op.param3:
+							if settings["autoJoin"] == True:
+								if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
+									k8.acceptGroupInvitation(op.param1)
+								else:
+									k8.acceptGroupInvitation(op.param1)
+									sendMention(op.param1,"Sorry @!,\nI Will Leave Because You Doesn't Have Access -_-",[op.param2])
+									k8.leaveGroup(op.param1)
+						if K9mid in op.param3:
+							if settings["autoJoin"] == True:
+								if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
+									k9.acceptGroupInvitation(op.param1)
+								else:
+									k9.acceptGroupInvitation(op.param1)
+									sendMention(op.param1,"Sorry @!,\nI Will Leave Because You Doesn't Have Access -_-",[op.param2])
+									k9.leaveGroup(op.param1)
+						if K10mid in op.param3:
+							if settings["autoJoin"] == True:
+								if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
+									k10.acceptGroupInvitation(op.param1)
+								else:
+									k10.acceptGroupInvitation(op.param1)
+									sendMention(op.param1,"Sorry @!,\nI Will Leave Because You Doesn't Have Access -_-",[op.param2])
+									k10.leaveGroup(op.param1)
 					if op.type == 17:
 						if op.param1 in status["lock"]:
 							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
@@ -1674,25 +2040,25 @@ async def cerberusRun():
 				pass
 			elif "logout" in error.lower():
 				backupData()
-				time.sleep(8)
+				time.sleep(10)
 				python = sys.executable
 				os.execl(python, python, *sys.argv)
 			elif "ShouldSyncException" in error:
 				backupData()
 				logError(error)
-				time.sleep(8)
+				time.sleep(10)
 				python3 = sys.executable
 				os.execl(python3, python3, *sys.argv)
 			elif "TalkException(code=8, reason='LOG_OUT', parameterMap=None)" in error:
 				backupData()
 				logError(error)
-				time.sleep(8)
+				time.sleep(10)
 				python = sys.executable
 				os.execl(python, python, *sys.argv)
 			elif "TalkException(code=20, reason='[UNCAUGHT_INTERNAL_ERROR] [UNCAUGHT_INTERNAL_ERROR] Login from secondary user blocked by userHash + clientType 8cb91561b450b38ccf0119fc4f5e37a3MA', parameterMap=None)" in error:
 				backupData()
 				logError(error)
-				time.sleep(8)
+				time.sleep(10)
 				python = sys.executable
 				os.execl(python, python, *sys.argv)
 			else:
