@@ -26,7 +26,7 @@ from datetime import datetime
 programStart = time.time()
 cl = LINE("auc03689@zzrgg.com","mai065558mai")
 print('==== UNIT หลัก READY ! ====')
-ki = LINE("kde31499@eoopy.com","mai065558mai")
+ki = LINE("jayaj88779@aprimail.com","mai065558mai")
 print('==== UNIT 1 READY ! ====')
 kk = LINE("gks57002@zzrgg.com","mai065558mai")
 print('==== UNIT 2 READY ! ====')
