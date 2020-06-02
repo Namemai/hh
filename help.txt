@@ -1,19 +1,19 @@
 ┏━━━━━━━━
 ┣ {key}Help
-┣ {key}Respon
-┣ {key}Reboot
-┣ {key}Inviteall
-┣ {key}Byeall
-┣ {key}Blacklist
-┣ {key}Clearban
+┣ {key}b
+┣ {key}รี
+┣ {key}Inb
+┣ {key}Bye
+┣ {key}Bc
+┣ {key}Cb
 ┣ {key}Squad List
 ┣ {key}View Bots
 ┣ {key}View Access
-┣ {key}Checkbot
-┣ {key}Changepict:1-5/All
-┣ {key}Changebio:1-5/All 「 Bio 」
-┣ {key}Changename:1-5/All 「 Name 」
-┣ {key}Kick 「 Mention 」
+┣ {key}Cek
+┣ {key}อัพรูป
+┣ {key}sp
+┣ {key}ชื่อ/ชื่อทั้งหมด 「 Name 」
+┣ {key}bk 「 Mention 」
 ┣ {key}Add Owner 「 Mention 」
 ┣ {key}Add Admin 「 Mention 」
 ┣ {key}Add Staff 「 Mention 」
@@ -24,5 +24,5 @@
 ┣ {key}Del Staff 「 Mention 」
 ┣ {key}Del Squad 「 Mention 」
 ┣ {key}Del Ban 「 Mention 」
-┣ {key}Lock Group 「 On/Off 」
+┣ {key}Lock 「 On/Off 」
 ┗━━━━━━━━
