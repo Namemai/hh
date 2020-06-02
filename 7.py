@@ -553,7 +553,7 @@ def RECEIVE_MESSAGE(op):
 					k6.updateProfilePicture(path6)
 					k6.sendReplyMessage(reply,receiver,"「 Profile Picture 」\nSuccess Change Profile Picture")
 				if K7mid in settings["sentinelPict"]:
-					path5 = k7.downloadObjectMsg(msg.id)
+					path7 = k7.downloadObjectMsg(msg.id)
 					del settings["sentinelPict"][K7mid]
 					k7.updateProfilePicture(path7)
 					k7.sendReplyMessage(reply,receiver,"「 Profile Picture 」\nSuccess Change Profile Picture")
