@@ -36,9 +36,9 @@ km = LINE("lev23557@bcaoo.com","12345678pp"
 print('==== UNIT 4 READY ! ====')
 k5 = LINE("xpcwertk@imail8.net","123456789pp"
 print('==== UNIT 5 READY ! ====')
-k6 = LINE("yokavad938@qortu.com","mai065558mai")
+k6 = LINE("xigagan806@qortu.com","mai065558mai")
 print('==== UNIT 6 READY ! ====')
-k7 = LINE("gasamix553@tashjw.com","mai065558mai")
+k7 = LINE("majowe2897@mailnd7.com","mai065558mai")
 print('==== UNIT 7 READY ! ====')
 print ('\n\nALL UNIT READY !')
 
