@@ -24,9 +24,9 @@ from datetime import datetime
 # Auth Token : LINE("authtoken")
 # Primary Token : LINE("primary",appName='IOS\t8.17.0\tUwewww\t11.2.5')
 programStart = time.time()
-cl = LINE("06555mai@gmail.com","mai06555mai")
+cl = LINE("majowe2897@mailnd7.com","mai06555mai")
 print('==== UNIT หลัก READY ! ====')
-ki = LINE("azc97736@bcaoo.com","Gy51220422")
+ki = LINE("xigagan806@qortu.com","mai065558mai")
 print('==== UNIT 1 READY ! ====')
 kk = LINE("umt18531@bcaoo.com","Gy51220422")
 print('==== UNIT 2 READY ! ====')
@@ -36,9 +36,9 @@ km = LINE("lev23557@bcaoo.com","12345678pp"
 print('==== UNIT 4 READY ! ====')
 k5 = LINE("xpcwertk@imail8.net","123456789pp"
 print('==== UNIT 5 READY ! ====')
-k6 = LINE("xigagan806@qortu.com","mai065558mai")
+k6 = LINE("azc97736@bcaoo.com","Gy51220422")
 print('==== UNIT 6 READY ! ====')
-k7 = LINE("majowe2897@mailnd7.com","mai065558mai")
+k7 = LINE("06555mai@gmaill.com","mai065558mai")
 print('==== UNIT 7 READY ! ====')
 print ('\n\nALL UNIT READY !')
 
