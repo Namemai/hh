@@ -1627,7 +1627,7 @@ async def cerberusRun():
 						RECEIVE_MESSAGE(op)
 		except Exception as error:
 			error = traceback.format_exc()
-			if "EOFError" in error:
+			if "EO" in error:
 				pass
 			elif "logout" in error.lower():
 				backupData()
