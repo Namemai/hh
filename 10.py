@@ -84,12 +84,12 @@ resp8 = k8.getProfile().displayName
 resp9 = k9.getProfile().displayName
 resp10 = k10.getProfile().displayName
 
-for uwew in Botslist:
-	for uwewww in Bots:
-		try:
-			uwew.findAndAddContactsByMid(uwewww)
-		except:
-			pass
+#for uwew in Botslist:
+#	for uwewww in Bots:
+#		try:
+#			uwew.findAndAddContactsByMid(uwewww)
+#		except:
+#			pass
 
 def backupData():
 	try:
