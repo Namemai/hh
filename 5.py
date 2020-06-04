@@ -22,19 +22,19 @@ from datetime import datetime
 # Login Option Below
 # Email : LINE("email","Password")
 # Auth Token : LINE("authtoken")
-# Primary Token : LINE("primary",appName='IOS\t8.17.0\tUwewww\t11.2.5')
+# Primary Token : LINE("primary",appName='IOS\t10.1.1\tUwewww\t11.2.5')
 programStart = time.time()
-cl = LINE("06555mai@gmail.com","mai06555mai")
+cl = LINE("ud1f06c8b90325f39a910dfb8c9b38dcb:aWF0OiAxNTkxMjc0MDY2OTEwCg==..lz59o6DrYAOOJDQCw73xtwMYyd8=",appName='IOS\t10.1.1\tUwewww\t11.2.5')
 print('==== UNIT หลัก READY ! ====')
-ki = LINE("azc97736@bcaoo.com","Gy51220422")
+ki = LINE("u8a0757ceb2318625ad7d1d37b026c24d:aWF0OiAxNTkxMjcyOTA4ODY1Cg==..htknQi7UQz2b57HAtCFe8ijYMzA=",appName='IOS\t10.1.1\tUwewww\t11.2.5')
 print('==== UNIT 1 READY ! ====')
-kk = LINE("umt18531@bcaoo.com","Gy51220422")
+kk = LINE("uca11a5b4a8487bd9b74f29e2268e39e0:aWF0OiAxNTkxMjczMjM1MTQzCg==..Sn1KXHv7s22RAJcmKN1huHlsbCw=",appName='IOS\t10.1.1\tUwewww\t11.2.5')
 print('==== UNIT 2 READY ! ====')
-kc = LINE("maf02121@bcaoo.com","Gy51220422")
+kc = LINE("u548903430fbe4ab45890500c74550bfa:aWF0OiAxNTkxMjczMzk4MzE1Cg==..MXIjApjJF6LwoZi9bEJCsiAFaW8=",appName='IOS\t10.1.1\tUwewww\t11.2.5')
 print('==== UNIT 3 READY ! ====')
-km = LINE("lev23557@bcaoo.com","12345678pp"
+km = LINE("u241b4591a1b9b451dd95899e7bba56f2:aWF0OiAxNTkxMjczNTU2NDUyCg==..D8DsqFdGk8PaTBaGbc7OxtxSrO8=",appName='IOS\t10.1.1\tUwewww\t11.2.5')
 print('==== UNIT 4 READY ! ====')
-k5 = LINE("xpcwertk@imail8.net","123456789pp"
+k5 = LINE("u458f5edf72e3aa462069a372819eed2d:aWF0OiAxNTkxMjczNzU5NTg5Cg==..VcMDAEMUvP8YuopXQOGahO966/Y=",appName='IOS\t10.1.1\tUwewww\t11.2.5')
 print('==== UNIT 5 READY ! ====')
 print ('\n\nALL UNIT READY !')
 
