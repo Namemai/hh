@@ -22,7 +22,7 @@ from datetime import datetime
 # Login Option Below
 # Email : LINE("email","Password")
 # Auth Token : LINE("authtoken")
-# Primary Token : LINE("primary",appName='IOS\t8.17.0\tUwewww\t11.2.5')
+# Primary Token : LINE("primary",appName='IOS\t10.1.1\tUwewww\t11.2.5')
 programStart = time.time()
 cl = LINE("ud1f06c8b90325f39a910dfb8c9b38dcb:aWF0OiAxNTkxMjc0MDY2OTEwCg==..lz59o6DrYAOOJDQCw73xtwMYyd8=",appName='IOS\t10.1.1\tUwewww\t11.2.5')
 print('==== UNIT หลัก READY ! ====')
@@ -341,144 +341,6 @@ def cance(grup, target):
                         except:
                             try:
                                 k7.cancelGroupInvitation(grup, [target])
-                            except:
-                                pass
-def cance(grup, target):
-    try:
-        kk.cancelGroupInvitation(grup, [target])
-    except:
-        try:
-            kc.cancelGroupInvitation(grup, [target])
-        except:
-            try:
-                km.cancelGroupInvitation(grup, [target])
-            except:
-                try:
-                    k5.cancelGroupInvitation(grup, [target])
-                except:
-                    try:
-                        k6.cancelGroupInvitation(grup, [target])
-                    except:
-                        try:
-                            k7.cancelGroupInvitation(grup, [target])
-                        except:
-                            try:
-                                ki.cancelGroupInvitation(grup, [target])
-                            except:
-                                pass
-def cance(grup, target):
-    try:
-        kc.cancelGroupInvitation(grup, [target])
-    except:
-        try:
-            km.cancelGroupInvitation(grup, [target])
-        except:
-            try:
-                k5.cancelGroupInvitation(grup, [target])
-            except:
-                try:
-                    k6.cancelGroupInvitation(grup, [target])
-                except:
-                    try:
-                        k7.cancelGroupInvitation(grup, [target])
-                    except:
-                        try:
-                            ki.cancelGroupInvitation(grup, [target])
-                        except:
-                            try:
-                                kk.cancelGroupInvitation(grup, [target])
-                            except:
-                                pass
-def cance(grup, target):
-    try:
-        km.cancelGroupInvitation(grup, [target])
-    except:
-        try:
-            k5.cancelGroupInvitation(grup, [target])
-        except:
-            try:
-                k6.cancelGroupInvitation(grup, [target])
-            except:
-                try:
-                    k7.cancelGroupInvitation(grup, [target])
-                except:
-                    try:
-                        ki.cancelGroupInvitation(grup, [target])
-                    except:
-                        try:
-                            kk.cancelGroupInvitation(grup, [target])
-                        except:
-                            try:
-                                kc.cancelGroupInvitation(grup, [target])
-                            except:
-                                pass
-def cance(grup, target):
-    try:
-        k5.cancelGroupInvitation(grup, [target])
-    except:
-        try:
-            k6.cancelGroupInvitation(grup, [target])
-        except:
-            try:
-                k7.cancelGroupInvitation(grup, [target])
-            except:
-                try:
-                    ki.cancelGroupInvitation(grup, [target])
-                except:
-                    try:
-                        kk.cancelGroupInvitation(grup, [target])
-                    except:
-                        try:
-                            kc.cancelGroupInvitation(grup, [target])
-                        except:
-                            try:
-                                km.cancelGroupInvitation(grup, [target])
-                            except:
-                                pass
-def cance(grup, target):
-    try:
-        k6.cancelGroupInvitation(grup, [target])
-    except:
-        try:
-            k7.cancelGroupInvitation(grup, [target])
-        except:
-            try:
-                ki.cancelGroupInvitation(grup, [target])
-            except:
-                try:
-                    kk.cancelGroupInvitation(grup, [target])
-                except:
-                    try:
-                        kc.cancelGroupInvitation(grup, [target])
-                    except:
-                        try:
-                            km.cancelGroupInvitation(grup, [target])
-                        except:
-                            try:
-                                k5.cancelGroupInvitation(grup, [target])
-                            except:
-                                pass
-def cance(grup, target):
-    try:
-        k7.cancelGroupInvitation(grup, [target])
-    except:
-        try:
-            ki.cancelGroupInvitation(grup, [target])
-        except:
-            try:
-                kk.cancelGroupInvitation(grup, [target])
-            except:
-                try:
-                    kc.cancelGroupInvitation(grup, [target])
-                except:
-                    try:
-                        km.cancelGroupInvitation(grup, [target])
-                    except:
-                        try:
-                            k5.cancelGroupInvitation(grup, [target])
-                        except:
-                            try:
-                                k6.cancelGroupInvitation(grup, [target])
                             except:
                                 pass
 
@@ -1982,7 +1844,7 @@ def RECEIVE_MESSAGE(op):
 								pass
 					else:
 						cl.sendReplyMessage(reply,receiver,"「 Delete Staff 」\nOwner/Admin Permission -_-")
-				elif uwew.startswith("แอด"):
+				elif uwew.startswith("add squad"):
 					if sender in creator or sender in owner:
 						key = eval(msg.contentMetadata["MENTION"])
 						key["MENTIONEES"][0]["M"]
