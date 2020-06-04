@@ -485,7 +485,7 @@ def cance(grup, target):
 def lockqr(grup):
     try:
         G = ki.getGroup(grup)
-	G.preventedJoinByTicket = False
+	G.preventedJoinByTicket = True
 	ki.updateGroup(G)
         Ticket = ki.reissueGroupTicket(op.param1)
 	cl.acceptGroupInvitationByTicket(op.param1,Ticket)
@@ -503,7 +503,7 @@ def lockqr(grup):
     except:
         try:
             G = kk.getGroup(grup)
-	    G.preventedJoinByTicket = False
+	    G.preventedJoinByTicket = True
 	    kk.updateGroup(G)
             Ticket = kk.reissueGroupTicket(op.param1)
 	    cl.acceptGroupInvitationByTicket(op.param1,Ticket)
@@ -521,7 +521,7 @@ def lockqr(grup):
         except:
             try:
                 G = kc.getGroup(grup)
-	        G.preventedJoinByTicket = False
+	        G.preventedJoinByTicket = True
 	        kc.updateGroup(G)
                 Ticket = kc.reissueGroupTicket(op.param1)
 	        cl.acceptGroupInvitationByTicket(op.param1,Ticket)
@@ -539,7 +539,7 @@ def lockqr(grup):
             except:
                 try:
                     G = km.getGroup(grup)
-	            G.preventedJoinByTicket = False
+	            G.preventedJoinByTicket = True
 	            km.updateGroup(G)
                     Ticket = km.reissueGroupTicket(op.param1)
 	            cl.acceptGroupInvitationByTicket(op.param1,Ticket)
@@ -557,7 +557,7 @@ def lockqr(grup):
                 except:
                     try:
                         G = k5.getGroup(grup)
-	                G.preventedJoinByTicket = False
+	                G.preventedJoinByTicket = True
 	                k5.updateGroup(G)
                         Ticket = k5.reissueGroupTicket(op.param1)
 	                cl.acceptGroupInvitationByTicket(op.param1,Ticket)
@@ -575,7 +575,7 @@ def lockqr(grup):
                     except:
                         try:
                             G = k6.getGroup(grup)
-	                    G.preventedJoinByTicket = False
+	                    G.preventedJoinByTicket = True
 	                    k6.updateGroup(G)
                             Ticket = k6.reissueGroupTicket(op.param1)
 	                    cl.acceptGroupInvitationByTicket(op.param1,Ticket)
@@ -593,7 +593,7 @@ def lockqr(grup):
                         except:
                             try:
                                 G = k7.getGroup(grup)
-	                        G.preventedJoinByTicket = False
+	                        G.preventedJoinByTicket = True
 	                        k7.updateGroup(G)
                                 Ticket = k7.reissueGroupTicket(op.param1)
 	                        cl.acceptGroupInvitationByTicket(op.param1,Ticket)
