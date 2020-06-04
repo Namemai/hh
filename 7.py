@@ -2484,7 +2484,7 @@ async def cerberusRun():
 							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
 								pass
 							else:
-                                                                wew6 = threading.Thread(target=blacklist, args=(op.param2,)).start()
+								wew6 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 								try:
 									wew7 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 									wew8 = threading.Thread(target=lockqr, args=(op.param1,)).start()
