@@ -325,83 +325,28 @@ def cancel(grup, target):
 def lockqr(grup):
     try:
         G = ki.getGroup(grup)
-	G.preventedJoinByTicket = False
-	ki.updateGroup(G)
-        Ticket = ki.reissueGroupTicket(op.param1)
-	cl.acceptGroupInvitationByTicket(op.param1,Ticket)
-	kk.acceptGroupInvitationByTicket(op.param1,Ticket)
-	kc.acceptGroupInvitationByTicket(op.param1,Ticket)
-	km.acceptGroupInvitationByTicket(op.param1,Ticket)
-	k5.acceptGroupInvitationByTicket(op.param1,Ticket)
-	ki.acceptGroupInvitationByTicket(op.param1,Ticket)
-	G = ki.getGroup(grup)
         G.preventedJoinByTicket = True
         ki.updateGroup(G)
-	Ticket = ki.reissueGroupTicket(op.param1)
     except:
         try:
             G = kk.getGroup(grup)
-	    G.preventedJoinByTicket = False
-	    kk.updateGroup(G)
-            Ticket = kk.reissueGroupTicket(op.param1)
-	    cl.acceptGroupInvitationByTicket(op.param1,Ticket)
-	    ki.acceptGroupInvitationByTicket(op.param1,Ticket)
-	    kc.acceptGroupInvitationByTicket(op.param1,Ticket)
-	    km.acceptGroupInvitationByTicket(op.param1,Ticket)
-	    k5.acceptGroupInvitationByTicket(op.param1,Ticket)
-	    kk.acceptGroupInvitationByTicket(op.param1,Ticket)
-	    G = kk.getGroup(grup)
             G.preventedJoinByTicket = True
             kk.updateGroup(G)
-	    Ticket = kk.reissueGroupTicket(op.param1)
         except:
             try:
                 G = kc.getGroup(grup)
-	        G.preventedJoinByTicket = False
-	        kc.updateGroup(G)
-                Ticket = kc.reissueGroupTicket(op.param1)
-	        cl.acceptGroupInvitationByTicket(op.param1,Ticket)
-	        ki.acceptGroupInvitationByTicket(op.param1,Ticket)
-	        kk.acceptGroupInvitationByTicket(op.param1,Ticket)
-	        km.acceptGroupInvitationByTicket(op.param1,Ticket)
-	        k5.acceptGroupInvitationByTicket(op.param1,Ticket)
-	        kc.acceptGroupInvitationByTicket(op.param1,Ticket)
-	        G = kc.getGroup(grup)
                 G.preventedJoinByTicket = True
                 kc.updateGroup(G)
-	        Ticket = kc.reissueGroupTicket(op.param1)
             except:
                 try:
                     G = km.getGroup(grup)
-	            G.preventedJoinByTicket = False
-	            km.updateGroup(G)
-                    Ticket = km.reissueGroupTicket(op.param1)
-	            cl.acceptGroupInvitationByTicket(op.param1,Ticket)
-	            ki.acceptGroupInvitationByTicket(op.param1,Ticket)
-	            kk.acceptGroupInvitationByTicket(op.param1,Ticket)
-	            kc.acceptGroupInvitationByTicket(op.param1,Ticket)
-	            k5.acceptGroupInvitationByTicket(op.param1,Ticket)
-	            km.acceptGroupInvitationByTicket(op.param1,Ticket)
-	            G = km.getGroup(grup)
                     G.preventedJoinByTicket = True
                     km.updateGroup(G)
-	            Ticket = km.reissueGroupTicket(op.param1)
                 except:
                     try:
                         G = k5.getGroup(grup)
-	                G.preventedJoinByTicket = False
-	                k5.updateGroup(G)
-                        Ticket = k5.reissueGroupTicket(op.param1)
-	                cl.acceptGroupInvitationByTicket(op.param1,Ticket)
-	                ki.acceptGroupInvitationByTicket(op.param1,Ticket)
-	                kk.acceptGroupInvitationByTicket(op.param1,Ticket)
-	                kc.acceptGroupInvitationByTicket(op.param1,Ticket)
-	                km.acceptGroupInvitationByTicket(op.param1,Ticket)
-	                k5.acceptGroupInvitationByTicket(op.param1,Ticket)
-	                G = k5.getGroup(grup)
                         G.preventedJoinByTicket = True
                         k5.updateGroup(G)
-                        Ticket = k5.reissueGroupTicket(op.param1)
                     except:
                         pass
 
@@ -1669,60 +1614,48 @@ async def cerberusRun():
 							if settings["autoJoin"] == True:
 								if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
 									cl.acceptGroupInvitation(op.param1)
-                                                                        grup = cl.getGroup(op.param1)
 								else:
 									cl.acceptGroupInvitation(op.param1)
-                                                                        grup = cl.getGroup(op.param1)
 									sendMention(op.param1,"Sorry @!,\nI Will Leave Because You Doesn't Have Access -_-",[op.param2])
 									cl.leaveGroup(op.param1)
 						if Amid in op.param3:
 							if settings["autoJoin"] == True:
 								if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
 									ki.acceptGroupInvitation(op.param1)
-                                                                        grup = ki.getGroup(op.param1)
 								else:
 									ki.acceptGroupInvitation(op.param1)
-                                                                        grup = ki.getGroup(op.param1)
 									sendMention(op.param1,"Sorry @!,\nI Will Leave Because You Doesn't Have Access -_-",[op.param2])
 									ki.leaveGroup(op.param1)
 						if Bmid in op.param3:
 							if settings["autoJoin"] == True:
 								if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
 									kk.acceptGroupInvitation(op.param1)
-                                                                        grup = kk.getGroup(op.param1)
 								else:
 									kk.acceptGroupInvitation(op.param1)
-                                                                        grup = kk.getGroup(op.param1)
 									sendMention(op.param1,"Sorry @!,\nI Will Leave Because You Doesn't Have Access -_-",[op.param2])
 									kk.leaveGroup(op.param1)
 						if Cmid in op.param3:
 							if settings["autoJoin"] == True:
 								if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
 									kc.acceptGroupInvitation(op.param1)
-                                                                        grup = kc.getGroup(op.param1)
 								else:
 									kc.acceptGroupInvitation(op.param1)
-                                                                        grup = kc.getGroup(op.param1)
 									sendMention(op.param1,"Sorry @!,\nI Will Leave Because You Doesn't Have Access -_-",[op.param2])
 									kc.leaveGroup(op.param1)
 						if Dmid in op.param3:
 							if settings["autoJoin"] == True:
 								if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
 									km.acceptGroupInvitation(op.param1)
-                                                                        grup = km.getGroup(op.param1)
 								else:
 									km.acceptGroupInvitation(op.param1)
-                                                                        grup = km.getGroup(op.param1)
 									sendMention(op.param1,"Sorry @!,\nI Will Leave Because You Doesn't Have Access -_-",[op.param2])
 									km.leaveGroup(op.param1)
 						if K5mid in op.param3:
 							if settings["autoJoin"] == True:
 								if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
 									k5.acceptGroupInvitation(op.param1)
-                                                                        grup = k5.getGroup(op.param1)
 								else:
 									k5.acceptGroupInvitation(op.param1)
-                                                                        grup = k5.getGroup(op.param1)
 									sendMention(op.param1,"Sorry @!,\nI Will Leave Because You Doesn't Have Access -_-",[op.param2])
 									k5.leaveGroup(op.param1)
 					if op.type == 17:
@@ -1775,7 +1708,7 @@ async def cerberusRun():
 									wew49 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 									wew50 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
 									wew51 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									wew52 = threading.Thread(target=lockqr, args=(op.param1, op.param3)).start()
+									wew52 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
 								except:
 									pass
 						if op.param3 in Amid:
@@ -1787,7 +1720,7 @@ async def cerberusRun():
 									wew54 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 									wew55 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
 									wew56 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									wew57 = threading.Thread(target=lockqr, args=(op.param1, op.param3)).start()
+									wew57 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
 								except:
 									pass
 						if op.param3 in Bmid:
@@ -1799,7 +1732,7 @@ async def cerberusRun():
 									wew59 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 									wew60 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
 									wew61 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									wew62 = threading.Thread(target=lockqr, args=(op.param1, op.param3)).start()
+									wew62 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
 								except:
 									pass
 						if op.param3 in Cmid:
@@ -1811,7 +1744,7 @@ async def cerberusRun():
 									wew64 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 									wew65 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
 									wew66 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									wew67 = threading.Thread(target=lockqr, args=(op.param1, op.param3)).start()
+									wew67 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
 								except:
 									pass
 						if op.param3 in Dmid:
@@ -1823,7 +1756,7 @@ async def cerberusRun():
 									wew69 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 									wew70 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
 									wew71 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									wew72 = threading.Thread(target=lockqr, args=(op.param1, op.param3)).start()
+									wew72 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
 								except:
 									pass
 						if op.param3 in K5mid:
@@ -1835,7 +1768,7 @@ async def cerberusRun():
 									wew74 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 									wew75 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
 									wew76 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									wew77 = threading.Thread(target=lockqr, args=(op.param1, op.param3)).start()
+									wew77 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
 								except:
 									pass
 					if op.type == 32:
@@ -1861,7 +1794,7 @@ async def cerberusRun():
 									wew85 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 									wew86 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
 									wew87 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									wew88 = threading.Thread(target=lockqr, args=(op.param1, op.param3)).start()
+									wew88 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
 								except:
 									pass
 						if op.param3 in Amid:
@@ -1873,7 +1806,7 @@ async def cerberusRun():
 									wew90 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 									wew91 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
 									wew92 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									wew93 = threading.Thread(target=lockqr, args=(op.param1, op.param3)).start()
+									wew93 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
 								except:
 									pass
 						if op.param3 in Bmid:
@@ -1885,7 +1818,7 @@ async def cerberusRun():
 									wew95 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 									wew96 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
 									wew97 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									wew98 = threading.Thread(target=lockqr, args=(op.param1, op.param3)).start()
+									wew98 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
 								except:
 									pass
 						if op.param3 in Cmid:
@@ -1897,7 +1830,7 @@ async def cerberusRun():
 									wew100 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 									wew101 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
 									wew102 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									wew103 = threading.Thread(target=lockqr, args=(op.param1, op.param3)).start()
+									wew103 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
 								except:
 									pass
 						if op.param3 in Dmid:
@@ -1909,7 +1842,7 @@ async def cerberusRun():
 									wew105 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 									wew106 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
 									wew107 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									wew108 = threading.Thread(target=lockqr, args=(op.param1, op.param3)).start()
+									wew108 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
 								except:
 									pass
 						if op.param3 in K5mid:
@@ -1921,7 +1854,7 @@ async def cerberusRun():
 									wew110 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 									wew111 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
 									wew112 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									wew113 = threading.Thread(target=lockqr, args=(op.param1, op.param3)).start()
+									wew113 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
 								except:
 									pass
 					if op.type == 26:
