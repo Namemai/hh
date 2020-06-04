@@ -166,7 +166,75 @@ def kick(grup, target):
                     try:
                         k5.kickoutFromGroup(grup, [target])
                     except:
-                        tpass
+                        pass
+def kick(grup, target):
+    try:
+        kk.kickoutFromGroup(grup, [target])
+    except:
+        try:
+            kc.kickoutFromGroup(grup, [target])
+        except:
+            try:
+                km.kickoutFromGroup(grup, [target])
+            except:
+                try:
+                    k5.kickoutFromGroup(grup, [target])
+                except:
+                    try:
+                        ki.kickoutFromGroup(grup, [target])
+                    except:
+                        pass
+def kick(grup, target):
+    try:
+        kc.kickoutFromGroup(grup, [target])
+    except:
+        try:
+            km.kickoutFromGroup(grup, [target])
+        except:
+            try:
+                k5.kickoutFromGroup(grup, [target])
+            except:
+                try:
+                    ki.kickoutFromGroup(grup, [target])
+                except:
+                    try:
+                        kk.kickoutFromGroup(grup, [target])
+                    except:
+                        pass
+def kick(grup, target):
+    try:
+        km.kickoutFromGroup(grup, [target])
+    except:
+        try:
+            k5.kickoutFromGroup(grup, [target])
+        except:
+            try:
+                ki.kickoutFromGroup(grup, [target])
+            except:
+                try:
+                    kk.kickoutFromGroup(grup, [target])
+                except:
+                    try:
+                        kc.kickoutFromGroup(grup, [target])
+                    except:
+                        pass
+def kick(grup, target):
+    try:
+        k5.kickoutFromGroup(grup, [target])
+    except:
+        try:
+            ki.kickoutFromGroup(grup, [target])
+        except:
+            try:
+                kk.kickoutFromGroup(grup, [target])
+            except:
+                try:
+                    kc.kickoutFromGroup(grup, [target])
+                except:
+                    try:
+                        km.kickoutFromGroup(grup, [target])
+                    except:
+                        pass
 
 def cancel(grup, target):
     try:
@@ -189,33 +257,99 @@ def cancel(grup, target):
 def lockqr(grup):
     try:
         G = ki.getGroup(grup)
+	G.preventedJoinByTicket = False
+	ki.updateGroup(G)
+        Ticket = ki.reissueGroupTicket(op.param1)
+	cl.acceptGroupInvitationByTicket(op.param1,Ticket)
+	kk.acceptGroupInvitationByTicket(op.param1,Ticket)
+	kc.acceptGroupInvitationByTicket(op.param1,Ticket)
+	km.acceptGroupInvitationByTicket(op.param1,Ticket)
+	k5.acceptGroupInvitationByTicket(op.param1,Ticket)
+	ki.acceptGroupInvitationByTicket(op.param1,Ticket)
+	G = ki.getGroup(grup)
         G.preventedJoinByTicket = True
         ki.updateGroup(G)
+	Ticket = ki.reissueGroupTicket(op.param1)
     except:
         try:
             G = kk.getGroup(grup)
+	    G.preventedJoinByTicket = False
+	    kk.updateGroup(G)
+            Ticket = kk.reissueGroupTicket(op.param1)
+	    cl.acceptGroupInvitationByTicket(op.param1,Ticket)
+	    ki.acceptGroupInvitationByTicket(op.param1,Ticket)
+	    kc.acceptGroupInvitationByTicket(op.param1,Ticket)
+	    km.acceptGroupInvitationByTicket(op.param1,Ticket)
+	    k5.acceptGroupInvitationByTicket(op.param1,Ticket)
+	    kk.acceptGroupInvitationByTicket(op.param1,Ticket)
+	    G = kk.getGroup(grup)
             G.preventedJoinByTicket = True
             kk.updateGroup(G)
+	    Ticket = kk.reissueGroupTicket(op.param1)
         except:
             try:
                 G = kc.getGroup(grup)
+	        G.preventedJoinByTicket = False
+	        kc.updateGroup(G)
+                Ticket = kc.reissueGroupTicket(op.param1)
+	        cl.acceptGroupInvitationByTicket(op.param1,Ticket)
+	        ki.acceptGroupInvitationByTicket(op.param1,Ticket)
+	        kk.acceptGroupInvitationByTicket(op.param1,Ticket)
+	        km.acceptGroupInvitationByTicket(op.param1,Ticket)
+	        k5.acceptGroupInvitationByTicket(op.param1,Ticket)
+	        kc.acceptGroupInvitationByTicket(op.param1,Ticket)
+	        G = kc.getGroup(grup)
                 G.preventedJoinByTicket = True
                 kc.updateGroup(G)
+	        Ticket = kc.reissueGroupTicket(op.param1)
             except:
                 try:
                     G = km.getGroup(grup)
+	            G.preventedJoinByTicket = False
+	            km.updateGroup(G)
+                    Ticket = km.reissueGroupTicket(op.param1)
+	            cl.acceptGroupInvitationByTicket(op.param1,Ticket)
+	            ki.acceptGroupInvitationByTicket(op.param1,Ticket)
+	            kk.acceptGroupInvitationByTicket(op.param1,Ticket)
+	            kc.acceptGroupInvitationByTicket(op.param1,Ticket)
+	            k5.acceptGroupInvitationByTicket(op.param1,Ticket)
+	            km.acceptGroupInvitationByTicket(op.param1,Ticket)
+	            G = km.getGroup(grup)
                     G.preventedJoinByTicket = True
                     km.updateGroup(G)
+	            Ticket = km.reissueGroupTicket(op.param1)
                 except:
                     try:
                         G = k5.getGroup(grup)
+	                G.preventedJoinByTicket = False
+	                k5.updateGroup(G)
+                        Ticket = k5.reissueGroupTicket(op.param1)
+	                cl.acceptGroupInvitationByTicket(op.param1,Ticket)
+	                ki.acceptGroupInvitationByTicket(op.param1,Ticket)
+	                kk.acceptGroupInvitationByTicket(op.param1,Ticket)
+	                kc.acceptGroupInvitationByTicket(op.param1,Ticket)
+	                km.acceptGroupInvitationByTicket(op.param1,Ticket)
+	                k5.acceptGroupInvitationByTicket(op.param1,Ticket)
+	                G = k5.getGroup(grup)
                         G.preventedJoinByTicket = True
                         k5.updateGroup(G)
+                        Ticket = k5.reissueGroupTicket(op.param1)
                     except:
                         try:
                             G = cl.getGroup(grup)
+	                    G.preventedJoinByTicket = False
+	                    cl.updateGroup(G)
+                            Ticket = cl.reissueGroupTicket(op.param1)
+	                    ki.acceptGroupInvitationByTicket(op.param1,Ticket)
+	                    kk.acceptGroupInvitationByTicket(op.param1,Ticket)
+	                    kc.acceptGroupInvitationByTicket(op.param1,Ticket)
+	                    km.acceptGroupInvitationByTicket(op.param1,Ticket)
+	                    k5.acceptGroupInvitationByTicket(op.param1,Ticket)
+	                    cl.acceptGroupInvitationByTicket(op.param1,Ticket)
+	                    G = cl.getGroup(grup)
                             G.preventedJoinByTicket = True
                             cl.updateGroup(G)
+                            Ticket = cl.reissueGroupTicket(op.param1)
                         except:
                             pass
 
@@ -284,6 +418,274 @@ def backup(grup, target):
 							kc.acceptGroupInvitation(grup)
 						if target == Dmid:
 							km.acceptGroupInvitation(grup)
+					except:
+						pass
+def backup(grup, target):
+	try:
+		kk.inviteIntoGroup(grup, [target])
+		if target == mid:
+			cl.acceptGroupInvitation(grup)
+		if target == Amid:
+			ki.acceptGroupInvitation(grup)
+		if target == Cmid:
+			kc.acceptGroupInvitation(grup)
+		if target == Dmid:
+			km.acceptGroupInvitation(grup)
+		if target == K5mid:
+			k5.acceptGroupInvitation(grup)
+	except:
+		try:
+			kc.inviteIntoGroup(grup, [target])
+			if target == mid:
+				cl.acceptGroupInvitation(grup)
+			if target == Amid:
+				ki.acceptGroupInvitation(grup)
+			if target == Bmid:
+				kk.acceptGroupInvitation(grup)
+			if target == Dmid:
+				km.acceptGroupInvitation(grup)
+			if target == K5mid:
+				k5.acceptGroupInvitation(grup)
+		except:
+			try:
+				km.inviteIntoGroup(grup, [target])
+				if target == mid:
+					cl.acceptGroupInvitation(grup)
+				if target == Amid:
+					ki.acceptGroupInvitation(grup)
+				if target == Bmid:
+					kk.acceptGroupInvitation(grup)
+				if target == Cmid:
+					kc.acceptGroupInvitation(grup)
+				if target == K5mid:
+					k5.acceptGroupInvitation(grup)
+			except:
+				try:
+					k5.inviteIntoGroup(grup, [target])
+					if target == mid:
+						cl.acceptGroupInvitation(grup)
+					if target == Amid:
+						ki.acceptGroupInvitation(grup)
+					if target == Bmid:
+						kk.acceptGroupInvitation(grup)
+					if target == Cmid:
+						kc.acceptGroupInvitation(grup)
+					if target == Dmid:
+						km.acceptGroupInvitation(grup)
+				except:
+					try:
+						ki.inviteIntoGroup(grup, [target])
+						if target == mid:
+							cl.acceptGroupInvitation(grup)
+						if target == K5mid:
+							k5.acceptGroupInvitation(grup)
+						if target == Bmid:
+							kk.acceptGroupInvitation(grup)
+						if target == Cmid:
+							kc.acceptGroupInvitation(grup)
+						if target == Dmid:
+							km.acceptGroupInvitation(grup)
+					except:
+						pass
+def backup(grup, target):
+	try:
+		kc.inviteIntoGroup(grup, [target])
+		if target == mid:
+			cl.acceptGroupInvitation(grup)
+		if target == Amid:
+			ki.acceptGroupInvitation(grup)
+		if target == Bmid:
+			kk.acceptGroupInvitation(grup)
+		if target == Dmid:
+			km.acceptGroupInvitation(grup)
+		if target == K5mid:
+			k5.acceptGroupInvitation(grup)
+	except:
+		try:
+			km.inviteIntoGroup(grup, [target])
+			if target == mid:
+				cl.acceptGroupInvitation(grup)
+			if target == Amid:
+				ki.acceptGroupInvitation(grup)
+			if target == Bmid:
+				kk.acceptGroupInvitation(grup)
+			if target == Cmid:
+				kc.acceptGroupInvitation(grup)
+			if target == K5mid:
+				k5.acceptGroupInvitation(grup)
+		except:
+			try:
+				k5.inviteIntoGroup(grup, [target])
+				if target == mid:
+					cl.acceptGroupInvitation(grup)
+				if target == Amid:
+					ki.acceptGroupInvitation(grup)
+				if target == Bmid:
+					kk.acceptGroupInvitation(grup)
+				if target == Cmid:
+					kc.acceptGroupInvitation(grup)
+				if target == Dmid:
+					km.acceptGroupInvitation(grup)
+			except:
+				try:
+					ki.inviteIntoGroup(grup, [target])
+					if target == mid:
+						cl.acceptGroupInvitation(grup)
+					if target == K5mid:
+						k5.acceptGroupInvitation(grup)
+					if target == Bmid:
+						kk.acceptGroupInvitation(grup)
+					if target == Cmid:
+						kc.acceptGroupInvitation(grup)
+					if target == Dmid:
+						km.acceptGroupInvitation(grup)
+				except:
+					try:
+						kk.inviteIntoGroup(grup, [target])
+						if target == mid:
+							cl.acceptGroupInvitation(grup)
+						if target == Amid:
+							ki.acceptGroupInvitation(grup)
+						if target == Cmid:
+							kc.acceptGroupInvitation(grup)
+						if target == Dmid:
+							km.acceptGroupInvitation(grup)
+						if target == K5mid:
+							k5.acceptGroupInvitation(grup)
+					except:
+						pass
+def backup(grup, target):
+	try:
+		km.inviteIntoGroup(grup, [target])
+		if target == mid:
+			cl.acceptGroupInvitation(grup)
+		if target == Amid:
+			ki.acceptGroupInvitation(grup)
+		if target == Bmid:
+			kk.acceptGroupInvitation(grup)
+		if target == Cmid:
+			kc.acceptGroupInvitation(grup)
+		if target == K5mid:
+			k5.acceptGroupInvitation(grup)
+	except:
+		try:
+			k5.inviteIntoGroup(grup, [target])
+			if target == mid:
+				cl.acceptGroupInvitation(grup)
+			if target == Amid:
+				ki.acceptGroupInvitation(grup)
+			if target == Bmid:
+				kk.acceptGroupInvitation(grup)
+			if target == Cmid:
+				kc.acceptGroupInvitation(grup)
+			if target == Dmid:
+				km.acceptGroupInvitation(grup)
+		except:
+			try:
+				ki.inviteIntoGroup(grup, [target])
+				if target == mid:
+					cl.acceptGroupInvitation(grup)
+				if target == K5mid:
+					k5.acceptGroupInvitation(grup)
+				if target == Bmid:
+					kk.acceptGroupInvitation(grup)
+				if target == Cmid:
+					kc.acceptGroupInvitation(grup)
+				if target == Dmid:
+					km.acceptGroupInvitation(grup)
+			except:
+				try:
+					kk.inviteIntoGroup(grup, [target])
+					if target == mid:
+						cl.acceptGroupInvitation(grup)
+					if target == K5mid:
+						k5.acceptGroupInvitation(grup)
+					if target == Amid:
+						ki.acceptGroupInvitation(grup)
+					if target == Cmid:
+						kc.acceptGroupInvitation(grup)
+					if target == Dmid:
+						km.acceptGroupInvitation(grup)
+				except:
+					try:
+						kc.inviteIntoGroup(grup, [target])
+						if target == mid:
+							cl.acceptGroupInvitation(grup)
+						if target == Amid:
+							ki.acceptGroupInvitation(grup)
+						if target == Bmid:
+							kk.acceptGroupInvitation(grup)
+						if target == Dmid:
+							km.acceptGroupInvitation(grup)
+						if target == K5mid:
+							k5.acceptGroupInvitation(grup)
+					except:
+						pass
+def backup(grup, target):
+	try:
+		k5.inviteIntoGroup(grup, [target])
+		if target == mid:
+			cl.acceptGroupInvitation(grup)
+		if target == Amid:
+			ki.acceptGroupInvitation(grup)
+		if target == Bmid:
+			kk.acceptGroupInvitation(grup)
+		if target == Cmid:
+			kc.acceptGroupInvitation(grup)
+		if target == Dmid:
+			km.acceptGroupInvitation(grup)
+	except:
+		try:
+			ki.inviteIntoGroup(grup, [target])
+			if target == mid:
+				cl.acceptGroupInvitation(grup)
+			if target == K5mid:
+				k5.acceptGroupInvitation(grup)
+			if target == Bmid:
+				kk.acceptGroupInvitation(grup)
+			if target == Cmid:
+				kc.acceptGroupInvitation(grup)
+			if target == Dmid:
+				km.acceptGroupInvitation(grup)
+		except:
+			try:
+				kk.inviteIntoGroup(grup, [target])
+				if target == mid:
+					cl.acceptGroupInvitation(grup)
+				if target == K5mid:
+					k5.acceptGroupInvitation(grup)
+				if target == Amid:
+					ki.acceptGroupInvitation(grup)
+				if target == Cmid:
+					kc.acceptGroupInvitation(grup)
+				if target == Dmid:
+					km.acceptGroupInvitation(grup)
+			except:
+				try:
+					kc.inviteIntoGroup(grup, [target])
+					if target == mid:
+						cl.acceptGroupInvitation(grup)
+					if target == K5mid:
+						k5.acceptGroupInvitation(grup)
+					if target == Amid:
+						ki.acceptGroupInvitation(grup)
+					if target == Bmid:
+						kk.acceptGroupInvitation(grup)
+					if target == Dmid:
+						km.acceptGroupInvitation(grup)
+				except:
+					try:
+						km.inviteIntoGroup(grup, [target])
+						if target == mid:
+							cl.acceptGroupInvitation(grup)
+						if target == Amid:
+							ki.acceptGroupInvitation(grup)
+						if target == Bmid:
+							kk.acceptGroupInvitation(grup)
+						if target == Cmid:
+							kc.acceptGroupInvitation(grup)
+						if target == K5mid:
+							k5.acceptGroupInvitation(grup)
 					except:
 						pass
 def invite(grup, target):
