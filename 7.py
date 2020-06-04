@@ -24,7 +24,7 @@ from datetime import datetime
 # Auth Token : LINE("authtoken")
 # Primary Token : LINE("primary",appName='IOS\t8.17.0\tUwewww\t11.2.5')
 programStart = time.time()
-cl = LINE("u2cd96c105522f0875cd6e55bcda3267e:aWF0OiAxNTkxMjA1MDAxNzM1Cg==..ziNnGvlW9pkvG8CT07YEUzUIwGk=",appName='IOS\t10.1.1\tUwewww\t11.2.5')
+cl = LINE("ud1f06c8b90325f39a910dfb8c9b38dcb:aWF0OiAxNTkxMjc0MDY2OTEwCg==..lz59o6DrYAOOJDQCw73xtwMYyd8=",appName='IOS\t10.1.1\tUwewww\t11.2.5')
 print('==== UNIT หลัก READY ! ====')
 ki = LINE("u8a0757ceb2318625ad7d1d37b026c24d:aWF0OiAxNTkxMjcyOTA4ODY1Cg==..htknQi7UQz2b57HAtCFe8ijYMzA=",appName='IOS\t10.1.1\tUwewww\t11.2.5')
 print('==== UNIT 1 READY ! ====')
@@ -38,7 +38,7 @@ k5 = LINE("u458f5edf72e3aa462069a372819eed2d:aWF0OiAxNTkxMjczNzU5NTg5Cg==..VcMDA
 print('==== UNIT 5 READY ! ====')
 k6 = LINE("ua0c899a039d13ccf6611b383a1a43b86:aWF0OiAxNTkxMjczOTI2ODAyCg==..NTgN2wJVZ9VjcphLgnqZ+pVervc=",appName='IOS\t10.1.1\tUwewww\t11.2.5')
 print('==== UNIT 6 READY ! ====')
-k7 = LINE("ud1f06c8b90325f39a910dfb8c9b38dcb:aWF0OiAxNTkxMjc0MDY2OTEwCg==..lz59o6DrYAOOJDQCw73xtwMYyd8=",appName='IOS\t10.1.1\tUwewww\t11.2.5')
+k7 = LINE("u2cd96c105522f0875cd6e55bcda3267e:aWF0OiAxNTkxMjA1MDAxNzM1Cg==..ziNnGvlW9pkvG8CT07YEUzUIwGk=",appName='IOS\t10.1.1\tUwewww\t11.2.5')
 print('==== UNIT 7 READY ! ====')
 print ('\n\nALL UNIT READY !')
 
