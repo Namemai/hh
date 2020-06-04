@@ -253,6 +253,74 @@ def cancel(grup, target):
                         k5.cancelGroupInvitation(grup, [target])
                     except:
                         pass
+def cancel(grup, target):
+    try:
+        kk.cancelGroupInvitation(grup, [target])
+    except:
+        try:
+            kc.cancelGroupInvitation(grup, [target])
+        except:
+            try:
+                km.cancelGroupInvitation(grup, [target])
+            except:
+                try:
+                    k5.cancelGroupInvitation(grup, [target])
+                except:
+                    try:
+                        ki.cancelGroupInvitation(grup, [target])
+                    except:
+                        pass
+def cancel(grup, target):
+    try:
+        kc.cancelGroupInvitation(grup, [target])
+    except:
+        try:
+            km.cancelGroupInvitation(grup, [target])
+        except:
+            try:
+                k5.cancelGroupInvitation(grup, [target])
+            except:
+                try:
+                    ki.cancelGroupInvitation(grup, [target])
+                except:
+                    try:
+                        kk.cancelGroupInvitation(grup, [target])
+                    except:
+                        pass
+def cancel(grup, target):
+    try:
+        km.cancelGroupInvitation(grup, [target])
+    except:
+        try:
+            k5.cancelGroupInvitation(grup, [target])
+        except:
+            try:
+                ki.cancelGroupInvitation(grup, [target])
+            except:
+                try:
+                    kk.cancelGroupInvitation(grup, [target])
+                except:
+                    try:
+                        kc.cancelGroupInvitation(grup, [target])
+                    except:
+                        pass
+def cancel(grup, target):
+    try:
+        k5.cancelGroupInvitation(grup, [target])
+    except:
+        try:
+            ki.cancelGroupInvitation(grup, [target])
+        except:
+            try:
+                kk.cancelGroupInvitation(grup, [target])
+            except:
+                try:
+                    kc.cancelGroupInvitation(grup, [target])
+                except:
+                    try:
+                        km.cancelGroupInvitation(grup, [target])
+                    except:
+                        pass
 
 def lockqr(grup):
     try:
