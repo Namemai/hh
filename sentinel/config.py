@@ -58,18 +58,18 @@ class Config(object):
             self.APP_VER = self.APP_VERSION[self.APP_TYPE] if self.APP_TYPE in self.APP_VERSION else self.APP_VERSION['DEFAULT']
         self.APP_NAME = 'IOS\t10.1.1\tIOS OS\t1'
         self.USER_AGENT = 'Line/9.2.2'
+#               แบบใสเมล
+#    APP_TYPE    = 'CHROMEOS\t2.1.0\tCHROMEOS\t10.0.0'
+#    APP_VER     = APP_VERSION[APP_TYPE] if APP_TYPE in APP_VERSION else APP_VERSION['DEFAULT']
+#    CARRIER     = '51089, 1-0'
+#    SYSTEM_NAME = 'Uwewww'
+#    SYSTEM_VER  = '10.0.14'
+#    IP_ADDR     = '8.8.8.8'
+#    EMAIL_REGEX = re.compile(r"[^@]+@[^@]+\.[^@]+")
 
-    APP_TYPE    = 'CHROMEOS\t2.1.0\tCHROMEOS\t10.0.0'
-    APP_VER     = APP_VERSION[APP_TYPE] if APP_TYPE in APP_VERSION else APP_VERSION['DEFAULT']
-    CARRIER     = '51089, 1-0'
-    SYSTEM_NAME = 'Uwewww'
-    SYSTEM_VER  = '10.0.14'
-    IP_ADDR     = '8.8.8.8'
-    EMAIL_REGEX = re.compile(r"[^@]+@[^@]+\.[^@]+")
-
-    def __init__(self, appType=None):
-        if appType:
-            self.APP_TYPE = appType
-            self.APP_VER = self.APP_VERSION[self.APP_TYPE] if self.APP_TYPE in self.APP_VERSION else self.APP_VERSION['DEFAULT']
-        self.APP_NAME = 'CHROMEOS\t2.1.0\tCHROMEOS\t10.0.0'
-        self.USER_AGENT = 'Line/8.9.0'
+#    def __init__(self, appType=None):
+#        if appType:
+#            self.APP_TYPE = appType
+#            self.APP_VER = self.APP_VERSION[self.APP_TYPE] if self.APP_TYPE in self.APP_VERSION else self.APP_VERSION['DEFAULT']
+#        self.APP_NAME = 'CHROMEOS\t2.1.0\tCHROMEOS\t10.0.0'
+#        self.USER_AGENT = 'Line/8.9.0'
