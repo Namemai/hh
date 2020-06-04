@@ -710,6 +710,94 @@ def invite(grup, target):
                         k5.inviteIntoGroup(grup, [target])
                     except:
                         pass
+def invite(grup, target):
+    try:
+        kk.findAndAddContactsByMid(target)
+        kk.inviteIntoGroup(grup, [target])
+    except:
+        try:
+            kc.findAndAddContactsByMid(target)
+            kc.inviteIntoGroup(grup, [target])
+        except:
+            try:
+                km.findAndAddContactsByMid(target)
+                km.inviteIntoGroup(grup, [target])
+            except:
+                try:
+                    k5.findAndAddContactsByMid(target)
+                    k5.inviteIntoGroup(grup, [target])
+                except:
+                    try:
+                        ki.findAndAddContactsByMid(target)
+                        ki.inviteIntoGroup(grup, [target])
+                    except:
+                        pass
+def invite(grup, target):
+    try:
+        kc.findAndAddContactsByMid(target)
+        kc.inviteIntoGroup(grup, [target])
+    except:
+        try:
+            km.findAndAddContactsByMid(target)
+            km.inviteIntoGroup(grup, [target])
+        except:
+            try:
+                k5.findAndAddContactsByMid(target)
+                k5.inviteIntoGroup(grup, [target])
+            except:
+                try:
+                    ki.findAndAddContactsByMid(target)
+                    ki.inviteIntoGroup(grup, [target])
+                except:
+                    try:
+                        kk.findAndAddContactsByMid(target)
+                        kk.inviteIntoGroup(grup, [target])
+                    except:
+                        pass
+def invite(grup, target):
+    try:
+        km.findAndAddContactsByMid(target)
+        km.inviteIntoGroup(grup, [target])
+    except:
+        try:
+            k5.findAndAddContactsByMid(target)
+            k5.inviteIntoGroup(grup, [target])
+        except:
+            try:
+                ki.findAndAddContactsByMid(target)
+                ki.inviteIntoGroup(grup, [target])
+            except:
+                try:
+                    kk.findAndAddContactsByMid(target)
+                    kk.inviteIntoGroup(grup, [target])
+                except:
+                    try:
+                        kc.findAndAddContactsByMid(target)
+                        kc.inviteIntoGroup(grup, [target])
+                    except:
+                        pass
+def invite(grup, target):
+    try:
+        k5.findAndAddContactsByMid(target)
+        k5.inviteIntoGroup(grup, [target])
+    except:
+        try:
+            ki.findAndAddContactsByMid(target)
+            ki.inviteIntoGroup(grup, [target])
+        except:
+            try:
+                kk.findAndAddContactsByMid(target)
+                kk.inviteIntoGroup(grup, [target])
+            except:
+                try:
+                    kc.findAndAddContactsByMid(target)
+                    kc.inviteIntoGroup(grup, [target])
+                except:
+                    try:
+                        km.findAndAddContactsByMid(target)
+                        km.inviteIntoGroup(grup, [target])
+                    except:
+                        pass
 
 def blacklist(target):
 	try:
