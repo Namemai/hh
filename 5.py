@@ -1216,7 +1216,7 @@ def RECEIVE_MESSAGE(op):
 								pass
 					else:
 						cl.sendReplyMessage(reply,receiver,"「 Delete Staff 」\nOwner/Admin Permission -_-")
-				elif uwew.startswith("add squad"):
+				elif uwew.startswith("แอด"):
 					if sender in creator or sender in owner:
 						key = eval(msg.contentMetadata["MENTION"])
 						key["MENTIONEES"][0]["M"]
@@ -1647,104 +1647,101 @@ async def cerberusRun():
 								try:
 									wew10 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 									wew11 = threading.Thread(target=cancel, args=(op.param1, op.param3)).start()
+									wew12 = threading.Thread(target=cancel, args=(op.param1, op.param3)).start()
+									wew13 = threading.Thread(target=cancel, args=(op.param1, op.param3)).start()
+									wew14 = threading.Thread(target=cancel, args=(op.param1, op.param3)).start()
+									wew15 = threading.Thread(target=cancel, args=(op.param1, op.param3)).start()
 								except:
 									pass
 						if op.param2 in status["blacklist"]:
 							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
 								pass
 							else:
-								wew12 = threading.Thread(target=blacklist, args=(op.param2,)).start()
+								wew16 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 								try:
-									wew13 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									wew14 = threading.Thread(target=cancel, args=(op.param1, op.param3)).start()
+									wew17 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									wew18 = threading.Thread(target=cancel, args=(op.param1, op.param3)).start()
+									wew19 = threading.Thread(target=cancel, args=(op.param1, op.param3)).start()
+									wew20 = threading.Thread(target=cancel, args=(op.param1, op.param3)).start()
+									wew21 = threading.Thread(target=cancel, args=(op.param1, op.param3)).start()
+									wew22 = threading.Thread(target=cancel, args=(op.param1, op.param3)).start()
 								except:
 									pass
 						if op.param3 in status["blacklist"]:
 							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
 								pass
 							else:
-								wew15 = threading.Thread(target=blacklist, args=(op.param2,)).start()
+								wew23 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 								try:
-									wew16 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									wew17 = threading.Thread(target=cancel, args=(op.param1, op.param3)).start()
+									wew24 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									wew25 = threading.Thread(target=cancel, args=(op.param1, op.param3)).start()
+									wew26 = threading.Thread(target=cancel, args=(op.param1, op.param3)).start()
+									wew27 = threading.Thread(target=cancel, args=(op.param1, op.param3)).start()
+									wew28 = threading.Thread(target=cancel, args=(op.param1, op.param3)).start()
+									wew29 = threading.Thread(target=cancel, args=(op.param1, op.param3)).start()
 								except:
 									pass
 						if mid in op.param3:
 							if settings["autoJoin"] == True:
 								if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
 									cl.acceptGroupInvitation(op.param1)
+                                                                        grup = cl.getGroup(op.param1)
 								else:
 									cl.acceptGroupInvitation(op.param1)
+                                                                        grup = cl.getGroup(op.param1)
 									sendMention(op.param1,"Sorry @!,\nI Will Leave Because You Doesn't Have Access -_-",[op.param2])
 									cl.leaveGroup(op.param1)
 						if Amid in op.param3:
 							if settings["autoJoin"] == True:
 								if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
 									ki.acceptGroupInvitation(op.param1)
+                                                                        grup = ki.getGroup(op.param1)
 								else:
 									ki.acceptGroupInvitation(op.param1)
+                                                                        grup = ki.getGroup(op.param1)
 									sendMention(op.param1,"Sorry @!,\nI Will Leave Because You Doesn't Have Access -_-",[op.param2])
 									ki.leaveGroup(op.param1)
 						if Bmid in op.param3:
 							if settings["autoJoin"] == True:
 								if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
 									kk.acceptGroupInvitation(op.param1)
+                                                                        grup = kk.getGroup(op.param1)
 								else:
 									kk.acceptGroupInvitation(op.param1)
+                                                                        grup = kk.getGroup(op.param1)
 									sendMention(op.param1,"Sorry @!,\nI Will Leave Because You Doesn't Have Access -_-",[op.param2])
 									kk.leaveGroup(op.param1)
 						if Cmid in op.param3:
 							if settings["autoJoin"] == True:
 								if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
 									kc.acceptGroupInvitation(op.param1)
+                                                                        grup = kc.getGroup(op.param1)
 								else:
 									kc.acceptGroupInvitation(op.param1)
+                                                                        grup = kc.getGroup(op.param1)
 									sendMention(op.param1,"Sorry @!,\nI Will Leave Because You Doesn't Have Access -_-",[op.param2])
 									kc.leaveGroup(op.param1)
 						if Dmid in op.param3:
 							if settings["autoJoin"] == True:
 								if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
 									km.acceptGroupInvitation(op.param1)
+                                                                        grup = km.getGroup(op.param1)
 								else:
 									km.acceptGroupInvitation(op.param1)
+                                                                        grup = km.getGroup(op.param1)
 									sendMention(op.param1,"Sorry @!,\nI Will Leave Because You Doesn't Have Access -_-",[op.param2])
 									km.leaveGroup(op.param1)
 						if K5mid in op.param3:
 							if settings["autoJoin"] == True:
 								if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
 									k5.acceptGroupInvitation(op.param1)
+                                                                        grup = k5.getGroup(op.param1)
 								else:
 									k5.acceptGroupInvitation(op.param1)
+                                                                        grup = k5.getGroup(op.param1)
 									sendMention(op.param1,"Sorry @!,\nI Will Leave Because You Doesn't Have Access -_-",[op.param2])
 									k5.leaveGroup(op.param1)
 					if op.type == 17:
-						if op.param1 in status["lock"]:
-							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
-								pass
-							else:
-								wew18 = threading.Thread(target=blacklist, args=(op.param2,)).start()
-								try:
-									wew19 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									wew20 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									wew21 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									wew22 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									wew23 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-								except:
-									pass
-						if op.param2 in status["blacklist"]:
-							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
-								pass
-							else:
-								wew24 = threading.Thread(target=blacklist, args=(op.param2,)).start()
-								try:
-									wew25 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									wew26 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									wew27 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									wew28 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									wew29 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-								except:
-									pass
-					if op.type == 19:
 						if op.param1 in status["lock"]:
 							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
 								pass
@@ -1758,40 +1755,34 @@ async def cerberusRun():
 									wew35 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 								except:
 									pass
-						if op.param3 in mid:
+						if op.param2 in status["blacklist"]:
 							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
 								pass
 							else:
 								wew36 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 								try:
 									wew37 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									wew38 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
+									wew38 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 									wew39 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-								except:
-									pass
-						if op.param3 in Amid:
-							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
-								pass
-							else:
-								wew40 = threading.Thread(target=blacklist, args=(op.param2,)).start()
-								try:
+									wew40 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 									wew41 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									wew42 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
-									wew43 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 								except:
 									pass
-						if op.param3 in Bmid:
+					if op.type == 19:
+						if op.param1 in status["lock"]:
 							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
 								pass
 							else:
-								wew44 = threading.Thread(target=blacklist, args=(op.param2,)).start()
+								wew42 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 								try:
+									wew43 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									wew44 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 									wew45 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									wew46 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
+									wew46 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 									wew47 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 								except:
 									pass
-						if op.param3 in Cmid:
+						if op.param3 in mid:
 							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
 								pass
 							else:
@@ -1800,28 +1791,67 @@ async def cerberusRun():
 									wew49 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 									wew50 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
 									wew51 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									wew52 = threading.Thread(target=lockqr, args=(op.param1, op.param3)).start()
+								except:
+									pass
+						if op.param3 in Amid:
+							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
+								pass
+							else:
+								wew53 = threading.Thread(target=blacklist, args=(op.param2,)).start()
+								try:
+									wew54 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									wew55 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
+									wew56 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									wew57 = threading.Thread(target=lockqr, args=(op.param1, op.param3)).start()
+								except:
+									pass
+						if op.param3 in Bmid:
+							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
+								pass
+							else:
+								wew58 = threading.Thread(target=blacklist, args=(op.param2,)).start()
+								try:
+									wew59 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									wew60 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
+									wew61 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									wew62 = threading.Thread(target=lockqr, args=(op.param1, op.param3)).start()
+								except:
+									pass
+						if op.param3 in Cmid:
+							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
+								pass
+							else:
+								wew63 = threading.Thread(target=blacklist, args=(op.param2,)).start()
+								try:
+									wew64 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									wew65 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
+									wew66 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									wew67 = threading.Thread(target=lockqr, args=(op.param1, op.param3)).start()
 								except:
 									pass
 						if op.param3 in Dmid:
 							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
 								pass
 							else:
-								wew52 = threading.Thread(target=blacklist, args=(op.param2,)).start()
+								wew68 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 								try:
-									wew53 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									wew54 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
-									wew55 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									wew69 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									wew70 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
+									wew71 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									wew72 = threading.Thread(target=lockqr, args=(op.param1, op.param3)).start()
 								except:
 									pass
 						if op.param3 in K5mid:
 							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
 								pass
 							else:
-								wew56 = threading.Thread(target=blacklist, args=(op.param2,)).start()
+								wew73 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 								try:
-									wew57 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									wew58 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
-									wew59 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									wew74 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									wew75 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
+									wew76 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									wew77 = threading.Thread(target=lockqr, args=(op.param1, op.param3)).start()
 								except:
 									pass
 					if op.type == 32:
@@ -1829,79 +1859,85 @@ async def cerberusRun():
 							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
 								pass
 							else:
-								wew60 = threading.Thread(target=blacklist, args=(op.param2,)).start()
-								try:
-									wew61 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									wew62 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									wew63 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									wew64 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									wew65 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-								except:
-									pass
-						if op.param3 == mid:
-							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
-								pass
-							else:
-								wew66 = threading.Thread(target=blacklist, args=(op.param2,)).start()
-								try:
-									wew67 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									wew68 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
-									wew69 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-								except:
-									pass
-						if op.param3 == Amid:
-							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
-								pass
-							else:
-								wew70 = threading.Thread(target=blacklist, args=(op.param2,)).start()
-								try:
-									wew71 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									wew72 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
-									wew73 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-								except:
-									pass
-						if op.param3 == Bmid:
-							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
-								pass
-							else:
-								wew74 = threading.Thread(target=blacklist, args=(op.param2,)).start()
-								try:
-									wew75 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									wew76 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
-									wew77 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-								except:
-									pass
-						if op.param3 == Cmid:
-							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
-								pass
-							else:
 								wew78 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 								try:
 									wew79 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									wew80 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
+									wew80 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 									wew81 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-								except:
-									pass
-						if op.param3 == Dmid:
-							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
-								pass
-							else:
-								wew82 = threading.Thread(target=blacklist, args=(op.param2,)).start()
-								try:
+									wew82 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 									wew83 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									wew84 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
-									wew85 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 								except:
 									pass
-						if op.param3 == K5mid:
+						if op.param3 in mid:
 							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
 								pass
 							else:
-								wew86 = threading.Thread(target=blacklist, args=(op.param2,)).start()
+								wew84 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 								try:
+									wew85 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									wew86 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
 									wew87 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									wew88 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
-									wew89 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									wew88 = threading.Thread(target=lockqr, args=(op.param1, op.param3)).start()
+								except:
+									pass
+						if op.param3 in Amid:
+							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
+								pass
+							else:
+								wew89 = threading.Thread(target=blacklist, args=(op.param2,)).start()
+								try:
+									wew90 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									wew91 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
+									wew92 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									wew93 = threading.Thread(target=lockqr, args=(op.param1, op.param3)).start()
+								except:
+									pass
+						if op.param3 in Bmid:
+							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
+								pass
+							else:
+								wew94 = threading.Thread(target=blacklist, args=(op.param2,)).start()
+								try:
+									wew95 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									wew96 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
+									wew97 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									wew98 = threading.Thread(target=lockqr, args=(op.param1, op.param3)).start()
+								except:
+									pass
+						if op.param3 in Cmid:
+							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
+								pass
+							else:
+								wew99 = threading.Thread(target=blacklist, args=(op.param2,)).start()
+								try:
+									wew100 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									wew101 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
+									wew102 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									wew103 = threading.Thread(target=lockqr, args=(op.param1, op.param3)).start()
+								except:
+									pass
+						if op.param3 in Dmid:
+							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
+								pass
+							else:
+								wew104 = threading.Thread(target=blacklist, args=(op.param2,)).start()
+								try:
+									wew105 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									wew106 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
+									wew107 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									wew108 = threading.Thread(target=lockqr, args=(op.param1, op.param3)).start()
+								except:
+									pass
+						if op.param3 in K5mid:
+							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
+								pass
+							else:
+								wew109 = threading.Thread(target=blacklist, args=(op.param2,)).start()
+								try:
+									wew110 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									wew111 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
+									wew112 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									wew113 = threading.Thread(target=lockqr, args=(op.param1, op.param3)).start()
 								except:
 									pass
 					if op.type == 26:
