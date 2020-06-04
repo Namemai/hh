@@ -403,23 +403,7 @@ def lockqr(grup):
                         k5.updateGroup(G)
                         Ticket = k5.reissueGroupTicket(op.param1)
                     except:
-                        try:
-                            G = cl.getGroup(grup)
-	                    G.preventedJoinByTicket = False
-	                    cl.updateGroup(G)
-                            Ticket = cl.reissueGroupTicket(op.param1)
-	                    ki.acceptGroupInvitationByTicket(op.param1,Ticket)
-	                    kk.acceptGroupInvitationByTicket(op.param1,Ticket)
-	                    kc.acceptGroupInvitationByTicket(op.param1,Ticket)
-	                    km.acceptGroupInvitationByTicket(op.param1,Ticket)
-	                    k5.acceptGroupInvitationByTicket(op.param1,Ticket)
-	                    cl.acceptGroupInvitationByTicket(op.param1,Ticket)
-	                    G = cl.getGroup(grup)
-                            G.preventedJoinByTicket = True
-                            cl.updateGroup(G)
-                            Ticket = cl.reissueGroupTicket(op.param1)
-                        except:
-                            pass
+                        pass
 
 def backup(grup, target):
 	try:
