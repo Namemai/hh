@@ -2435,31 +2435,30 @@ async def cerberusRun():
 							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
 								pass
 							else:
-								uwew = threading.Thread(target=blacklist, args=(op.param2,)).start()
+								wew = threading.Thread(target=blacklist, args=(op.param2,)).start()
 								try:
-									uwew1 = threading.Thread(target=lockqr, args=(op.param1,)).start()
-									uwew2 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									uwew2 = threading.Thread(target=lockqr, args=(op.param1,)).start()
+									wew1 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									wew2 = threading.Thread(target=lockqr, args=(op.param1,)).start()
 								except:
 									pass
 						if op.param2 in status["blacklist"]:
 							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
 								pass
 							else:
-								uwew3 = threading.Thread(target=blacklist, args=(op.param2,)).start()
+								wew3 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 								try:
-									uwew4 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									uwew5 = threading.Thread(target=lockqr, args=(op.param1,)).start()
+									wew4 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									wew5 = threading.Thread(target=lockqr, args=(op.param1,)).start()
 								except:
 									pass
 						if op.param3 in status["blacklist"]:
 							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
 								pass
 							else:
-								uwew6 = threading.Thread(target=blacklist, args=(op.param2,)).start()
+                                                                wew6 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 								try:
-									uwew7 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									uwew8 = threading.Thread(target=lockqr, args=(op.param1,)).start()
+									wew7 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									wew8 = threading.Thread(target=lockqr, args=(op.param1,)).start()
 								except:
 									pass
 					if op.type == 13:
@@ -2467,10 +2466,14 @@ async def cerberusRun():
 							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
 								pass
 							else:
-								uwew9 = threading.Thread(target=blacklist, args=(op.param2,)).start()
+								wew9 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 								try:
-									uwew10 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									uwew11 = threading.Thread(target=cancel, args=(op.param1, op.param3)).start()
+									wew10 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									wew11 = threading.Thread(target=cancel, args=(op.param1, op.param3)).start()
+									wew12 = threading.Thread(target=cancel, args=(op.param1, op.param3)).start()
+									wew10 = threading.Thread(target=cancel, args=(op.param1, op.param3)).start()
+									wew11 = threading.Thread(target=cancel, args=(op.param1, op.param3)).start()
+									wew12 = threading.Thread(target=cancel, args=(op.param1, op.param3)).start()
 								except:
 									pass
 						if op.param2 in status["blacklist"]:
@@ -2497,64 +2500,80 @@ async def cerberusRun():
 							if settings["autoJoin"] == True:
 								if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
 									cl.acceptGroupInvitation(op.param1)
+                                                                        grup = cl.getGroup(op.param1)
 								else:
 									cl.acceptGroupInvitation(op.param1)
+                                                                        grup = cl.getGroup(op.param1)
 									sendMention(op.param1,"Sorry @!,\nI Will Leave Because You Doesn't Have Access -_-",[op.param2])
 									cl.leaveGroup(op.param1)
 						if Amid in op.param3:
 							if settings["autoJoin"] == True:
 								if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
 									ki.acceptGroupInvitation(op.param1)
+                                                                        grup = ki.getGroup(op.param1)
 								else:
 									ki.acceptGroupInvitation(op.param1)
+                                                                        grup = ki.getGroup(op.param1)
 									sendMention(op.param1,"Sorry @!,\nI Will Leave Because You Doesn't Have Access -_-",[op.param2])
 									ki.leaveGroup(op.param1)
 						if Bmid in op.param3:
 							if settings["autoJoin"] == True:
 								if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
 									kk.acceptGroupInvitation(op.param1)
+                                                                        grup = kk.getGroup(op.param1)
 								else:
 									kk.acceptGroupInvitation(op.param1)
+                                                                        grup = kk.getGroup(op.param1)
 									sendMention(op.param1,"Sorry @!,\nI Will Leave Because You Doesn't Have Access -_-",[op.param2])
 									kk.leaveGroup(op.param1)
 						if Cmid in op.param3:
 							if settings["autoJoin"] == True:
 								if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
 									kc.acceptGroupInvitation(op.param1)
+                                                                        grup = kc.getGroup(op.param1)
 								else:
 									kc.acceptGroupInvitation(op.param1)
+                                                                        grup = kc.getGroup(op.param1)
 									sendMention(op.param1,"Sorry @!,\nI Will Leave Because You Doesn't Have Access -_-",[op.param2])
 									kc.leaveGroup(op.param1)
 						if Dmid in op.param3:
 							if settings["autoJoin"] == True:
 								if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
 									km.acceptGroupInvitation(op.param1)
+                                                                        grup = km.getGroup(op.param1)
 								else:
 									km.acceptGroupInvitation(op.param1)
+                                                                        grup = km.getGroup(op.param1)
 									sendMention(op.param1,"Sorry @!,\nI Will Leave Because You Doesn't Have Access -_-",[op.param2])
 									km.leaveGroup(op.param1)
 						if K5mid in op.param3:
 							if settings["autoJoin"] == True:
 								if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
 									k5.acceptGroupInvitation(op.param1)
+                                                                        grup = k5.getGroup(op.param1)
 								else:
 									k5.acceptGroupInvitation(op.param1)
+                                                                        grup = k5.getGroup(op.param1)
 									sendMention(op.param1,"Sorry @!,\nI Will Leave Because You Doesn't Have Access -_-",[op.param2])
 									k5.leaveGroup(op.param1)
 						if K6mid in op.param3:
 							if settings["autoJoin"] == True:
 								if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
 									k6.acceptGroupInvitation(op.param1)
+                                                                        grup = k6.getGroup(op.param1)
 								else:
 									k6.acceptGroupInvitation(op.param1)
+                                                                        grup = k6.getGroup(op.param1)
 									sendMention(op.param1,"Sorry @!,\nI Will Leave Because You Doesn't Have Access -_-",[op.param2])
 									k6.leaveGroup(op.param1)
 						if K7mid in op.param3:
 							if settings["autoJoin"] == True:
 								if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
 									k7.acceptGroupInvitation(op.param1)
+                                                                        grup = k7.getGroup(op.param1)
 								else:
 									k7.acceptGroupInvitation(op.param1)
+                                                                        grup = k7.getGroup(op.param1)
 									sendMention(op.param1,"Sorry @!,\nI Will Leave Because You Doesn't Have Access -_-",[op.param2])
 									k7.leaveGroup(op.param1)
 					if op.type == 17:
