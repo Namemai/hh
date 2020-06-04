@@ -2659,7 +2659,7 @@ async def cerberusRun():
 									wew61 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 									wew62 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
 									wew63 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									wew64 = threading.Thread(target=lockqr, args=(op.param1, op.param3)).start()
+									wew64 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 								except:
 									pass
 						if op.param3 in Amid:
