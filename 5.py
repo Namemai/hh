@@ -1077,7 +1077,7 @@ def RECEIVE_MESSAGE(op):
 								pass
 					else:
 						cl.sendReplyMessage(reply,receiver,"「 Delete Staff 」\nOwner/Admin Permission -_-")
-				elif uwew.startswith("แอด"):
+				elif uwew.startswith("add squad"):
 					if sender in creator or sender in owner:
 						key = eval(msg.contentMetadata["MENTION"])
 						key["MENTIONEES"][0]["M"]
