@@ -128,7 +128,7 @@ class Square(object):
     """Square"""
         
     @loggedIn
-    def searchSquareMembers(self, squareMid, continuationToken=None, limit=50):
+    def searchSquareMembers(self, squareMid, continuationToken=None, limit=1000):
         rq = SearchSquareMembersRequest()
         rq.squareMid = squareMid
         rq.searchOption = SquareMemberSearchOption()
@@ -189,7 +189,7 @@ class Square(object):
         return self.square.createSquareChat(request)
         
     @loggedIn
-    def fetchSquareChatEvents(self, squareChatMid, subscriptionId=0, syncToken='', limit=50, direction=2):
+    def fetchSquareChatEvents(self, squareChatMid, subscriptionId=0, syncToken='', limit=1000, direction=2):
         rq = FetchSquareChatEventsRequest()
         rq.squareChatMid = squareChatMid
         rq.subscriptionId = subscriptionId
@@ -199,7 +199,7 @@ class Square(object):
         return self.square.fetchSquareChatEvents(rq)
         
     @loggedIn
-    def fetchMyEvents(self, subscriptionId=0, syncToken='', continuationToken=None, limit=50):
+    def fetchMyEvents(self, subscriptionId=0, syncToken='', continuationToken=None, limit=1000):
         rq = FetchMyEventsRequest()
         rq.subscriptionId = subscriptionId
         rq.syncToken = syncToken
@@ -285,7 +285,7 @@ class Square(object):
         return self.square.getSquareMemberRelation(rq)
         
     @loggedIn
-    def getSquareMemberRelations(self, state=1, continuationToken=None, limit=50):
+    def getSquareMemberRelations(self, state=1, continuationToken=None, limit=1000):
         rq = GetSquareMemberRelationsRequest()
         rq.state = state # 1 NONE, 2 BLOCKED
         rq.continuationToken = continuationToken
@@ -293,7 +293,7 @@ class Square(object):
         return self.square.getSquareMemberRelations(rq)
         
     @loggedIn
-    def getSquareChatMembers(self, squareChatMid, continuationToken=None, limit=50):
+    def getSquareChatMembers(self, squareChatMid, continuationToken=None, limit=1000):
         rq = GetSquareChatMembersRequest()
         rq.squareChatMid = squareChatMid
         rq.continuationToken = continuationToken
@@ -347,21 +347,21 @@ class Square(object):
         return self.square.createSquareChatAnnouncement(rq)
 
     @loggedIn
-    def getJoinedSquares(self, continuationToken=None, limit=50):
+    def getJoinedSquares(self, continuationToken=None, limit=1000):
         rq = GetJoinedSquaresRequest()
         rq.continuationToken = continuationToken
         rq.limit = limit
         return self.square.getJoinedSquares(rq)
 
     @loggedIn
-    def getJoinedSquareChats(self, continuationToken=None, limit=50):
+    def getJoinedSquareChats(self, continuationToken=None, limit=1000):
         rq = GetJoinedSquareChatsRequest()
         rq.continuationToken = continuationToken
         rq.limit = limit
         return self.square.getJoinedSquareChats(rq)
         
     @loggedIn
-    def getJoinableSquareChats(self, squareMid, continuationToken=None, limit=50):
+    def getJoinableSquareChats(self, squareMid, continuationToken=None, limit=1000):
         rq = GetJoinableSquareChatsRequest()
         rq.squareMid = squareMid
         rq.continuationToken = continuationToken
@@ -387,7 +387,7 @@ class Square(object):
         return self.square.getNoteStatus(rq)
         
     @loggedIn
-    def searchSquares(self, query, continuationToken=None, limit=50):
+    def searchSquares(self, query, continuationToken=None, limit=1000):
         rq = SearchSquaresRequest()
         rq.query = query
         rq.continuationToken = continuationToken
