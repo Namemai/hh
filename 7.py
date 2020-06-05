@@ -768,7 +768,7 @@ def RECEIVE_MESSAGE(op):
 						for target in targets:
 							try:
 								status["mybots"].append(target)
-								sendMention(to,"「 Add Squad 」\nUser @!,[target])
+								sendMention(to,"「 Add Squad 」\nUser @!",[target])
 							except:
 								pass
 					else:
