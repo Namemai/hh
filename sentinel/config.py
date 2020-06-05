@@ -18,14 +18,14 @@ class Config(object):
     LINE_CHAN_QUERY_PATH        = '/CH4'
     LINE_SQUARE_QUERY_PATH      = '/SQS1'
     LINE_SHOP_QUERY_PATH        = '/SHOP4'
-
+    LINE_LIFF_PATH              = '/LIFF1'
     CHANNEL_ID = {
         'LINE_TIMELINE': '1341209850',
         'LINE_WEBTOON': '1401600689',
         'LINE_TODAY': '1518712866',
         'LINE_STORE': '1376922440',
         'LINE_MUSIC': '1381425814',
-        'LINE_SERVICES': '1459630796'
+        'LINE_SERVICES': '1459630796',  
     }
 
     APP_VERSION = {
@@ -40,15 +40,15 @@ class Config(object):
         'IOSIPAD': '8.14.2',
         'CHROMEOS': '2.1.5',
         'WIN10': '5.5.5',
-        'DEFAULT': '8.11.0'
+        'DEFAULT': '8.11.0',
+        'CLOVAFRIENDS':'5.5.1'
     }
 
-
-    APP_TYPE    = 'IOS\t10.1.1\tIOS OS\t1'
-    APP_VER     = APP_VERSION[APP_TYPE] if APP_TYPE in APP_VERSION else APP_VERSION['DEFAULT']
+    APP_TYPE    = 'CLOVAFRIENDS'
+    APP_VER     = APP_VERSION[APP_TYPE] if APP_TYPE in APP_VERSION else       APP_VERSION['DEFAULT']
     CARRIER     = '51089, 1-0'
-    SYSTEM_NAME = 'Uwewww'
-    SYSTEM_VER  = '10.0.14'
+    SYSTEM_NAME = 'BY,MAI'
+    SYSTEM_VER  = '11.2.5'
     IP_ADDR     = '8.8.8.8'
     EMAIL_REGEX = re.compile(r"[^@]+@[^@]+\.[^@]+")
 
@@ -56,8 +56,9 @@ class Config(object):
         if appType:
             self.APP_TYPE = appType
             self.APP_VER = self.APP_VERSION[self.APP_TYPE] if self.APP_TYPE in self.APP_VERSION else self.APP_VERSION['DEFAULT']
-        self.APP_NAME = 'IOS\t10.1.1\tIOS OS\t1'
-        self.USER_AGENT = 'Line/9.2.2'
+        self.APP_NAME = '%s\t%s\t%s\t%s' % (self.APP_TYPE, self.APP_VER, self.SYSTEM_NAME, self.SYSTEM_VER)
+        self.USER_AGENT = 'Line/%s' % self.APP_VER
+
 #               แบบใสเมล
 #    APP_TYPE    = 'CHROMEOS\t2.1.0\tCHROMEOS\t10.0.0'
 #    APP_VER     = APP_VERSION[APP_TYPE] if APP_TYPE in APP_VERSION else APP_VERSION['DEFAULT']
