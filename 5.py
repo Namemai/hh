@@ -64,13 +64,6 @@ resp3 = kc.getProfile().displayName
 resp4 = km.getProfile().displayName
 resp5 = k5.getProfile().displayName
 
-#for uwew in Botslist:
-#	for uwewww in Bots:
-#		try:
-#			uwew.findAndAddContactsByMid(uwewww)
-#		except:
-#			pass
-
 def backupData():
 	try:
 		backup = settings
