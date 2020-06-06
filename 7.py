@@ -92,6 +92,7 @@ def backupData():
 def restartProgram():
 	print('####==== ระบบเริ่มทำงาน ====####')
 	backupData()
+	time.sleep(1)
 	python = sys.executable
 	os.execl(python, python, *sys.argv)
 
@@ -161,25 +162,39 @@ def sendMention(to, text="", mids=[]):
 
 def kick(grup, target):
     try:
-        ki.kickoutFromGroup(grup, [target])
+        asd= ki.kickoutFromGroup(grup, [target])
+        if asd != None:
+            botwars
     except:
         try:
-            kk.kickoutFromGroup(grup, [target])
+            asd= kk.kickoutFromGroup(grup, [target])
+            if asd != None:
+                botwars
         except:
             try:
-                kc.kickoutFromGroup(grup, [target])
+                asd= kc.kickoutFromGroup(grup, [target])
+                if asd != None:
+                    botwars
             except:
                 try:
-                    km.kickoutFromGroup(grup, [target])
+                    asd= km.kickoutFromGroup(grup, [target])
+                    if asd != None:
+                        botwars
                 except:
                     try:
-                        k5.kickoutFromGroup(grup, [target])
+                        asd= k5.kickoutFromGroup(grup, [target])
+                        if asd != None:
+                            botwars
                     except:
                         try:
-                            k6.kickoutFromGroup(grup, [target])
+                            asd= k6.kickoutFromGroup(grup, [target])
+                            if asd != None:
+                                botwars
                         except:
                             try:
-                                k7.kickoutFromGroup(grup, [target])
+                                asd= k7.kickoutFromGroup(grup, [target])
+                                if asd != None:
+                                    botwars
                             except:
                                 pass
 
