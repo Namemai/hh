@@ -25,6 +25,8 @@ from datetime import datetime
 # Primary Token : LINE("primary",appName='IOS\t10.1.1\tIOS OS\t1')
 programStart = time.time()
 cl = LINE("a09371920@gmail.com","Arm130635")
+cl.log("Auth Token : " + str(cl.authToken))
+channelToken = cl.getChannelResult()
 print('==== UNIT หลัก READY ! ====')
 ki = LINE("a09371922@gmail.com","Arm130635")
 print('==== UNIT 1 READY ! ====')
