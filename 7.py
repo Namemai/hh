@@ -24,21 +24,21 @@ from datetime import datetime
 # Auth Token : LINE("authtoken")
 # Primary Token : LINE("primary",appName='IOS\t10.1.1\tIOS OS\t1')
 programStart = time.time()
-cl = LINE("primary",appName='IOS\t10.1.1\tIOS OS\t1')
+cl = LINE("gmail","รหัส")
 print('==== UNIT หลัก READY ! ====')
-ki = LINE("primary",appName='IOS\t10.1.1\tIOS OS\t1')
+ki = LINE("gmail","รหัส")
 print('==== UNIT 1 READY ! ====')
-kk = LINE("primary",appName='IOS\t10.1.1\tIOS OS\t1')
+kk = LINE("gmail","รหัส")
 print('==== UNIT 2 READY ! ====')
-kc = LINE("primary",appName='IOS\t10.1.1\tIOS OS\t1')
+kc = LINE("gmail","รหัส")
 print('==== UNIT 3 READY ! ====')
-km = LINE("primary",appName='IOS\t10.1.1\tIOS OS\t1')
+km = LINE("gmail","รหัส")
 print('==== UNIT 4 READY ! ====')
-k5 = LINE("primary",appName='IOS\t10.1.1\tIOS OS\t1')
+k5 = LINE("gmail","รหัส")
 print('==== UNIT 5 READY ! ====')
-k6 = LINE("primary",appName='IOS\t10.1.1\tIOS OS\t1')
+k6 = LINE("gmail","รหัส")
 print('==== UNIT 6 READY ! ====')
-k7 = LINE("primary",appName='IOS\t10.1.1\tIOS OS\t1')
+k7 = LINE("gmail","รหัส")
 print('==== UNIT 7 READY ! ====')
 print ('\n\nALL UNIT READY !')
 
@@ -343,9 +343,7 @@ def cancel(grup, target):
                             try:
                                 k7.cancelGroupInvitation(grup, [target])
                             except:
-                                try:
-                                except:
-                                    pass
+                                pass
 
 def invite(grup, target):
     try:
