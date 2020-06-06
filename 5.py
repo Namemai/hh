@@ -26,7 +26,7 @@ from datetime import datetime
 programStart = time.time()
 cl = LINE("a09371920@gmail.com","Arm130635")
 cl.log("Auth Token : " + str(cl.authToken))
-channelToken = cl.getChannelResult()
+cl.log("Timeline Token : " + str(cl.tl.channelAccessToken))
 print('==== UNIT หลัก READY ! ====')
 ki = LINE("a09371922@gmail.com","Arm130635")
 print('==== UNIT 1 READY ! ====')
