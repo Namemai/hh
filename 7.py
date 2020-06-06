@@ -63,6 +63,7 @@ staff = status["staff"]
 mybots = status["mybots"]
 Bots = [mid,Amid,Bmid,Cmid,Dmid,K5mid,K6mid,K7mid]
 Botslist = [cl,ki,kk,kc,km,k5,k6,k7]
+bot = random.choice[ki,kk,kc,km,k5,k6,k7]
 resp0 = cl.getProfile().displayName
 resp1 = ki.getProfile().displayName
 resp2 = kk.getProfile().displayName
