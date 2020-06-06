@@ -390,7 +390,7 @@ def backup(grup, target):
                     k5.acceptGroupInvitation(grup)
             except:
                 try:
-                    k5.inviteIntoGroup(grup, [mid,Amid,Bmid,Cmid,Dmid)
+                    k5.inviteIntoGroup(grup, [mid,Amid,Bmid,Cmid,Dmid])
                     if target == mid:
                         cl.acceptGroupInvitation(grup)
                     if target == Amid:
