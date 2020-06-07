@@ -478,8 +478,6 @@ def RECEIVE_MESSAGE(op):
 							kc.acceptGroupInvitation(receiver)
 							km.acceptGroupInvitation(receiver)
 							k5.acceptGroupInvitation(receiver)
-						except TalkException as talk_error:
-							if talk_error.code == 35:
 				elif uwew == "blacklist" or uwew == "bc":
 					if sender in creator or sender in owner or sender in admin or sender in staff:
 						if len(status["blacklist"]) > 0:
