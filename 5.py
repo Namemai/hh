@@ -1075,8 +1075,8 @@ async def cerberusRun():
 							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
 								pass
 							else:
+								t = threading.Thread(target=blacklist, args=(op.param2,)).start()
 								try:
-									t = threading.Thread(target=blacklist, args=(op.param2,)).start()
 									t1 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 									t2 = threading.Thread(target=lockqr, args=(op.param1,)).start()
 								except:
@@ -1085,8 +1085,8 @@ async def cerberusRun():
 							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
 								pass
 							else:
+								t3 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 								try:
-									t3 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 									t4 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 									t5 = threading.Thread(target=lockqr, args=(op.param1,)).start()
 								except:
@@ -1095,8 +1095,8 @@ async def cerberusRun():
 							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
 								pass
 							else:
+								t6 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 								try:
-									t6 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 									t7 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 									t8 = threading.Thread(target=lockqr, args=(op.param1,)).start()
 								except:
@@ -1106,8 +1106,8 @@ async def cerberusRun():
 							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
 								pass
 							else:
+								t9 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 								try:
-									t9 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 									t10 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 									t11 = threading.Thread(target=cancel, args=(op.param1, op.param2)).start()
 								except:
@@ -1116,8 +1116,8 @@ async def cerberusRun():
 							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
 								pass
 							else:
+								t12 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 								try:
-									t12 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 									t13 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 									t14 = threading.Thread(target=cancel, args=(op.param1, op.param2)).start()
 								except:
@@ -1126,8 +1126,8 @@ async def cerberusRun():
 							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
 								pass
 							else:
+								t15 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 								try:
-									t15 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 									t16 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 									t17 = threading.Thread(target=cancel, args=(op.param1, op.param2)).start()
 								except:
@@ -1185,8 +1185,8 @@ async def cerberusRun():
 							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
 								pass
 							else:
+								t18 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 								try:
-									t18 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 									t19 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 									t20 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 									t21 = threading.Thread(target=cancel, args=(op.param1, op.param2)).start()
@@ -1196,8 +1196,8 @@ async def cerberusRun():
 							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
 								pass
 							else:
+								t22 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 								try:
-									t22 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 									t23 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 									t24 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 									t25 = threading.Thread(target=cancel, args=(op.param1, op.param2)).start()
@@ -1208,19 +1208,19 @@ async def cerberusRun():
 							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
 								pass
 							else:
+								t26 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 								try:
-									t26 = threading.Thread(target=blacklist, args=(op.param2,)).start()
-									t27 = threading.Thread(target=cancel, args=(op.param1, op.param2)).start()
+									t27 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 									t28 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t29 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t29 = threading.Thread(target=cancel, args=(op.param1, op.param2)).start()
 								except:
 									pass
 						if op.param3 in mid:
 							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
 								pass
 							else:
+								t30 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 								try:
-									t30 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 									t31 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 									t32 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
 									t33 = threading.Thread(target=cancel, args=(op.param1, op.param2)).start()
@@ -1230,8 +1230,8 @@ async def cerberusRun():
 							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
 								pass
 							else:
+								t34 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 								try:
-									t34 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 									t35 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 									t36 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
 									t37 = threading.Thread(target=cancel, args=(op.param1, op.param2)).start()
@@ -1241,8 +1241,8 @@ async def cerberusRun():
 							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
 								pass
 							else:
+								t38 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 								try:
-									t38 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 									t39 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 									t40 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
 									t41 = threading.Thread(target=cancel, args=(op.param1, op.param2)).start()
@@ -1252,8 +1252,8 @@ async def cerberusRun():
 							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
 								pass
 							else:
+								t42 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 								try:
-									t42 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 									t43 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 									t44 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
 									t45 = threading.Thread(target=cancel, args=(op.param1, op.param2)).start()
@@ -1263,8 +1263,8 @@ async def cerberusRun():
 							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
 								pass
 							else:
+								t46 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 								try:
-									t46 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 									t47 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 									t48 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
 									t49 = threading.Thread(target=cancel, args=(op.param1, op.param2)).start()
@@ -1274,8 +1274,8 @@ async def cerberusRun():
 							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
 								pass
 							else:
+								t50 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 								try:
-									t50 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 									t51 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 									t52 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
 									t53 = threading.Thread(target=cancel, args=(op.param1, op.param2)).start()
@@ -1286,8 +1286,8 @@ async def cerberusRun():
 							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
 								pass
 							else:
+								t54 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 								try:
-									t54 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 									t55 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 									t56 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 									t57 = threading.Thread(target=cancel, args=(op.param1, op.param2)).start()
@@ -1297,8 +1297,8 @@ async def cerberusRun():
 							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
 								pass
 							else:
+								t58 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 								try:
-									t58 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 									t59 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 									t60 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
 									t61 = threading.Thread(target=cancel, args=(op.param1, op.param2)).start()
@@ -1308,8 +1308,8 @@ async def cerberusRun():
 							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
 								pass
 							else:
+								t52 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 								try:
-									t62 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 									t63 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 									t64 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
 									t65 = threading.Thread(target=cancel, args=(op.param1, op.param2)).start()
@@ -1319,8 +1319,8 @@ async def cerberusRun():
 							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
 								pass
 							else:
+								t56 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 								try:
-									t66 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 									t67 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 									t68 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
 									t69 = threading.Thread(target=cancel, args=(op.param1, op.param2)).start()
@@ -1330,8 +1330,8 @@ async def cerberusRun():
 							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
 								pass
 							else:
+								t70 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 								try:
-									t70 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 									t71 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 									t72 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
 									t73 = threading.Thread(target=cancel, args=(op.param1, op.param2)).start()
@@ -1341,8 +1341,8 @@ async def cerberusRun():
 							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
 								pass
 							else:
+								t74 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 								try:
-									t74 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 									t75 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 									t76 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
 									t77 = threading.Thread(target=cancel, args=(op.param1, op.param2)).start()
@@ -1352,8 +1352,8 @@ async def cerberusRun():
 							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
 								pass
 							else:
+								t78 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 								try:
-									t78 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 									t79 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 									t80 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
 									t81 = threading.Thread(target=cancel, args=(op.param1, op.param2)).start()
