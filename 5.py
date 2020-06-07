@@ -1399,8 +1399,8 @@ async def cerberusRun():
 								pass
 							else:
 								try:
-                                                                        t = Thread(target=blacklist, args=(op.param2,)).start()
-									t1 = Thread(target=kick, args=(op.param1, op.param2)).start()
+                                                                        t0 = Thread(target=blacklist, args=(op.param2,)).start()
+                                                                        t1 = Thread(target=kick, args=(op.param1, op.param2)).start()
 									t2 = Thread(target=lockqr, args=(op.param1,)).start()
 								except:
 
