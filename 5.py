@@ -1398,36 +1398,31 @@ async def cerberusRun():
 							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
 								pass
 							else:
-								t = Thread(target=blacklist, args=(op.param2,)).start()
 								try:
-									t1 = Thread(target=kick, args=(op.param1, op.param2))
-									t1.start()
-									t2 = Thread(target=lockqr, args=(op.param1,))
-									t2.start()
+                                                                        t = Thread(target=blacklist, args=(op.param2,)).start()
+									t1 = Thread(target=kick, args=(op.param1, op.param2)).start()
+									t2 = Thread(target=lockqr, args=(op.param1,)).start()
 								except:
+
 									pass
 						if op.param2 in status["blacklist"]:
 							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
 								pass
 							else:
-								t3 = Thread(target=blacklist, args=(op.param2,)).start()
 								try:
-									t4 = Thread(target=kick, args=(op.param1, op.param2))
-									t4.start()
-									t5 = Thread(target=lockqr, args=(op.param1,))
-									t5.start()
+                                                                        t3 = Thread(target=blacklist, args=(op.param2,)).start()
+									t4 = Thread(target=kick, args=(op.param1, op.param2)).start()
+									t5 = Thread(target=lockqr, args=(op.param1,)).start()
 								except:
 									pass
 						if op.param3 in status["blacklist"]:
 							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
 								pass
 							else:
-								t6 = Thread(target=blacklist, args=(op.param2,)).start()
 								try:
-									t7 = Thread(target=kick, args=(op.param1, op.param2))
-									t7.start()
-									t8 = Thread(target=lockqr, args=(op.param1,))
-									t8.start()
+                                                                        t6 = Thread(target=blacklist, args=(op.param2,)).start()
+									t7 = Thread(target=kick, args=(op.param1, op.param2)).start()
+									t8 = Thread(target=lockqr, args=(op.param1,)).start()
 								except:
 									pass
 					if op.type == 13:
@@ -1435,44 +1430,30 @@ async def cerberusRun():
 							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
 								pass
 							else:
-								t9 = Thread(target=blacklist, args=(op.param2,)).start()
 								try:
-									t10 = Thread(target=cancel, args=(op.param1, op.param2)).start()
-									t11 = Thread(target=cancel, args=(op.param1, op.param2)).start()
-									t12 = Thread(target=cancel, args=(op.param1, op.param2)).start()
-									t13 = Thread(target=cancel, args=(op.param1, op.param2)).start()
-									t14 = Thread(target=cancel, args=(op.param1, op.param2)).start()
+                                                                        t9 = Thread(target=blacklist, args=(op.param2,)).start()
+									t10 = Thread(target=cancel, args=(op.param1, op.param3)).start()
+									t11 = Thread(target=kick, args=(op.param1, op.param2)).start()
 								except:
 									pass
 						if op.param2 in status["blacklist"]:
 							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
 								pass
 							else:
-								t15 = Thread(target=blacklist, args=(op.param2,)).start()
 								try:
-									t16 = Thread(target=cancel, args=(op.param1, op.param2)).start()
-									t17 = Thread(target=cancel, args=(op.param1, op.param2)).start()
-									t18 = Thread(target=cancel, args=(op.param1, op.param2)).start()
-									t19 = Thread(target=cancel, args=(op.param1, op.param2)).start()
-									t20 = Thread(target=cancel, args=(op.param1, op.param2)).start()
+                                                                        t12 = Thread(target=blacklist, args=(op.param2,)).start()
+									t13 = Thread(target=cancel, args=(op.param1, op.param3)).start()
+									t14 = Thread(target=kick, args=(op.param1, op.param2)).start()
 								except:
 									pass
 						if op.param3 in status["blacklist"]:
 							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
 								pass
 							else:
-								t20 = Thread(target=blacklist, args=(op.param2,)).start()
 								try:
-									t21 = Thread(target=cancel, args=(op.param1, op.param2)).start()
-									t21 = Thread(target=kick, args=(op.param1, op.param2)).start()
-									t22 = Thread(target=cancel, args=(op.param1, op.param2)).start()
-									t22 = Thread(target=kick, args=(op.param1, op.param2)).start()
-									t23 = Thread(target=cancel, args=(op.param1, op.param2)).start()
-									t23 = Thread(target=kick, args=(op.param1, op.param2)).start()
-									t24 = Thread(target=cancel, args=(op.param1, op.param2)).start()
-									t24 = Thread(target=kick, args=(op.param1, op.param2)).start()
-									t25 = Thread(target=cancel, args=(op.param1, op.param2)).start()
-									t25 = Thread(target=kick, args=(op.param1, op.param2)).start()
+                                                                        t15 = Thread(target=blacklist, args=(op.param2,)).start()
+									t16 = Thread(target=cancel, args=(op.param1, op.param3)).start()
+									t17 = Thread(target=kick, args=(op.param1, op.param2)).start()
 								except:
 									pass
 						if mid in op.param3:
@@ -1528,26 +1509,24 @@ async def cerberusRun():
 							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
 								pass
 							else:
-								t26 = Thread(target=blacklist, args=(op.param2,)).start()
 								try:
-									t27 = Thread(target=kick, args=(op.param1, op.param2)).start()
-									t28 = Thread(target=kick, args=(op.param1, op.param2)).start()
-									t29 = Thread(target=kick, args=(op.param1, op.param2)).start()
-									t30 = Thread(target=kick, args=(op.param1, op.param2)).start()
-									t31 = Thread(target=kick, args=(op.param1, op.param2)).start()
+                                                                        t18 = Thread(target=blacklist, args=(op.param2,)).start()
+									t19 = Thread(target=kick, args=(op.param1, op.param2)).start()
+									t20 = Thread(target=kick, args=(op.param1, op.param2)).start()
+									t21 = Thread(target=kick, args=(op.param1, op.param2)).start()
+									
 								except:
 									pass
 						if op.param2 in status["blacklist"]:
 							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
 								pass
 							else:
-								t32 = Thread(target=blacklist, args=(op.param2,)).start()
 								try:
-									t31 = Thread(target=kick, args=(op.param1, op.param2)).start()
-									t32 = Thread(target=kick, args=(op.param1, op.param2)).start()
-									t33 = Thread(target=kick, args=(op.param1, op.param2)).start()
-									t34 = Thread(target=kick, args=(op.param1, op.param2)).start()
-									t35 = Thread(target=kick, args=(op.param1, op.param2)).start()
+                                                                        t22 = Thread(target=blacklist, args=(op.param2,)).start()
+									t23 = Thread(target=kick, args=(op.param1, op.param2)).start()
+									t24 = Thread(target=kick, args=(op.param1, op.param2)).start()
+									t25 = Thread(target=kick, args=(op.param1, op.param2)).start()
+									
 								except:
 									pass
 					if op.type == 19:
