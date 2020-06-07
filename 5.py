@@ -480,29 +480,6 @@ def RECEIVE_MESSAGE(op):
 							k5.acceptGroupInvitation(receiver)
 						except TalkException as talk_error:
 							if talk_error.code == 35:
-								G = cl.getGroup(receiver)
-								G.preventedJoinByTicket = False
-								cl.updateGroup(G)
-								links = cl.reissueGroupTicket(receiver)
-								for bot in KAC:
-									bot.acceptGroupInvitationByTicket(receiver,links)
-								G = cl.getGroup(receiver)
-								G.preventedJoinByTicket = True
-								cl.updateGroup(G)
-				elif uwew == "in":
-					if sender in creator or sender in owner or sender in admin or sender in staff:
-                                            G = cl.getGroup(msg.to)
-                                            G.preventedJoinByTicket = False
-                                            cl.updateGroup(G)
-                                            links = cl.reissueGroupTicket(msg.to)
-                                            ki.acceptGroupInvitationByTicket(msg.to,links)
-                                            kk.acceptGroupInvitationByTicket(msg.to,links)
-                                            kc.acceptGroupInvitationByTicket(msg.to,links)
-                                            km.acceptGroupInvitationByTicket(msg.to,links)
-                                            k5.acceptGroupInvitationByTicket(msg.to,links)
-                                            G = k5.getGroup(msg.to)
-                                            G.preventedJoinByTicket = True
-                                            k5.updateGroup(G)
 				elif uwew == "blacklist" or uwew == "bc":
 					if sender in creator or sender in owner or sender in admin or sender in staff:
 						if len(status["blacklist"]) > 0:
