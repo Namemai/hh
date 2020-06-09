@@ -16,41 +16,57 @@ from threading import Thread
 import pytz, datetime, time, timeit, livejson, asyncio, random, sys, ast, re, os, json, subprocess, threading, string, codecs, requests, ctypes, urllib,traceback,platform
 from datetime import timedelta, date
 from datetime import datetime
-# Sentinel™ Simple Bots
-# Free To Use,All Credits Belong To Me,Uwewww
-# Found Some Bugs Or Error? Feel Free To Report Bugs :)
-# Login Option Below
 # Email : LINE("email","Password")
 # Auth Token : LINE("authtoken")
 # Primary Token : LINE("primary",appName='IOS\t10.1.1\tIOS OS\t1')
 programStart = time.time()
+
 cl = LINE("runrsa1@gmail.com","Arm130635")
 print('==== UNIT หลัก READY ! ====')
-ki = LINE("ruyxraxxx@gmail.com","Arm130635")
+
+k1 = LINE("ruyxraxxx@gmail.com","Arm130635")
 print('==== UNIT 1 READY ! ====')
-kk = LINE("zna96817@gmail.com","Arm130635")
+
+k2 = LINE("zna96817@gmail.com","Arm130635")
 print('==== UNIT 2 READY ! ====')
-kc = LINE("a409371920@gmail.com","Arm130635")
+
+k3 = LINE("a409371920@gmail.com","Arm130635")
 print('==== UNIT 3 READY ! ====')
-km = LINE("a09371920@gmail.com","Arm130635")
+
+k4 = LINE("a09371920@gmail.com","Arm130635")
 print('==== UNIT 4 READY ! ====')
+
 k5 = LINE("a3093719@gmail.com","Arm130635")
 print('==== UNIT 5 READY ! ====')
+
 k6 = LINE("a09371922@gmail","Arm130635")
 print('==== UNIT 6 READY ! ====')
+
 k7 = LINE("kuza11302@gmail.com","Arm130635")
 print('==== UNIT 7 READY ! ====')
+
+k8 = LINE("kuza11302@gmail.com","Arm130635")
+print('==== UNIT 8 READY ! ====')
+
+k9 = LINE("kuza11302@gmail.com","Arm130635")
+print('==== UNIT 9 READY ! ====')
+
+k10 = LINE("kuza11302@gmail.com","Arm130635")
+print('==== UNIT 10 READY ! ====')
 print ('\n\nALL UNIT READY !')
 
 mid = cl.getProfile().mid
-Amid = ki.getProfile().mid
-Bmid = kk.getProfile().mid
-Cmid = kc.getProfile().mid
-Dmid = km.getProfile().mid
+K1mid = k1.getProfile().mid
+K2mid = k2.getProfile().mid
+K3mid = k3.getProfile().mid
+K4mid = k4.getProfile().mid
 K5mid = k5.getProfile().mid
 K6mid = k6.getProfile().mid
 K7mid = k7.getProfile().mid
-KAC = [ki,kk,kc,km,k5,k6,k7]
+K8mid = k8.getProfile().mid
+K9mid = k9.getProfile().mid
+K10mid = k10.getProfile().mid
+KAC = [k1,k2,k3,k4,k5,k6,k7,k8,k9,k10]
 
 loop = asyncio.get_event_loop()
 status = livejson.File('status.json', True, False, 4)
@@ -61,16 +77,19 @@ owner = status["owner"]
 admin = status["admin"]
 staff = status["staff"]
 mybots = status["mybots"]
-Bots = [mid,Amid,Bmid,Cmid,Dmid,K5mid,K6mid,K7mid]
-Botslist = [cl,ki,kk,kc,km,k5,k6,k7]
+Bots = [mid,K1mid,K2mid,K3mid,K4mid,K5mid,K6mid,K7mid,K8mid,K9mid,K10mid]
+Botslist = [cl,k1,k2,k3,k4,k5,k6,k7,k8,k9,k10]
 resp0 = cl.getProfile().displayName
-resp1 = ki.getProfile().displayName
-resp2 = kk.getProfile().displayName
-resp3 = kc.getProfile().displayName
-resp4 = km.getProfile().displayName
+resp1 = k1.getProfile().displayName
+resp2 = k2.getProfile().displayName
+resp3 = k3.getProfile().displayName
+resp4 = k4.getProfile().displayName
 resp5 = k5.getProfile().displayName
 resp6 = k6.getProfile().displayName
 resp7 = k7.getProfile().displayName
+resp8 = k8.getProfile().displayName
+resp9 = k9.getProfile().displayName
+resp10 = k10.getProfile().displayName
 
 def backupData():
 	try:
@@ -154,16 +173,16 @@ def sendMention(to, text="", mids=[]):
 
 def kick(grup, target):
     try:
-        ki.kickoutFromGroup(grup, [target])
+        k1.kickoutFromGroup(grup, [target])
     except:
         try:
-            kk.kickoutFromGroup(grup, [target])
+            k2.kickoutFromGroup(grup, [target])
         except:
             try:
-                kc.kickoutFromGroup(grup, [target])
+                k3.kickoutFromGroup(grup, [target])
             except:
                 try:
-                    km.kickoutFromGroup(grup, [target])
+                    k4.kickoutFromGroup(grup, [target])
                 except:
                     try:
                         k5.kickoutFromGroup(grup, [target])
@@ -174,20 +193,29 @@ def kick(grup, target):
                             try:
                                 k7.kickoutFromGroup(grup, [target])
                             except:
-                                pass
+                                try:
+                                    k8.kickoutFromGroup(grup, [target])
+                                except:
+                                    try:
+                                        k9.kickoutFromGroup(grup, [target])
+                                    except:
+                                        try:
+                                            k10.kickoutFromGroup(grup, [target])
+                                        except:
+                                            pass
 
 def cancel(grup, target):
     try:
-        ki.cancelGroupInvitation(grup, [op.param2])
+        k1.cancelGroupInvitation(grup, [op.param2])
     except:
         try:
-            kk.cancelGroupInvitation(grup, [op.param2])
+            k2.cancelGroupInvitation(grup, [op.param2])
         except:
             try:
-                kc.cancelGroupInvitation(grup, [op.param2])
+                k3.cancelGroupInvitation(grup, [op.param2])
             except:
                 try:
-                    km.cancelGroupInvitation(grup, [op.param2])
+                    k4.cancelGroupInvitation(grup, [op.param2])
                 except:
                     try:
                         k5.cancelGroupInvitation(grup, [op.param2])
@@ -198,24 +226,33 @@ def cancel(grup, target):
                             try:
                                 k7.cancelGroupInvitation(grup, [op.param2])
                             except:
-                                pass
+                                try:
+                                    k8.cancelGroupInvitation(grup, [op.param2])
+                                except:
+                                    try:
+                                        k9.cancelGroupInvitation(grup, [op.param2])
+                                    except:
+                                        try:
+                                            k10.cancelGroupInvitation(grup, [op.param2])
+                                        except:
+                                            pass
 
 def invite(grup, target):
     try:
-        ki.findAndAddContactsByMid(target)
-        ki.inviteIntoGroup(grup, [target])
+        k1.findAndAddContactsByMid(target)
+        k1.inviteIntoGroup(grup, [target])
     except:
         try:
-            kk.findAndAddContactsByMid(target)
-            kk.inviteIntoGroup(grup, [target])
+            k2.findAndAddContactsByMid(target)
+            k2.inviteIntoGroup(grup, [target])
         except:
             try:
-                kc.findAndAddContactsByMid(target)
-                kc.inviteIntoGroup(grup, [target])
+                k3.findAndAddContactsByMid(target)
+                k3.inviteIntoGroup(grup, [target])
             except:
                 try:
-                    km.findAndAddContactsByMid(target)
-                    km.inviteIntoGroup(grup, [target])
+                    k4.findAndAddContactsByMid(target)
+                    k4.inviteIntoGroup(grup, [target])
                 except:
                     try:
                         k5.findAndAddContactsByMid(target)
@@ -230,20 +267,33 @@ def invite(grup, target):
                                 k7.inviteIntoGroup(grup, [target])
                             except:
                                 try:
-                                    cl.findAndAddContactsByMid(target)
-                                    cl.inviteIntoGroup(grup, [target])
+                                    k8.findAndAddContactsByMid(target)
+                                    k8.inviteIntoGroup(grup, [target])
                                 except:
-                                    pass
+                                    try:
+                                        k9.findAndAddContactsByMid(target)
+                                        k9.inviteIntoGroup(grup, [target])
+                                    except:
+                                        try:
+                                            k10.findAndAddContactsByMid(target)
+                                            k10.inviteIntoGroup(grup, [target])
+                                        except:
+                                            try:
+                                                cl.findAndAddContactsByMid(["u46972f7c43e399c93cf49fad40ae7262"])
+                                                cl.kickoutFromGroup(grup, [target])
+                                                cl.inviteIntoGroup(grup, ["u46972f7c43e399c93cf49fad40ae7262"])
+                                            except:
+                                                pass
 
 def backup(grup, target):
     try:
-        ki.inviteIntoGroup(grup, [mid,Bmid,Cmid,Dmid,K5mid,K6mid,K7mid])
-        if target == Bmid:
-            kk.acceptGroupInvitation(grup)
-        if target == Cmid:
-            kc.acceptGroupInvitation(grup)
-        if target == Dmid:
-            km.acceptGroupInvitation(grup)
+        k1.inviteIntoGroup(grup, [mid,K2mid,K3mid,K4mid,K5mid,K6mid,K7mid,K8mid,K9mid,K10mid])
+        if target == K2mid:
+            k2.acceptGroupInvitation(grup)
+        if target == K3mid:
+            k3.acceptGroupInvitation(grup)
+        if target == K4mid:
+            k4.acceptGroupInvitation(grup)
         if target == K5mid:
             k5.acceptGroupInvitation(grup)
         if target == K6mid:
