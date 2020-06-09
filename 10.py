@@ -66,7 +66,9 @@ K7mid = k7.getProfile().mid
 K8mid = k8.getProfile().mid
 K9mid = k9.getProfile().mid
 K10mid = k10.getProfile().mid
-KAC = [k1,k2,k3,k4,k5,k6,k7,k8,k9,k10]
+KAC10 = [k1,k2,k3,k4,k5,k6,k7,k8,k9,k10]
+KAC7 = [k1,k2,k3,k4,k5,k6,k7]
+KAC5 = [k1,k2,k3,k4,k5]
 
 loop = asyncio.get_event_loop()
 status = livejson.File('status.json', True, False, 4)
@@ -79,6 +81,10 @@ staff = status["staff"]
 mybots = status["mybots"]
 Bots = [mid,K1mid,K2mid,K3mid,K4mid,K5mid,K6mid,K7mid,K8mid,K9mid,K10mid]
 Botslist = [cl,k1,k2,k3,k4,k5,k6,k7,k8,k9,k10]
+Bot10 = [k1,k2,k3,k4,k5,k6,k7,k8,k9,k10]
+Bot7 = [k8,k9,k10]
+Bot5 = [k6,k7,k8,k9,k10]
+Bot1 = [cl]
 resp0 = cl.getProfile().displayName
 resp1 = k1.getProfile().displayName
 resp2 = k2.getProfile().displayName
@@ -672,22 +678,22 @@ def blacklist(target):
 
 def logspeed():
 	get_profile_time_start = time.time()
-	get_profile = ki.getProfile()
+	get_profile = k1.getProfile()
 	get_profile_time = time.time() - get_profile_time_start
 	get_profile_took = time.time() - get_profile_time_start
 	return "「 Bots Speed 」\n • Took : %.3fms\n • Taken: %.5f" % (get_profile_took,get_profile_time)
 	get_profile_time_start = time.time()
-	get_profile = kk.getProfile()
+	get_profile = k2.getProfile()
 	get_profile_time = time.time() - get_profile_time_start
 	get_profile_took = time.time() - get_profile_time_start
 	return "「 Bots Speed 」\n • Took : %.3fms\n • Taken: %.5f" % (get_profile_took,get_profile_time)
 	get_profile_time_start = time.time()
-	get_profile = kc.getProfile()
+	get_profile = k3.getProfile()
 	get_profile_time = time.time() - get_profile_time_start
 	get_profile_took = time.time() - get_profile_time_start
 	return "「 Bots Speed 」\n • Took : %.3fms\n • Taken: %.5f" % (get_profile_took,get_profile_time)
 	get_profile_time_start = time.time()
-	get_profile = km.getProfile()
+	get_profile = k4.getProfile()
 	get_profile_time = time.time() - get_profile_time_start
 	get_profile_took = time.time() - get_profile_time_start
 	return "「 Bots Speed 」\n • Took : %.3fms\n • Taken: %.5f" % (get_profile_took,get_profile_time)
@@ -703,6 +709,21 @@ def logspeed():
 	return "「 Bots Speed 」\n • Took : %.3fms\n • Taken: %.5f" % (get_profile_took,get_profile_time)
 	get_profile_time_start = time.time()
 	get_profile = k7.getProfile()
+	get_profile_time = time.time() - get_profile_time_start
+	get_profile_took = time.time() - get_profile_time_start
+	return "「 Bots Speed 」\n • Took : %.3fms\n • Taken: %.5f" % (get_profile_took,get_profile_time)
+	get_profile_time_start = time.time()
+	get_profile = k8.getProfile()
+	get_profile_time = time.time() - get_profile_time_start
+	get_profile_took = time.time() - get_profile_time_start
+	return "「 Bots Speed 」\n • Took : %.3fms\n • Taken: %.5f" % (get_profile_took,get_profile_time)
+	get_profile_time_start = time.time()
+	get_profile = k9.getProfile()
+	get_profile_time = time.time() - get_profile_time_start
+	get_profile_took = time.time() - get_profile_time_start
+	return "「 Bots Speed 」\n • Took : %.3fms\n • Taken: %.5f" % (get_profile_took,get_profile_time)
+	get_profile_time_start = time.time()
+	get_profile = k10.getProfile()
 	get_profile_time = time.time() - get_profile_time_start
 	get_profile_took = time.time() - get_profile_time_start
 	return "「 Bots Speed 」\n • Took : %.3fms\n • Taken: %.5f" % (get_profile_took,get_profile_time)
@@ -760,26 +781,26 @@ def RECEIVE_MESSAGE(op):
 					del settings["sentinelPict"][mid]
 					cl.updateProfilePicture(path0)
 					cl.sendReplyMessage(reply,receiver,"「 Profile Picture 」\nSuccess Change Profile Picture")
-				if Amid in settings["sentinelPict"]:
-					path1 = ki.downloadObjectMsg(msg.id)
-					del settings["sentinelPict"][Amid]
-					ki.updateProfilePicture(path1)
-					ki.sendReplyMessage(reply,receiver,"「 Profile Picture 」\nSuccess Change Profile Picture")
-				if Bmid in settings["sentinelPict"]:
-					path2 = kk.downloadObjectMsg(msg.id)
-					del settings["sentinelPict"][Bmid]
-					kk.updateProfilePicture(path2)
-					kk.sendReplyMessage(reply,receiver,"「 Profile Picture 」\nSuccess Change Profile Picture")
-				if Cmid in settings["sentinelPict"]:
-					path3 = kc.downloadObjectMsg(msg.id)
-					del settings["sentinelPict"][Cmid]
-					kc.updateProfilePicture(path3)
-					kc.sendReplyMessage(reply,receiver,"「 Profile Picture 」\nSuccess Change Profile Picture")
-				if Dmid in settings["sentinelPict"]:
-					path4 = km.downloadObjectMsg(msg.id)
-					del settings["sentinelPict"][Dmid]
-					km.updateProfilePicture(path4)
-					km.sendReplyMessage(reply,receiver,"「 Profile Picture 」\nSuccess Change Profile Picture")
+				if K1mid in settings["sentinelPict"]:
+					path1 = k1.downloadObjectMsg(msg.id)
+					del settings["sentinelPict"][K1mid]
+					k1.updateProfilePicture(path1)
+					k1.sendReplyMessage(reply,receiver,"「 Profile Picture 」\nSuccess Change Profile Picture")
+				if K2mid in settings["sentinelPict"]:
+					path2 = k2.downloadObjectMsg(msg.id)
+					del settings["sentinelPict"][K2mid]
+					k2.updateProfilePicture(path2)
+					k2.sendReplyMessage(reply,receiver,"「 Profile Picture 」\nSuccess Change Profile Picture")
+				if K3mid in settings["sentinelPict"]:
+					path3 = k3.downloadObjectMsg(msg.id)
+					del settings["sentinelPict"][K3mid]
+					k3.updateProfilePicture(path3)
+					k3.sendReplyMessage(reply,receiver,"「 Profile Picture 」\nSuccess Change Profile Picture")
+				if K4mid in settings["sentinelPict"]:
+					path4 = k4.downloadObjectMsg(msg.id)
+					del settings["sentinelPict"][K4mid]
+					k4.updateProfilePicture(path4)
+					k4.sendReplyMessage(reply,receiver,"「 Profile Picture 」\nSuccess Change Profile Picture")
 				if K5mid in settings["sentinelPict"]:
 					path5 = k5.downloadObjectMsg(msg.id)
 					del settings["sentinelPict"][K5mid]
@@ -795,6 +816,21 @@ def RECEIVE_MESSAGE(op):
 					del settings["sentinelPict"][K7mid]
 					k7.updateProfilePicture(path7)
 					k7.sendReplyMessage(reply,receiver,"「 Profile Picture 」\nSuccess Change Profile Picture")
+				if K8mid in settings["sentinelPict"]:
+					path8 = k8.downloadObjectMsg(msg.id)
+					del settings["sentinelPict"][K8mid]
+					k8.updateProfilePicture(path8)
+					k8.sendReplyMessage(reply,receiver,"「 Profile Picture 」\nSuccess Change Profile Picture")
+				if K9mid in settings["sentinelPict"]:
+					path9 = k9.downloadObjectMsg(msg.id)
+					del settings["sentinelPict"][K9mid]
+					k9.updateProfilePicture(path9)
+					k9.sendReplyMessage(reply,receiver,"「 Profile Picture 」\nSuccess Change Profile Picture")
+				if K10mid in settings["sentinelPict"]:
+					path10 = k10.downloadObjectMsg(msg.id)
+					del settings["sentinelPict"][K10mid]
+					k10.updateProfilePicture(path10)
+					k10.sendReplyMessage(reply,receiver,"「 Profile Picture 」\nSuccess Change Profile Picture")
 		if msg.contentType == 0:
 			if text is None:
 				return
@@ -818,34 +854,52 @@ def RECEIVE_MESSAGE(op):
 							u.sendReplyMessage(reply,receiver,"「 All Chat Cleared 」")
 				elif uwew == "b":
 					if sender in creator or sender in owner or sender in admin or sender in staff:
-						ki.sendReplyMessage(reply,receiver,"「 {} 」".format(resp1))
-						kk.sendReplyMessage(reply,receiver,"「 {} 」".format(resp2))
-						kc.sendReplyMessage(reply,receiver,"「 {} 」".format(resp3))
-						km.sendReplyMessage(reply,receiver,"「 {} 」".format(resp4))
-						k5.sendReplyMessage(reply,receiver,"「 {} 」".format(resp5))
-						k6.sendReplyMessage(reply,receiver,"「 {} 」".format(resp6))
-						k7.sendReplyMessage(reply,receiver,"「 {} 」".format(resp7))
+						k1.sendReplyMessage(reply,receiver,"「 {} อยู่ค่ะเจ้านาย..」".format(resp1))
+						k2.sendReplyMessage(reply,receiver,"「 {} อยู่ค่ะเจ้านาย..」".format(resp2))
+						k3.sendReplyMessage(reply,receiver,"「 {} อยู่ค่ะเจ้านาย..」".format(resp3))
+						k4.sendReplyMessage(reply,receiver,"「 {} อยู่ค่ะเจ้านาย..」".format(resp4))
+						k5.sendReplyMessage(reply,receiver,"「 {} อยู่ค่ะเจ้านาย..」".format(resp5))
+						k6.sendReplyMessage(reply,receiver,"「 {} อยู่ค่ะเจ้านาย..」".format(resp6))
+						k7.sendReplyMessage(reply,receiver,"「 {} อยู่ค่ะเจ้านาย..」".format(resp7))
+						k8.sendReplyMessage(reply,receiver,"「 {} อยู่ค่ะเจ้านาย..」".format(resp8))
+						k9.sendReplyMessage(reply,receiver,"「 {} อยู่ค่ะเจ้านาย..」".format(resp9))
+						k10.sendReplyMessage(reply,receiver,"「 {} อยู่ค่ะเจ้านาย..」".format(resp10))
 				elif uwew == "sp":
 					if sender in creator or sender in owner or sender in admin or sender in staff:
-						ki.sendReplyMessage(reply,receiver,logspeed())
-						kk.sendReplyMessage(reply,receiver,logspeed())
-						kc.sendReplyMessage(reply,receiver,logspeed())
-						km.sendReplyMessage(reply,receiver,logspeed())
+						k1.sendReplyMessage(reply,receiver,logspeed())
+						k2.sendReplyMessage(reply,receiver,logspeed())
+						k3.sendReplyMessage(reply,receiver,logspeed())
+						k4.sendReplyMessage(reply,receiver,logspeed())
 						k5.sendReplyMessage(reply,receiver,logspeed())
 						k6.sendReplyMessage(reply,receiver,logspeed())
 						k7.sendReplyMessage(reply,receiver,logspeed())
+						k8.sendReplyMessage(reply,receiver,logspeed())
+						k9.sendReplyMessage(reply,receiver,logspeed())
+						k10.sendReplyMessage(reply,receiver,logspeed())
 				elif uwew == "bye":
 					if sender in creator or sender in owner or sender in admin or sender in staff:
-						for bot in Botslist:
-							bot.leaveGroup(receiver)
-				elif uwew == "ivb":
+						for cl in Bot1:
+							cl.leaveGroup(receiver)
+				elif uwew == "out":
+					if sender in creator or sender in owner or sender in admin or sender in staff:
+						for b10 in Botslist:
+							b10.leaveGroup(receiver)
+				elif uwew == "เล่น7":
+					if sender in creator or sender in owner or sender in admin or sender in staff:
+						for b7 in Bot7:
+							b7.leaveGroup(receiver)
+				elif uwew == "เล่น5":
+					if sender in creator or sender in owner or sender in admin or sender in staff:
+						for b5 in Bot5:
+							b5.leaveGroup(receiver)
+				elif uwew == "in7":
 					if sender in creator or sender in owner or sender in admin or sender in staff:
 						try:
-							cl.inviteIntoGroup(receiver, [Amid,Bmid,Cmid,Dmid,K5mid,K6mid,K7mid])
-							ki.acceptGroupInvitation(receiver)
-							kk.acceptGroupInvitation(receiver)
-							kc.acceptGroupInvitation(receiver)
-							km.acceptGroupInvitation(receiver)
+							cl.inviteIntoGroup(receiver, [K1mid,K2mid,K3mid,K4mid,K5mid,K6mid,K7mid])
+							k1.acceptGroupInvitation(receiver)
+							k2.acceptGroupInvitation(receiver)
+							k3.acceptGroupInvitation(receiver)
+							k4.acceptGroupInvitation(receiver)
 							k5.acceptGroupInvitation(receiver)
 							k6.acceptGroupInvitation(receiver)
 							k7.acceptGroupInvitation(receiver)
@@ -855,8 +909,53 @@ def RECEIVE_MESSAGE(op):
 								G.preventedJoinByTicket = False
 								cl.updateGroup(G)
 								links = cl.reissueGroupTicket(receiver)
+								for bot7 in KAC7:
+									bot7.acceptGroupInvitationByTicketV2(receiver,links)
+								G = cl.getGroup(receiver)
+								G.preventedJoinByTicket = True
+								cl.updateGroup(G)
+				elif uwew == "in5":
+					if sender in creator or sender in owner or sender in admin or sender in staff:
+						try:
+							cl.inviteIntoGroup(receiver, [K1mid,K2mid,K3mid,K4mid,K5mid])
+							k1.acceptGroupInvitation(receiver)
+							k2.acceptGroupInvitation(receiver)
+							k3.acceptGroupInvitation(receiver)
+							k4.acceptGroupInvitation(receiver)
+							k5.acceptGroupInvitation(receiver)
+						except TalkException as talk_error:
+							if talk_error.code == 35:
+								G = cl.getGroup(receiver)
+								G.preventedJoinByTicket = False
+								cl.updateGroup(G)
+								links = cl.reissueGroupTicket(receiver)
+								for bot5 in KAC5:
+									bot5.acceptGroupInvitationByTicketV2(receiver,links)
+								G = cl.getGroup(receiver)
+								G.preventedJoinByTicket = True
+								cl.updateGroup(G)
+				elif uwew == "in":
+					if sender in creator or sender in owner or sender in admin or sender in staff:
+						try:
+							cl.inviteIntoGroup(receiver, [K1mid,K2mid,K3mid,K4mid,K5mid,K6mid,K7mid,K8mid,K9mid,K10mid])
+							k1.acceptGroupInvitation(receiver)
+							k2.acceptGroupInvitation(receiver)
+							k3.acceptGroupInvitation(receiver)
+							k4.acceptGroupInvitation(receiver)
+							k5.acceptGroupInvitation(receiver)
+							k6.acceptGroupInvitation(receiver)
+							k7.acceptGroupInvitation(receiver)
+							k8.acceptGroupInvitation(receiver)
+							k9.acceptGroupInvitation(receiver)
+							k10.acceptGroupInvitation(receiver)
+						except TalkException as talk_error:
+							if talk_error.code == 35:
+								G = cl.getGroup(receiver)
+								G.preventedJoinByTicket = False
+								cl.updateGroup(G)
+								links = cl.reissueGroupTicket(receiver)
 								for bot in KAC:
-									bot.acceptGroupInvitationByTicket(receiver,links)
+									bot.acceptGroupInvitationByTicketV2(receiver,links)
 								G = cl.getGroup(receiver)
 								G.preventedJoinByTicket = True
 								cl.updateGroup(G)
@@ -1121,42 +1220,42 @@ def RECEIVE_MESSAGE(op):
 							cl.sendReplyMessage(reply,receiver,"「 Lock Group 」\n" + uwew)
 				elif uwew.startswith("cek"):
 					if sender in creator or sender in owner or sender in admin or sender in staff:
-						try:ki.inviteIntoGroup(to, [Amid]);has = "OK"
+						try:k1.inviteIntoGroup(to, [K1mid]);has = "OK"
 						except:has = "NOT"
-						try:ki.kickoutFromGroup(to, [Amid]);has1 = "OK"
+						try:k1.kickoutFromGroup(to, [K1mid]);has1 = "OK"
 						except:has1 = "NOT"
 						if has == "OK":sil = "OK.✔"
 						else:sil = "Down!"
 						if has1 == "OK":sil1 = "OK.✔"
 						else:sil1 = "Down!"
-						ki.sendReplyMessage(reply, receiver, "「 Bots Status 」\n • Invite : {}\n • Kick : {}".format(sil1,sil))
-						try:kk.inviteIntoGroup(to, [Bmid]);has = "OK"
+						k1.sendReplyMessage(reply, receiver, "「 Bots Status 」\n • Invite : {}\n • Kick : {}".format(sil1,sil))
+						try:k2.inviteIntoGroup(to, [K2mid]);has = "OK"
 						except:has = "NOT"
-						try:kk.kickoutFromGroup(to, [Bmid]);has1 = "OK"
+						try:k2.kickoutFromGroup(to, [K2mid]);has1 = "OK"
 						except:has1 = "NOT"
 						if has == "OK":sil = "OK.✔"
 						else:sil = "Down!"
 						if has1 == "OK":sil1 = "OK.✔"
 						else:sil1 = "Down!"
-						kk.sendReplyMessage(reply, receiver, "「 Bots Status 」\n • Invite : {}\n • Kick : {}".format(sil1,sil))
-						try:kc.inviteIntoGroup(to, [Cmid]);has = "OK"
+						k2.sendReplyMessage(reply, receiver, "「 Bots Status 」\n • Invite : {}\n • Kick : {}".format(sil1,sil))
+						try:k3.inviteIntoGroup(to, [K3mid]);has = "OK"
 						except:has = "NOT"
-						try:kc.kickoutFromGroup(to, [Cmid]);has1 = "OK"
+						try:k3.kickoutFromGroup(to, [K3mid]);has1 = "OK"
 						except:has1 = "NOT"
 						if has == "OK":sil = "OK.✔"
 						else:sil = "Down!"
 						if has1 == "OK":sil1 = "OK.✔"
 						else:sil1 = "Down!"
-						kc.sendReplyMessage(reply, receiver, "「 Bots Status 」\n • Invite : {}\n • Kick : {}".format(sil1,sil))
-						try:km.inviteIntoGroup(to, [Dmid]);has = "OK"
+						k3.sendReplyMessage(reply, receiver, "「 Bots Status 」\n • Invite : {}\n • Kick : {}".format(sil1,sil))
+						try:k4.inviteIntoGroup(to, [K4mid]);has = "OK"
 						except:has = "NOT"
-						try:km.kickoutFromGroup(to, [Dmid]);has1 = "OK"
+						try:k4.kickoutFromGroup(to, [K4mid]);has1 = "OK"
 						except:has1 = "NOT"
 						if has == "OK":sil = "OK.✔"
 						else:sil = "Down!"
 						if has1 == "OK":sil1 = "OK.✔"
 						else:sil1 = "Down!"
-						km.sendReplyMessage(reply, receiver, "「 Bots Status 」\n • Invite : {}\n • Kick : {}".format(sil1,sil))
+						k4.sendReplyMessage(reply, receiver, "「 Bots Status 」\n • Invite : {}\n • Kick : {}".format(sil1,sil))
 						try:k5.inviteIntoGroup(to, [K5mid]);has = "OK"
 						except:has = "NOT"
 						try:k5.kickoutFromGroup(to, [K5mid]);has1 = "OK"
@@ -1184,6 +1283,33 @@ def RECEIVE_MESSAGE(op):
 						if has1 == "OK":sil1 = "OK.✔"
 						else:sil1 = "Down!"
 						k7.sendReplyMessage(reply, receiver, "「 Bots Status 」\n • Invite : {}\n • Kick : {}".format(sil1,sil))
+						try:k8.inviteIntoGroup(to, [K8mid]);has = "OK"
+						except:has = "NOT"
+						try:k8.kickoutFromGroup(to, [K8mid]);has1 = "OK"
+						except:has1 = "NOT"
+						if has == "OK":sil = "OK.✔"
+						else:sil = "Down!"
+						if has1 == "OK":sil1 = "OK.✔"
+						else:sil1 = "Down!"
+						k8.sendReplyMessage(reply, receiver, "「 Bots Status 」\n • Invite : {}\n • Kick : {}".format(sil1,sil))
+						try:k9.inviteIntoGroup(to, [K9mid]);has = "OK"
+						except:has = "NOT"
+						try:k9.kickoutFromGroup(to, [K9mid]);has1 = "OK"
+						except:has1 = "NOT"
+						if has == "OK":sil = "OK.✔"
+						else:sil = "Down!"
+						if has1 == "OK":sil1 = "OK.✔"
+						else:sil1 = "Down!"
+						k9.sendReplyMessage(reply, receiver, "「 Bots Status 」\n • Invite : {}\n • Kick : {}".format(sil1,sil))
+						try:k10.inviteIntoGroup(to, [K10mid]);has = "OK"
+						except:has = "NOT"
+						try:k10.kickoutFromGroup(to, [K10mid]);has1 = "OK"
+						except:has1 = "NOT"
+						if has == "OK":sil = "OK.✔"
+						else:sil = "Down!"
+						if has1 == "OK":sil1 = "OK.✔"
+						else:sil1 = "Down!"
+						k10.sendReplyMessage(reply, receiver, "「 Bots Status 」\n • Invite : {}\n • Kick : {}".format(sil1,sil))
 				elif uwew.startswith("ชื่อ0 "):
 					if sender in creator or sender in owner:
 						sep = text.split(" ")
@@ -1200,45 +1326,45 @@ def RECEIVE_MESSAGE(op):
 						sep = text.split(" ")
 						name = text.replace(sep[0] + " ","")
 						if len(name) <= 99999999:
-							dname1 = ki.getProfile()
+							dname1 = k1.getProfile()
 							dname1.displayName = name
-							ki.updateProfile(dname1)
-							ki.sendReplyMessage(reply,receiver,"「 Display Name 」\nDisplay Name Changed To {}".format(str(name)))
+							k1.updateProfile(dname1)
+							k1.sendReplyMessage(reply,receiver,"「 Display Name 」\nDisplay Name Changed To {}".format(str(name)))
 					else:
-						ki.sendReplyMessage(reply,receiver,"「 Display Name 」\nAccess Limited For Owner Only -_-")
+						k1.sendReplyMessage(reply,receiver,"「 Display Name 」\nAccess Limited For Owner Only -_-")
 				elif uwew.startswith("ชื่อ2 "):
 					if sender in creator or sender in owner:
 						sep = text.split(" ")
 						name = text.replace(sep[0] + " ","")
 						if len(name) <= 99999999:
-							dname2 = kk.getProfile()
+							dname2 = k2.getProfile()
 							dname2.displayName = name
-							kk.updateProfile(dname2)
-							kk.sendReplyMessage(reply,receiver,"「 Display Name 」\nDisplay Name Changed To {}".format(str(name)))
+							k2.updateProfile(dname2)
+							k2.sendReplyMessage(reply,receiver,"「 Display Name 」\nDisplay Name Changed To {}".format(str(name)))
 					else:
-						kk.sendReplyMessage(reply,receiver,"「 Display Name 」\nAccess Limited For Owner Only -_-")
+						k2.sendReplyMessage(reply,receiver,"「 Display Name 」\nAccess Limited For Owner Only -_-")
 				elif uwew.startswith("ชื่อ3 "):
 					if sender in creator or sender in owner:
 						sep = text.split(" ")
 						name = text.replace(sep[0] + " ","")
 						if len(name) <= 99999999:
-							dname3 = kc.getProfile()
+							dname3 = k3.getProfile()
 							dname3.displayName = name
-							kc.updateProfile(dname3)
-							kc.sendReplyMessage(reply,receiver,"「 Display Name 」\nDisplay Name Changed To {}".format(str(name)))
+							k3.updateProfile(dname3)
+							k3.sendReplyMessage(reply,receiver,"「 Display Name 」\nDisplay Name Changed To {}".format(str(name)))
 					else:
-						kc.sendReplyMessage(reply,receiver,"「 Display Name 」\nAccess Limited For Owner Only -_-")
+						k3.sendReplyMessage(reply,receiver,"「 Display Name 」\nAccess Limited For Owner Only -_-")
 				elif uwew.startswith("ชื่อ4 "):
 					if sender in creator or sender in owner:
 						sep = text.split(" ")
 						name = text.replace(sep[0] + " ","")
 						if len(name) <= 99999999:
-							dname4 = km.getProfile()
+							dname4 = k4.getProfile()
 							dname4.displayName = name
-							km.updateProfile(dname4)
-							km.sendReplyMessage(reply,receiver,"「 Display Name 」\nDisplay Name Changed To {}".format(str(name)))
+							k4.updateProfile(dname4)
+							k4.sendReplyMessage(reply,receiver,"「 Display Name 」\nDisplay Name Changed To {}".format(str(name)))
 					else:
-						km.sendReplyMessage(reply,receiver,"「 Display Name 」\nAccess Limited For Owner Only -_-")
+						k4.sendReplyMessage(reply,receiver,"「 Display Name 」\nAccess Limited For Owner Only -_-")
 				elif uwew.startswith("ชื่อ5 "):
 					if sender in creator or sender in owner:
 						sep = text.split(" ")
@@ -1272,6 +1398,39 @@ def RECEIVE_MESSAGE(op):
 							k7.sendReplyMessage(reply,receiver,"「 Display Name 」\nDisplay Name Changed To {}".format(str(name)))
 					else:
 						k7.sendReplyMessage(reply,receiver,"「 Display Name 」\nAccess Limited For Owner Only -_-")
+				elif uwew.startswith("ชื่อ8 "):
+					if sender in creator or sender in owner:
+						sep = text.split(" ")
+						name = text.replace(sep[0] + " ","")
+						if len(name) <= 99999999:
+							dname8 = k8.getProfile()
+							dname8.displayName = name
+							k8.updateProfile(dname8)
+							k8.sendReplyMessage(reply,receiver,"「 Display Name 」\nDisplay Name Changed To {}".format(str(name)))
+					else:
+						k8.sendReplyMessage(reply,receiver,"「 Display Name 」\nAccess Limited For Owner Only -_-")
+				elif uwew.startswith("ชื่อ9 "):
+					if sender in creator or sender in owner:
+						sep = text.split(" ")
+						name = text.replace(sep[0] + " ","")
+						if len(name) <= 99999999:
+							dname9 = k9.getProfile()
+							dname9.displayName = name
+							k9.updateProfile(dname9)
+							k9.sendReplyMessage(reply,receiver,"「 Display Name 」\nDisplay Name Changed To {}".format(str(name)))
+					else:
+						k9.sendReplyMessage(reply,receiver,"「 Display Name 」\nAccess Limited For Owner Only -_-")
+				elif uwew.startswith("ชื่อ10 "):
+					if sender in creator or sender in owner:
+						sep = text.split(" ")
+						name = text.replace(sep[0] + " ","")
+						if len(name) <= 99999999:
+							dname10 = k10.getProfile()
+							dname10.displayName = name
+							k10.updateProfile(dname10)
+							k10.sendReplyMessage(reply,receiver,"「 Display Name 」\nDisplay Name Changed To {}".format(str(name)))
+					else:
+						k10.sendReplyMessage(reply,receiver,"「 Display Name 」\nAccess Limited For Owner Only -_-")
 				elif uwew.startswith("ชื่อทั้งหมด "):
 					if sender in creator or sender in owner:
 						sep = text.split(" ")
