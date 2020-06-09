@@ -2192,25 +2192,25 @@ async def cerberusRun():
 				pass
 			elif "log_out" in error.lower():
 				backupData()
-				time.sleep(8)
+				time.sleep(11)
 				python = sys.executable
 				os.execl(python, python, *sys.argv)
 			elif "ShouldSyncException" in error:
 				backupData()
 				logError(error)
-				time.sleep(8)
+				time.sleep(11)
 				python3 = sys.executable
 				os.execl(python3, python3, *sys.argv)
 			elif "TalkException(code=8, reason='LOG_OUT', parameterMap=None)" in error:
 				backupData()
 				logError(error)
-				time.sleep(8)
+				time.sleep(11)
 				python = sys.executable
 				os.execl(python, python, *sys.argv)
 			elif "TalkException(code=20, reason='[UNCAUGHT_INTERNAL_ERROR] [UNCAUGHT_INTERNAL_ERROR] Login from secondary user blocked by userHash + clientType 8cb91561b450b38ccf0119fc4f5e37a3MA', parameterMap=None)" in error:
 				backupData()
 				logError(error)
-				time.sleep(8)
+				time.sleep(11)
 				python = sys.executable
 				os.execl(python, python, *sys.argv)
 			else:
