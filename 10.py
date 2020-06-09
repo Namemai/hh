@@ -290,143 +290,344 @@ def backup(grup, target):
         k1.inviteIntoGroup(grup, [mid,K2mid,K3mid,K4mid,K5mid,K6mid,K7mid,K8mid,K9mid,K10mid])
         if target == K2mid:
             k2.acceptGroupInvitation(grup)
+            k2.kickoutFromGroup(grup, [op.param2])
         if target == K3mid:
             k3.acceptGroupInvitation(grup)
+            k3.kickoutFromGroup(grup, [op.param2])
         if target == K4mid:
             k4.acceptGroupInvitation(grup)
+            k4.kickoutFromGroup(grup, [op.param2])
         if target == K5mid:
             k5.acceptGroupInvitation(grup)
+            k5.kickoutFromGroup(grup, [op.param2])
         if target == K6mid:
             k6.acceptGroupInvitation(grup)
+            k6.kickoutFromGroup(grup, [op.param2])
         if target == K7mid:
             k7.acceptGroupInvitation(grup)
+            k7.kickoutFromGroup(grup, [op.param2])
+        if target == K8mid:
+            k8.acceptGroupInvitation(grup)
+            k8.kickoutFromGroup(grup, [op.param2])
+        if target == K9mid:
+            k9.acceptGroupInvitation(grup)
+            k9.kickoutFromGroup(grup, [op.param2])
+        if target == K10mid:
+            k10.acceptGroupInvitation(grup)
+            k10.kickoutFromGroup(grup, [op.param2])
         if target == mid:
             cl.acceptGroupInvitation(grup)
     except:
         try:
-            kk.inviteIntoGroup(grup, [mid,Amid,Cmid,Dmid,K5mid,K6mid,K7mid])
-            if target == Amid:
-                ki.acceptGroupInvitation(grup)
-            if target == Cmid:
-                kc.acceptGroupInvitation(grup)
-            if target == Dmid:
-                km.acceptGroupInvitation(grup)
+            k2.inviteIntoGroup(grup, [mid,K1mid,K3mid,K4mid,K5mid,K6mid,K7mid,K8mid,K9mid,K10mid])
+            if target == K1mid:
+                k1.acceptGroupInvitation(grup)
+                k1.kickoutFromGroup(grup, [op.param2])
+            if target == K3mid:
+                k3.acceptGroupInvitation(grup)
+                k3.kickoutFromGroup(grup, [op.param2])
+            if target == K4mid:
+                k4.acceptGroupInvitation(grup)
+                k4.kickoutFromGroup(grup, [op.param2])
             if target == K5mid:
                 k5.acceptGroupInvitation(grup)
+                k5.kickoutFromGroup(grup, [op.param2])
             if target == K6mid:
                 k6.acceptGroupInvitation(grup)
+                k6.kickoutFromGroup(grup, [op.param2])
             if target == K7mid:
                 k7.acceptGroupInvitation(grup)
+                k7.kickoutFromGroup(grup, [op.param2])
+            if target == K8mid:
+                k8.acceptGroupInvitation(grup)
+                k8.kickoutFromGroup(grup, [op.param2])
+            if target == K9mid:
+                k9.acceptGroupInvitation(grup)
+                k9.kickoutFromGroup(grup, [op.param2])
+            if target == K10mid:
+                k10.acceptGroupInvitation(grup)
+                k10.kickoutFromGroup(grup, [op.param2])
             if target == mid:
                 cl.acceptGroupInvitation(grup)
         except:
             try:
-                kc.inviteIntoGroup(grup, [mid,Amid,Bmid,Dmid,K5mid,K6mid,K7mid])
-                if target == Amid:
-                    ki.acceptGroupInvitation(grup)
-                if target == Bmid:
-                    kk.acceptGroupInvitation(grup)
-                if target == Dmid:
-                    km.acceptGroupInvitation(grup)
+                k3.inviteIntoGroup(grup, [mid,K1mid,K2mid,K4mid,K5mid,K6mid,K7mid,K8mid,K9mid,K10mid])
+                if target == K1mid:
+                    k1.acceptGroupInvitation(grup)
+                    k1.kickoutFromGroup(grup, [op.param2])
+                if target == K2mid:
+                    k2.acceptGroupInvitation(grup)
+                    k2.kickoutFromGroup(grup, [op.param2])
+                if target == K4mid:
+                    k4.acceptGroupInvitation(grup)
+                    k4.kickoutFromGroup(grup, [op.param2])
                 if target == K5mid:
                     k5.acceptGroupInvitation(grup)
+                    k5.kickoutFromGroup(grup, [op.param2])
                 if target == K6mid:
                     k6.acceptGroupInvitation(grup)
+                    k6.kickoutFromGroup(grup, [op.param2])
                 if target == K7mid:
                     k7.acceptGroupInvitation(grup)
+                    k7.kickoutFromGroup(grup, [op.param2])
+                if target == K8mid:
+                    k8.acceptGroupInvitation(grup)
+                    k8.kickoutFromGroup(grup, [op.param2])
+                if target == K9mid:
+                    k9.acceptGroupInvitation(grup)
+                    k9.kickoutFromGroup(grup, [op.param2])
+                if target == K10mid:
+                    k10.acceptGroupInvitation(grup)
+                    k10.kickoutFromGroup(grup, [op.param2])
                 if target == mid:
                     cl.acceptGroupInvitation(grup)
             except:
                 try:
-                    km.inviteIntoGroup(grup, [mid,Amid,Bmid,Cmid,K5mid,K6mid,K7mid])
-                    if target == Amid:
-                        ki.acceptGroupInvitation(grup)
-                    if target == Bmid:
-                        kk.acceptGroupInvitation(grup)
-                    if target == Cmid:
-                        kc.acceptGroupInvitation(grup)
+                    k4.inviteIntoGroup(grup, [mid,K1mid,K2mid,K3mid,K5mid,K6mid,K7mid,K8mid,K9mid,K10mid])
+                    if target == K1mid:
+                        k1.acceptGroupInvitation(grup)
+                        k1.kickoutFromGroup(grup, [op.param2])
+                    if target == K2mid:
+                        k2.acceptGroupInvitation(grup)
+                        k2.kickoutFromGroup(grup, [op.param2])
+                    if target == K3mid:
+                        k3.acceptGroupInvitation(grup)
+                        k3.kickoutFromGroup(grup, [op.param2])
                     if target == K5mid:
                         k5.acceptGroupInvitation(grup)
+                        k5.kickoutFromGroup(grup, [op.param2])
                     if target == K6mid:
                         k6.acceptGroupInvitation(grup)
+                        k6.kickoutFromGroup(grup, [op.param2])
                     if target == K7mid:
                         k7.acceptGroupInvitation(grup)
+                        k7.kickoutFromGroup(grup, [op.param2])
+                    if target == K8mid:
+                        k8.acceptGroupInvitation(grup)
+                        k8.kickoutFromGroup(grup, [op.param2])
+                    if target == K9mid:
+                        k9.acceptGroupInvitation(grup)
+                        k9.kickoutFromGroup(grup, [op.param2])
+                    if target == K10mid:
+                        k10.acceptGroupInvitation(grup)
+                        k10.kickoutFromGroup(grup, [op.param2])
                     if target == mid:
                         cl.acceptGroupInvitation(grup)
                 except:
                     try:
-                        k5.inviteIntoGroup(grup, [mid,Amid,Bmid,Cmid,Dmid,K6mid,K7mid])
-                        if target == Amid:
-                            ki.acceptGroupInvitation(grup)
-                        if target == Bmid:
-                            kk.acceptGroupInvitation(grup)
-                        if target == Cmid:
-                            kc.acceptGroupInvitation(grup)
-                        if target == Dmid:
-                            km.acceptGroupInvitation(grup)
+                        k5.inviteIntoGroup(grup, [mid,K1mid,K2mid,K3mid,K4mid,K6mid,K7mid,K8mid,K9mid,K10mid])
+                        if target == K1mid:
+                            k1.acceptGroupInvitation(grup)
+                            k1.kickoutFromGroup(grup, [op.param2])
+                        if target == K2mid:
+                            k2.acceptGroupInvitation(grup)
+                            k2.kickoutFromGroup(grup, [op.param2])
+                        if target == K3mid:
+                            k3.acceptGroupInvitation(grup)
+                            k3.kickoutFromGroup(grup, [op.param2])
+                        if target == K4mid:
+                            k4.acceptGroupInvitation(grup)
+                            k4.kickoutFromGroup(grup, [op.param2])
                         if target == K6mid:
                             k6.acceptGroupInvitation(grup)
+                            k6.kickoutFromGroup(grup, [op.param2])
                         if target == K7mid:
                             k7.acceptGroupInvitation(grup)
+                            k7.kickoutFromGroup(grup, [op.param2])
+                        if target == K8mid:
+                            k8.acceptGroupInvitation(grup)
+                            k8.kickoutFromGroup(grup, [op.param2])
+                        if target == K9mid:
+                            k9.acceptGroupInvitation(grup)
+                            k9.kickoutFromGroup(grup, [op.param2])
+                        if target == K10mid:
+                            k10.acceptGroupInvitation(grup)
+                            k10.kickoutFromGroup(grup, [op.param2])
                         if target == mid:
                             cl.acceptGroupInvitation(grup)
                     except:
                         try:
-                            k6.inviteIntoGroup(grup, [mid,Amid,Bmid,Cmid,Dmid,K5mid,K7mid])
-                            if target == Amid:
-                                ki.acceptGroupInvitation(grup)
-                            if target == Bmid:
-                                kk.acceptGroupInvitation(grup)
-                            if target == Cmid:
-                                kc.acceptGroupInvitation(grup)
-                            if target == Dmid:
-                                km.acceptGroupInvitation(grup)
+                            k6.inviteIntoGroup(grup, [mid,K1mid,K2mid,K3mid,K4mid,K5mid,K7mid,K8mid,K9mid,K10mid])
+                            if target == K1mid:
+                                k1.acceptGroupInvitation(grup)
+                                k1.kickoutFromGroup(grup, [op.param2])
+                            if target == K2mid:
+                                k2.acceptGroupInvitation(grup)
+                                k2.kickoutFromGroup(grup, [op.param2])
+                            if target == K3mid:
+                                k3.acceptGroupInvitation(grup)
+                                k3.kickoutFromGroup(grup, [op.param2])
+                            if target == K4mid:
+                                k4.acceptGroupInvitation(grup)
+                                k4.kickoutFromGroup(grup, [op.param2])
                             if target == K5mid:
                                 k5.acceptGroupInvitation(grup)
+                                k5.kickoutFromGroup(grup, [op.param2])
                             if target == K7mid:
                                 k7.acceptGroupInvitation(grup)
+                                k7.kickoutFromGroup(grup, [op.param2])
+                            if target == K8mid:
+                                k8.acceptGroupInvitation(grup)
+                                k8.kickoutFromGroup(grup, [op.param2])
+                            if target == K9mid:
+                                k9.acceptGroupInvitation(grup)
+                                k9.kickoutFromGroup(grup, [op.param2])
+                            if target == K10mid:
+                                k10.acceptGroupInvitation(grup)
+                                k10.kickoutFromGroup(grup, [op.param2])
                             if target == mid:
                                 cl.acceptGroupInvitation(grup)
                         except:
                             try:
-                                k7.inviteIntoGroup(grup, [mid,Amid,Bmid,Cmid,Dmid,K5mid,K6mid])
-                                if target == Amid:
-                                    ki.acceptGroupInvitation(grup)
-                                if target == Bmid:
-                                    kk.acceptGroupInvitation(grup)
-                                if target == Cmid:
-                                    kc.acceptGroupInvitation(grup)
-                                if target == Dmid:
-                                    km.acceptGroupInvitation(grup)
+                                k7.inviteIntoGroup(grup, [mid,K1mid,K2mid,K3mid,K4mid,K5mid,K6mid,K8mid,K9mid,K10mid])
+                                if target == K1mid:
+                                    k1.acceptGroupInvitation(grup)
+                                    k1.kickoutFromGroup(grup, [op.param2])
+                                if target == K2mid:
+                                    k2.acceptGroupInvitation(grup)
+                                    k2.kickoutFromGroup(grup, [op.param2])
+                                if target == K3mid:
+                                    k3.acceptGroupInvitation(grup)
+                                    k3.kickoutFromGroup(grup, [op.param2])
+                                if target == K4mid:
+                                    k4.acceptGroupInvitation(grup)
+                                    k4.kickoutFromGroup(grup, [op.param2])
                                 if target == K5mid:
                                     k5.acceptGroupInvitation(grup)
+                                    k5.kickoutFromGroup(grup, [op.param2])
                                 if target == K6mid:
                                     k6.acceptGroupInvitation(grup)
+                                    k6.kickoutFromGroup(grup, [op.param2])
+                                if target == K8mid:
+                                    k8.acceptGroupInvitation(grup)
+                                    k8.kickoutFromGroup(grup, [op.param2])
+                                if target == K9mid:
+                                    k9.acceptGroupInvitation(grup)
+                                    k9.kickoutFromGroup(grup, [op.param2])
+                                if target == K10mid:
+                                    k10.acceptGroupInvitation(grup)
+                                    k10.kickoutFromGroup(grup, [op.param2])
                                 if target == mid:
                                     cl.acceptGroupInvitation(grup)
                             except:
-                                pass
+                                try:
+                                    k8.inviteIntoGroup(grup, [mid,K1mid,K2mid,K3mid,K4mid,K5mid,K6mid,K7mid,K9mid,K10mid])
+                                    if target == K1mid:
+                                        k1.acceptGroupInvitation(grup)
+                                        k1.kickoutFromGroup(grup, [op.param2])
+                                    if target == K2mid:
+                                        k2.acceptGroupInvitation(grup)
+                                        k2.kickoutFromGroup(grup, [op.param2])
+                                    if target == K3mid:
+                                        k3.acceptGroupInvitation(grup)
+                                        k3.kickoutFromGroup(grup, [op.param2])
+                                    if target == K4mid:
+                                        k4.acceptGroupInvitation(grup)
+                                        k4.kickoutFromGroup(grup, [op.param2])
+                                    if target == K5mid:
+                                        k5.acceptGroupInvitation(grup)
+                                        k5.kickoutFromGroup(grup, [op.param2])
+                                    if target == K6mid:
+                                        k6.acceptGroupInvitation(grup)
+                                        k6.kickoutFromGroup(grup, [op.param2])
+                                    if target == K7mid:
+                                        k7.acceptGroupInvitation(grup)
+                                        k7.kickoutFromGroup(grup, [op.param2])
+                                    if target == K9mid:
+                                        k9.acceptGroupInvitation(grup)
+                                        k9.kickoutFromGroup(grup, [op.param2])
+                                    if target == K10mid:
+                                        k10.acceptGroupInvitation(grup)
+                                        k10.kickoutFromGroup(grup, [op.param2])
+                                    if target == mid:
+                                        cl.acceptGroupInvitation(grup)
+                                except:
+                                    try:
+                                        k9.inviteIntoGroup(grup, [mid,K1mid,K2mid,K3mid,K4mid,K5mid,K6mid,K7mid,K8mid,K10mid])
+                                        if target == K1mid:
+                                            k1.acceptGroupInvitation(grup)
+                                            k1.kickoutFromGroup(grup, [op.param2])
+                                        if target == K2mid:
+                                            k2.acceptGroupInvitation(grup)
+                                            k2.kickoutFromGroup(grup, [op.param2])
+                                        if target == K3mid:
+                                            k3.acceptGroupInvitation(grup)
+                                            k3.kickoutFromGroup(grup, [op.param2])
+                                        if target == K4mid:
+                                            k4.acceptGroupInvitation(grup)
+                                            k4.kickoutFromGroup(grup, [op.param2])
+                                        if target == K5mid:
+                                            k5.acceptGroupInvitation(grup)
+                                            k5.kickoutFromGroup(grup, [op.param2])
+                                        if target == K6mid:
+                                            k6.acceptGroupInvitation(grup)
+                                            k6.kickoutFromGroup(grup, [op.param2])
+                                        if target == K7mid:
+                                            k7.acceptGroupInvitation(grup)
+                                            k7.kickoutFromGroup(grup, [op.param2])
+                                        if target == K8mid:
+                                            k8.acceptGroupInvitation(grup)
+                                            k8.kickoutFromGroup(grup, [op.param2])
+                                        if target == K10mid:
+                                            k10.acceptGroupInvitation(grup)
+                                            k10.kickoutFromGroup(grup, [op.param2])
+                                        if target == mid:
+                                            cl.acceptGroupInvitation(grup)
+                                    except:
+                                        try:
+                                            k10.inviteIntoGroup(grup, [mid,K1mid,K2mid,K3mid,K4mid,K5mid,K6mid,K7mid,K8mid,K9mid])
+                                            if target == K1mid:
+                                                k1.acceptGroupInvitation(grup)
+                                                k1.kickoutFromGroup(grup, [op.param2])
+                                            if target == K2mid:
+                                                k2.acceptGroupInvitation(grup)
+                                                k2.kickoutFromGroup(grup, [op.param2])
+                                            if target == K3mid:
+                                                k3.acceptGroupInvitation(grup)
+                                                k3.kickoutFromGroup(grup, [op.param2])
+                                            if target == K4mid:
+                                                k4.acceptGroupInvitation(grup)
+                                                k4.kickoutFromGroup(grup, [op.param2])
+                                            if target == K5mid:
+                                                k5.acceptGroupInvitation(grup)
+                                                k5.kickoutFromGroup(grup, [op.param2])
+                                            if target == K6mid:
+                                                k6.acceptGroupInvitation(grup)
+                                                k6.kickoutFromGroup(grup, [op.param2])
+                                            if target == K7mid:
+                                                k7.acceptGroupInvitation(grup)
+                                                k7.kickoutFromGroup(grup, [op.param2])
+                                            if target == K8mid:
+                                                k8.acceptGroupInvitation(grup)
+                                                k8.kickoutFromGroup(grup, [op.param2])
+                                            if target == K9mid:
+                                                k9.acceptGroupInvitation(grup)
+                                                k9.kickoutFromGroup(grup, [op.param2])
+                                            if target == mid:
+                                                cl.acceptGroupInvitation(grup)
+                                        except:
+                                            pass
 
 def lockqr(grup):
     try:
-        G = ki.getGroup(grup)
+        G = k1.getGroup(grup)
         G.preventedJoinByTicket = True
-        ki.updateGroup(G)
+        k1.updateGroup(G)
     except:
         try:
-            G = kk.getGroup(grup)
+            G = k2.getGroup(grup)
             G.preventedJoinByTicket = True
-            kk.updateGroup(G)
+            k2.updateGroup(G)
         except:
             try:
-                G = kc.getGroup(grup)
+                G = k3.getGroup(grup)
                 G.preventedJoinByTicket = True
-                kc.updateGroup(G)
+                k3.updateGroup(G)
             except:
                 try:
-                    G = km.getGroup(grup)
+                    G = k4.getGroup(grup)
                     G.preventedJoinByTicket = True
-                    km.updateGroup(G)
+                    k4.updateGroup(G)
                 except:
                     try:
                         G = k5.getGroup(grup)
@@ -443,7 +644,22 @@ def lockqr(grup):
                                 G.preventedJoinByTicket = True
                                 k7.updateGroup(G)
                             except:
-                                pass
+                                try:
+                                    G = k8.getGroup(grup)
+                                    G.preventedJoinByTicket = True
+                                    k8.updateGroup(G)
+                                except:
+                                    try:
+                                        G = k9.getGroup(grup)
+                                        G.preventedJoinByTicket = True
+                                        k9.updateGroup(G)
+                                    except:
+                                        try:
+                                            G = k10.getGroup(grup)
+                                            G.preventedJoinByTicket = True
+                                            k10.updateGroup(G)
+                                        except:
+                                            pass
 
 def blacklist(target):
 	try:
