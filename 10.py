@@ -882,7 +882,7 @@ def RECEIVE_MESSAGE(op):
 							cl.leaveGroup(receiver)
 				elif uwew == "out":
 					if sender in creator or sender in owner or sender in admin or sender in staff:
-						for b10 in Botslist:
+						for b10 in Bot10:
 							b10.leaveGroup(receiver)
 				elif uwew == "เล่น7":
 					if sender in creator or sender in owner or sender in admin or sender in staff:
@@ -1440,22 +1440,22 @@ def RECEIVE_MESSAGE(op):
 							dname0.displayName = name
 							cl.updateProfile(dname0)
 							cl.sendReplyMessage(reply,receiver,"「 Display Name 」\nDisplay Name Changed To {}".format(str(name)))
-							dname1 = ki.getProfile()
+							dname1 = k1.getProfile()
 							dname1.displayName = name
-							ki.updateProfile(dname1)
-							ki.sendReplyMessage(reply,receiver,"「 Display Name 」\nDisplay Name Changed To {}".format(str(name)))
-							dname2 = kk.getProfile()
+							k1.updateProfile(dname1)
+							k1.sendReplyMessage(reply,receiver,"「 Display Name 」\nDisplay Name Changed To {}".format(str(name)))
+							dname2 = k2.getProfile()
 							dname2.displayName = name
-							kk.updateProfile(dname2)
-							kk.sendReplyMessage(reply,receiver,"「 Display Name 」\nDisplay Name Changed To {}".format(str(name)))
-							dname3 = kc.getProfile()
+							k2.updateProfile(dname2)
+							k2.sendReplyMessage(reply,receiver,"「 Display Name 」\nDisplay Name Changed To {}".format(str(name)))
+							dname3 = k3.getProfile()
 							dname3.displayName = name
-							kc.updateProfile(dname3)
-							kc.sendReplyMessage(reply,receiver,"「 Display Name 」\nDisplay Name Changed To {}".format(str(name)))
-							dname4 = km.getProfile()
+							k3.updateProfile(dname3)
+							k3.sendReplyMessage(reply,receiver,"「 Display Name 」\nDisplay Name Changed To {}".format(str(name)))
+							dname4 = k4.getProfile()
 							dname4.displayName = name
-							km.updateProfile(dname4)
-							km.sendReplyMessage(reply,receiver,"「 Display Name 」\nDisplay Name Changed To {}".format(str(name)))
+							k4.updateProfile(dname4)
+							k4.sendReplyMessage(reply,receiver,"「 Display Name 」\nDisplay Name Changed To {}".format(str(name)))
 							dname5 = k5.getProfile()
 							dname5.displayName = name
 							k5.updateProfile(dname5)
@@ -1468,6 +1468,18 @@ def RECEIVE_MESSAGE(op):
 							dname7.displayName = name
 							k7.updateProfile(dname7)
 							k7.sendReplyMessage(reply,receiver,"「 Display Name 」\nDisplay Name Changed To {}".format(str(name)))
+							dname8 = k8.getProfile()
+							dname8.displayName = name
+							k8.updateProfile(dname8)
+							k8.sendReplyMessage(reply,receiver,"「 Display Name 」\nDisplay Name Changed To {}".format(str(name)))
+							dname9 = k9.getProfile()
+							dname9.displayName = name
+							k9.updateProfile(dname9)
+							k9.sendReplyMessage(reply,receiver,"「 Display Name 」\nDisplay Name Changed To {}".format(str(name)))
+							dname10 = k10.getProfile()
+							dname10.displayName = name
+							k10.updateProfile(dname10)
+							k10.sendReplyMessage(reply,receiver,"「 Display Name 」\nDisplay Name Changed To {}".format(str(name)))
 					else:
 						for a in Botslist:
 							a.sendReplyMessage(reply,receiver,"「 Display Name 」\nAccess Limited For Owner Only -_-")
@@ -1487,45 +1499,45 @@ def RECEIVE_MESSAGE(op):
 						sep = text.split(" ")
 						name = text.replace(sep[0] + " ","")
 						if len(name) <= 99999999:
-							bio1 = ki.getProfile()
+							bio1 = k1.getProfile()
 							bio1.statusMessage = name
-							ki.updateProfile(bio1)
-							ki.sendReplyMessage(reply,receiver,"「 Status Message 」\nStatus Message Changed To {}".format(str(name)))
+							k1.updateProfile(bio1)
+							k1.sendReplyMessage(reply,receiver,"「 Status Message 」\nStatus Message Changed To {}".format(str(name)))
 					else:
-						ki.sendReplyMessage(reply,receiver,"「 Status Message 」\nAccess Limited For Owner Only -_-")
+						k1.sendReplyMessage(reply,receiver,"「 Status Message 」\nAccess Limited For Owner Only -_-")
 				elif uwew.startswith("ตัส2 "):
 					if sender in creator or sender in owner:
 						sep = text.split(" ")
 						name = text.replace(sep[0] + " ","")
 						if len(name) <= 99999999:
-							bio2 = kk.getProfile()
+							bio2 = k2.getProfile()
 							bio2.statusMessage = name
-							kk.updateProfile(bio2)
-							kk.sendReplyMessage(reply,receiver,"「 Status Message 」\nStatus Message Changed To {}".format(str(name)))
+							k2.updateProfile(bio2)
+							k2.sendReplyMessage(reply,receiver,"「 Status Message 」\nStatus Message Changed To {}".format(str(name)))
 					else:
-						kk.sendReplyMessage(reply,receiver,"「 Status Message 」\nAccess Limited For Owner Only -_-")
+						k2.sendReplyMessage(reply,receiver,"「 Status Message 」\nAccess Limited For Owner Only -_-")
 				elif uwew.startswith("ตัส3 "):
 					if sender in creator or sender in owner:
 						sep = text.split(" ")
 						name = text.replace(sep[0] + " ","")
 						if len(name) <= 99999999:
-							bio3 = kc.getProfile()
+							bio3 = k3.getProfile()
 							bio3.statusMessage = name
-							kc.updateProfile(bio3)
-							kc.sendReplyMessage(reply,receiver,"「 Status Message 」\nStatus Message Changed To {}".format(str(name)))
+							k3.updateProfile(bio3)
+							k3.sendReplyMessage(reply,receiver,"「 Status Message 」\nStatus Message Changed To {}".format(str(name)))
 					else:
-						kc.sendReplyMessage(reply,receiver,"「 Status Message 」\nAccess Limited For Owner Only -_-")
+						k3.sendReplyMessage(reply,receiver,"「 Status Message 」\nAccess Limited For Owner Only -_-")
 				elif uwew.startswith("ตัส4 "):
 					if sender in creator or sender in owner:
 						sep = text.split(" ")
 						name = text.replace(sep[0] + " ","")
 						if len(name) <= 99999999:
-							bio4 = km.getProfile()
+							bio4 = k4.getProfile()
 							bio4.statusMessage = name
-							km.updateProfile(bio4)
-							km.sendReplyMessage(reply,receiver,"「 Status Message 」\nStatus Message Changed To {}".format(str(name)))
+							k4.updateProfile(bio4)
+							k4.sendReplyMessage(reply,receiver,"「 Status Message 」\nStatus Message Changed To {}".format(str(name)))
 					else:
-						km.sendReplyMessage(reply,receiver,"「 Status Message 」\nAccess Limited For Owner Only -_-")
+						k4.sendReplyMessage(reply,receiver,"「 Status Message 」\nAccess Limited For Owner Only -_-")
 				elif uwew.startswith("ตัส5 "):
 					if sender in creator or sender in owner:
 						sep = text.split(" ")
@@ -1559,6 +1571,39 @@ def RECEIVE_MESSAGE(op):
 							k7.sendReplyMessage(reply,receiver,"「 Status Message 」\nStatus Message Changed To {}".format(str(name)))
 					else:
 						k7.sendReplyMessage(reply,receiver,"「 Status Message 」\nAccess Limited For Owner Only -_-")
+				elif uwew.startswith("ตัส8 "):
+					if sender in creator or sender in owner:
+						sep = text.split(" ")
+						name = text.replace(sep[0] + " ","")
+						if len(name) <= 99999999:
+							bio8 = k8.getProfile()
+							bio8.statusMessage = name
+							k8.updateProfile(bio8)
+							k8.sendReplyMessage(reply,receiver,"「 Status Message 」\nStatus Message Changed To {}".format(str(name)))
+					else:
+						k8.sendReplyMessage(reply,receiver,"「 Status Message 」\nAccess Limited For Owner Only -_-")
+				elif uwew.startswith("ตัส9 "):
+					if sender in creator or sender in owner:
+						sep = text.split(" ")
+						name = text.replace(sep[0] + " ","")
+						if len(name) <= 99999999:
+							bio9 = k9.getProfile()
+							bio9.statusMessage = name
+							k9.updateProfile(bio9)
+							k9.sendReplyMessage(reply,receiver,"「 Status Message 」\nStatus Message Changed To {}".format(str(name)))
+					else:
+						k9.sendReplyMessage(reply,receiver,"「 Status Message 」\nAccess Limited For Owner Only -_-")
+				elif uwew.startswith("ตัส10 "):
+					if sender in creator or sender in owner:
+						sep = text.split(" ")
+						name = text.replace(sep[0] + " ","")
+						if len(name) <= 99999999:
+							bio10 = k10.getProfile()
+							bio10.statusMessage = name
+							k10.updateProfile(bio10)
+							k10.sendReplyMessage(reply,receiver,"「 Status Message 」\nStatus Message Changed To {}".format(str(name)))
+					else:
+						k10.sendReplyMessage(reply,receiver,"「 Status Message 」\nAccess Limited For Owner Only -_-")
 				elif uwew.startswith("ตัสทั้งหมด "):
 					if sender in creator or sender in owner:
 						sep = text.split(" ")
@@ -1568,22 +1613,22 @@ def RECEIVE_MESSAGE(op):
 							bio0.statusMessage = name
 							cl.updateProfile(bio0)
 							cl.sendReplyMessage(reply,receiver,"「 Status Message 」\nStatus Message Changed To {}".format(str(name)))
-							bio1 = ki.getProfile()
+							bio1 = k1.getProfile()
 							bio1.statusMessage = name
-							ki.updateProfile(bio1)
-							ki.sendReplyMessage(reply,receiver,"「 Status Message 」\nStatus Message Changed To {}".format(str(name)))
-							bio2 = kk.getProfile()
+							k1.updateProfile(bio1)
+							k1.sendReplyMessage(reply,receiver,"「 Status Message 」\nStatus Message Changed To {}".format(str(name)))
+							bio2 = k2.getProfile()
 							bio2.statusMessage = name
-							kk.updateProfile(bio2)
-							kk.sendReplyMessage(reply,receiver,"「 Status Message 」\nStatus Message Changed To {}".format(str(name)))
-							bio3 = kc.getProfile()
+							k2.updateProfile(bio2)
+							k2.sendReplyMessage(reply,receiver,"「 Status Message 」\nStatus Message Changed To {}".format(str(name)))
+							bio3 = k3.getProfile()
 							bio3.statusMessage = name
-							kc.updateProfile(bio3)
-							kc.sendReplyMessage(reply,receiver,"「 Status Message 」\nStatus Message Changed To {}".format(str(name)))
-							bio4 = km.getProfile()
+							k3.updateProfile(bio3)
+							k3.sendReplyMessage(reply,receiver,"「 Status Message 」\nStatus Message Changed To {}".format(str(name)))
+							bio4 = k4.getProfile()
 							bio4.statusMessage = name
-							km.updateProfile(bio4)
-							km.sendReplyMessage(reply,receiver,"「 Status Message 」\nStatus Message Changed To {}".format(str(name)))
+							k4.updateProfile(bio4)
+							k4.sendReplyMessage(reply,receiver,"「 Status Message 」\nStatus Message Changed To {}".format(str(name)))
 							bio5 = k5.getProfile()
 							bio5.statusMessage = name
 							k5.updateProfile(bio5)
@@ -1596,6 +1641,18 @@ def RECEIVE_MESSAGE(op):
 							bio7.statusMessage = name
 							k7.updateProfile(bio7)
 							k7.sendReplyMessage(reply,receiver,"「 Status Message 」\nStatus Message Changed To {}".format(str(name)))
+							bio8 = k8.getProfile()
+							bio8.statusMessage = name
+							k8.updateProfile(bio8)
+							k8.sendReplyMessage(reply,receiver,"「 Status Message 」\nStatus Message Changed To {}".format(str(name)))
+							bio9 = k9.getProfile()
+							bio9.statusMessage = name
+							k9.updateProfile(bio9)
+							k9.sendReplyMessage(reply,receiver,"「 Status Message 」\nStatus Message Changed To {}".format(str(name)))
+							bio10 = k10.getProfile()
+							bio10.statusMessage = name
+							k10.updateProfile(bio10)
+							k10.sendReplyMessage(reply,receiver,"「 Status Message 」\nStatus Message Changed To {}".format(str(name)))
 					else:
 						for a in Botslist:
 							a.sendReplyMessage(reply,receiver,"「 Status Message 」\nAccess Limited For Owner Only -_-")
@@ -1606,17 +1663,17 @@ def RECEIVE_MESSAGE(op):
 							settings["sentinelPict"][mid] = True
 							cl.sendReplyMessage(reply,receiver,"「 Profile Picture 」\nPlease Send Picture You Want To Use")
 						if spl == "1":
-							settings["sentinelPict"][Amid] = True
-							ki.sendReplyMessage(reply,receiver,"「 Profile Picture 」\nPlease Send Picture You Want To Use")
+							settings["sentinelPict"][K1mid] = True
+							k1.sendReplyMessage(reply,receiver,"「 Profile Picture 」\nPlease Send Picture You Want To Use")
 						if spl == "2":
-							settings["sentinelPict"][Bmid] = True
-							kk.sendReplyMessage(reply,receiver,"「 Profile Picture 」\nPlease Send Picture You Want To Use")
+							settings["sentinelPict"][K2mid] = True
+							k2.sendReplyMessage(reply,receiver,"「 Profile Picture 」\nPlease Send Picture You Want To Use")
 						if spl == "3":
-							settings["sentinelPict"][Cmid] = True
-							kc.sendReplyMessage(reply,receiver,"「 Profile Picture 」\nPlease Send Picture You Want To Use")
+							settings["sentinelPict"][K3mid] = True
+							k3.sendReplyMessage(reply,receiver,"「 Profile Picture 」\nPlease Send Picture You Want To Use")
 						if spl == "4":
-							settings["sentinelPict"][Dmid] = True
-							km.sendReplyMessage(reply,receiver,"「 Profile Picture 」\nPlease Send Picture You Want To Use")
+							settings["sentinelPict"][K4mid] = True
+							k4.sendReplyMessage(reply,receiver,"「 Profile Picture 」\nPlease Send Picture You Want To Use")
 						if spl == "5":
 							settings["sentinelPict"][K5mid] = True
 							k5.sendReplyMessage(reply,receiver,"「 Profile Picture 」\nPlease Send Picture You Want To Use")
@@ -1626,15 +1683,27 @@ def RECEIVE_MESSAGE(op):
 						if spl == "7":
 							settings["sentinelPict"][K7mid] = True
 							k7.sendReplyMessage(reply,receiver,"「 Profile Picture 」\nPlease Send Picture You Want To Use")
+						if spl == "8":
+							settings["sentinelPict"][K8mid] = True
+							k8.sendReplyMessage(reply,receiver,"「 Profile Picture 」\nPlease Send Picture You Want To Use")
+						if spl == "9":
+							settings["sentinelPict"][K9mid] = True
+							k9.sendReplyMessage(reply,receiver,"「 Profile Picture 」\nPlease Send Picture You Want To Use")
+						if spl == "10":
+							settings["sentinelPict"][K10mid] = True
+							k10.sendReplyMessage(reply,receiver,"「 Profile Picture 」\nPlease Send Picture You Want To Use")
 						if spl == "รูป":
 							settings["sentinelPict"][mid] = True
-							settings["sentinelPict"][Amid] = True
-							settings["sentinelPict"][Bmid] = True
-							settings["sentinelPict"][Cmid] = True
-							settings["sentinelPict"][Dmid] = True
+							settings["sentinelPict"][K1mid] = True
+							settings["sentinelPict"][K2mid] = True
+							settings["sentinelPict"][K3mid] = True
+							settings["sentinelPict"][K4mid] = True
 							settings["sentinelPict"][K5mid] = True
 							settings["sentinelPict"][K6mid] = True
 							settings["sentinelPict"][K7mid] = True
+							settings["sentinelPict"][K8mid] = True
+							settings["sentinelPict"][K9mid] = True
+							settings["sentinelPict"][K10mid] = True
 							for a in Botslist:
 								a.sendReplyMessage(reply,receiver,"「 Profile Picture 」\nPlease Send Picture You Want To Use")
 					else:
@@ -1808,19 +1877,21 @@ async def cerberusRun():
 									t19 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 									t20 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 									t21 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t22 = threading.Thread(target=cancel, args=(op.param1, op.param2)).start()
+									t22 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t23 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 								except:
 									pass
 						if op.param2 in status["blacklist"]:
 							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
 								pass
 							else:
-								t23 = threading.Thread(target=blacklist, args=(op.param2,)).start()
+								t24 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 								try:
-									t24 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 									t25 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 									t26 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t27 = threading.Thread(target=cancel, args=(op.param1, op.param2)).start()
+									t27 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t28 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t29 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 								except:
 									pass
 					if op.type == 19:
@@ -1828,108 +1899,144 @@ async def cerberusRun():
 							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
 								pass
 							else:
-								t28 = threading.Thread(target=blacklist, args=(op.param2,)).start()
+								t30 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 								try:
-									t29 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t30 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
 									t31 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t32 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t32 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
+									t33 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t34 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 								except:
 									pass
 						if op.param3 in mid:
 							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
 								pass
 							else:
-								t33 = threading.Thread(target=blacklist, args=(op.param2,)).start()
+								t35 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 								try:
-									t34 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t35 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
 									t36 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t37 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-								except:
-									pass
-						if op.param3 in Amid:
-							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
-								pass
-							else:
-								t38 = threading.Thread(target=blacklist, args=(op.param2,)).start()
-								try:
+									t37 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
+									t38 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 									t39 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t40 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
+								except:
+									pass
+						if op.param3 in K1mid:
+							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
+								pass
+							else:
+								t40 = threading.Thread(target=blacklist, args=(op.param2,)).start()
+								try:
 									t41 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t42 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-								except:
-									pass
-						if op.param3 in Bmid:
-							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
-								pass
-							else:
-								t43 = threading.Thread(target=blacklist, args=(op.param2,)).start()
-								try:
+									t42 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
+									t43 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 									t44 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t45 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
+								except:
+									pass
+						if op.param3 in K2mid:
+							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
+								pass
+							else:
+								t45 = threading.Thread(target=blacklist, args=(op.param2,)).start()
+								try:
 									t46 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t47 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-								except:
-									pass
-						if op.param3 in Cmid:
-							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
-								pass
-							else:
-								t48 = threading.Thread(target=blacklist, args=(op.param2,)).start()
-								try:
+									t47 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
+									t48 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 									t49 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t50 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
-									t51 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t52 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 								except:
 									pass
-						if op.param3 in Dmid:
+						if op.param3 in K3mid:
 							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
 								pass
 							else:
-								t53 = threading.Thread(target=blacklist, args=(op.param2,)).start()
+								t50 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 								try:
+									t51 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t52 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
+									t53 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 									t54 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t55 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
+								except:
+									pass
+						if op.param3 in K4mid:
+							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
+								pass
+							else:
+								t55 = threading.Thread(target=blacklist, args=(op.param2,)).start()
+								try:
 									t56 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t57 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t57 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
+									t58 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t59 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 								except:
 									pass
 						if op.param3 in K5mid:
 							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
 								pass
 							else:
-								t58 = threading.Thread(target=blacklist, args=(op.param2,)).start()
+								t60 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 								try:
-									t59 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t60 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
 									t61 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t62 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t62 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
+									t63 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t64 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 								except:
 									pass
 						if op.param3 in K6mid:
 							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
 								pass
 							else:
-								t63 = threading.Thread(target=blacklist, args=(op.param2,)).start()
+								t65 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 								try:
-									t64 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t65 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
 									t66 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t67 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t67 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
+									t68 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t69 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 								except:
 									pass
 						if op.param3 in K7mid:
 							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
 								pass
 							else:
-								t68 = threading.Thread(target=blacklist, args=(op.param2,)).start()
+								t70 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 								try:
-									t69 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t70 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
 									t71 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t72 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t72 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
+									t73 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t74 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+								except:
+									pass
+						if op.param3 in K8mid:
+							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
+								pass
+							else:
+								t75 = threading.Thread(target=blacklist, args=(op.param2,)).start()
+								try:
+									t76 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t77 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
+									t78 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t79 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+								except:
+									pass
+						if op.param3 in K9mid:
+							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
+								pass
+							else:
+								t80 = threading.Thread(target=blacklist, args=(op.param2,)).start()
+								try:
+									t81 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t82 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
+									t83 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t84 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+								except:
+									pass
+						if op.param3 in K10mid:
+							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
+								pass
+							else:
+								t85 = threading.Thread(target=blacklist, args=(op.param2,)).start()
+								try:
+									t86 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t87 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
+									t88 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t89 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 								except:
 									pass
 					if op.type == 32:
@@ -1937,108 +2044,144 @@ async def cerberusRun():
 							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
 								pass
 							else:
-								t73 = threading.Thread(target=blacklist, args=(op.param2,)).start()
+								t90 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 								try:
-									t74 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t75 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
-									t76 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t77 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t91 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t92 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
+									t93 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t94 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 								except:
 									pass
 						if op.param3 in mid:
 							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
 								pass
 							else:
-								t78 = threading.Thread(target=blacklist, args=(op.param2,)).start()
+								t95 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 								try:
-									t79 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t80 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
-									t81 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t82 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-								except:
-									pass
-						if op.param3 in Amid:
-							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
-								pass
-							else:
-								t83 = threading.Thread(target=blacklist, args=(op.param2,)).start()
-								try:
-									t84 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t85 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
-									t86 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t87 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-								except:
-									pass
-						if op.param3 in Bmid:
-							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
-								pass
-							else:
-								t88 = threading.Thread(target=blacklist, args=(op.param2,)).start()
-								try:
-									t89 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t90 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
-									t91 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t92 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-								except:
-									pass
-						if op.param3 in Cmid:
-							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
-								pass
-							else:
-								t93 = threading.Thread(target=blacklist, args=(op.param2,)).start()
-								try:
-									t94 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t95 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
 									t96 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t97 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t97 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
+									t98 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t99 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 								except:
 									pass
-						if op.param3 in Dmid:
+						if op.param3 in K1mid:
 							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
 								pass
 							else:
-								t98 = threading.Thread(target=blacklist, args=(op.param2,)).start()
+								t100 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 								try:
-									t99 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t100 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
 									t101 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t102 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t102 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
+									t103 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t104 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+								except:
+									pass
+						if op.param3 in K2mid:
+							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
+								pass
+							else:
+								t105 = threading.Thread(target=blacklist, args=(op.param2,)).start()
+								try:
+									t106 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t107 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
+									t108 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t109 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+								except:
+									pass
+						if op.param3 in K3mid:
+							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
+								pass
+							else:
+								t110 = threading.Thread(target=blacklist, args=(op.param2,)).start()
+								try:
+									t111 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t112 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
+									t113 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t114 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+								except:
+									pass
+						if op.param3 in K4mid:
+							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
+								pass
+							else:
+								t115 = threading.Thread(target=blacklist, args=(op.param2,)).start()
+								try:
+									t116 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t117 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
+									t118 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t119 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 								except:
 									pass
 						if op.param3 in K5mid:
 							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
 								pass
 							else:
-								t103 = threading.Thread(target=blacklist, args=(op.param2,)).start()
+								t120 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 								try:
-									t104 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t105 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
-									t106 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t107 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t121 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t122 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
+									t123 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t124 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 								except:
 									pass
 						if op.param3 in K6mid:
 							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
 								pass
 							else:
-								t108 = threading.Thread(target=blacklist, args=(op.param2,)).start()
+								t125 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 								try:
-									t109 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t110 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
-									t111 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t112 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t126 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t127 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
+									t128 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t129 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 								except:
 									pass
 						if op.param3 in K7mid:
 							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
 								pass
 							else:
-								t113 = threading.Thread(target=blacklist, args=(op.param2,)).start()
+								t130 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 								try:
-									t114 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t115 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
-									t116 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t117 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t131 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t132 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
+									t133 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t134 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+								except:
+									pass
+						if op.param3 in K8mid:
+							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
+								pass
+							else:
+								t135 = threading.Thread(target=blacklist, args=(op.param2,)).start()
+								try:
+									t136 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t137 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
+									t138 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t139 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+								except:
+									pass
+						if op.param3 in K9mid:
+							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
+								pass
+							else:
+								t140 = threading.Thread(target=blacklist, args=(op.param2,)).start()
+								try:
+									t141 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t142 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
+									t143 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t144 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+								except:
+									pass
+						if op.param3 in K10mid:
+							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
+								pass
+							else:
+								t145 = threading.Thread(target=blacklist, args=(op.param2,)).start()
+								try:
+									t146 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t147 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
+									t148 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t149 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 								except:
 									pass
 					if op.type == 26:
