@@ -230,9 +230,9 @@ def invite(grup, target):
                                 k7.inviteIntoGroup(grup, [target])
                             except:
                                 try:
-                                    cl.findAndAddContactsByMid(["u46972f7c43e399c93cf49fad40ae7262"])
+                                    cl.findAndAddContactsByMid([target)
                                     cl.kickoutFromGroup(grup, [target])
-                                    cl.inviteIntoGroup(grup, ["u46972f7c43e399c93cf49fad40ae7262"])
+                                    cl.inviteIntoGroup(grup, [target])
                                 except:
                                     pass
 
