@@ -1691,7 +1691,7 @@ async def cerberusRun():
 								t9 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 								try:
 									t10 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t11 = threading.Thread(target=cancel, args=(op.param1, op.param2)).start()
+									t11 = threading.Thread(target=cancel, args=(op.param1, op.param3)).start()
 								except:
 									pass
 						if op.param2 in status["blacklist"]:
@@ -1701,7 +1701,7 @@ async def cerberusRun():
 								t12 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 								try:
 									t13 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t14 = threading.Thread(target=cancel, args=(op.param1, op.param2)).start()
+									t14 = threading.Thread(target=cancel, args=(op.param1, op.param3)).start()
 								except:
 									pass
 						if op.param3 in status["blacklist"]:
@@ -1711,7 +1711,7 @@ async def cerberusRun():
 								t15 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 								try:
 									t16 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t17 = threading.Thread(target=cancel, args=(op.param1, op.param2)).start()
+									t17 = threading.Thread(target=cancel, args=(op.param1, op.param3)).start()
 								except:
 									pass
 						if mid in op.param3:
