@@ -24,18 +24,20 @@ from datetime import datetime
 # Auth Token : LINE("authtoken")
 # Primary Token : LINE("primary",appName='IOS\t10.1.1\tIOS OS\t1')
 programStart = time.time()
-cl = LINE("a09371920@gmail.com","Arm130635")
+cl = LINE("heran67839@tmail7.com","mai065558mai")
 print('==== UNIT หลัก READY ! ====')
-ki = LINE("a09371922@gmail.com","Arm130635")
+ki = LINE("yopesew509@qkerbl.com","mai065558mai")
 print('==== UNIT 1 READY ! ====')
-kk = LINE("a409371920@gmail.com","Arm130635")
+kk = LINE("mihowi5359@qkerbl.com","mai065558mai")
 print('==== UNIT 2 READY ! ====')
-kc = LINE("zna96817@gmail.com","Arm130635")
+kc = LINE("wakehe9241@tmail7.com","mai065558mai")
 print('==== UNIT 3 READY ! ====')
-km = LINE("runrsa1@gmail.com","Arm130635")
+km = LINE("jiwiho6012@tmail7.com","mai065558mai")
 print('==== UNIT 4 READY ! ====')
-k5 = LINE("ruyxraxxx@gmail.com","Arm130635")
+k5 = LINE("gigaman399@tmail7.com","mai065558mai")
 print('==== UNIT 5 READY ! ====')
+k6 = LINE("riyino4854@lexu4g.com","mai065558mai")
+print('==== UNIT 6 READY ! ====')
 print ('\n\nALL UNIT READY !')
 
 mid = cl.getProfile().mid
@@ -44,7 +46,8 @@ Bmid = kk.getProfile().mid
 Cmid = kc.getProfile().mid
 Dmid = km.getProfile().mid
 K5mid = k5.getProfile().mid
-KAC = [ki,kk,kc,km,k5]
+K6mid = k6.getProfile().mid
+KAC = [ki,kk,kc,km,k5,k6]
 
 loop = asyncio.get_event_loop()
 status = livejson.File('status.json', True, False, 4)
@@ -55,14 +58,15 @@ owner = status["owner"]
 admin = status["admin"]
 staff = status["staff"]
 mybots = status["mybots"]
-Bots = [mid,Amid,Bmid,Cmid,Dmid,K5mid]
-Botslist = [cl,ki,kk,kc,km,k5]
+Bots = [mid,Amid,Bmid,Cmid,Dmid,K5mid,K6mid]
+Botslist = [cl,ki,kk,kc,km,k5,k6]
 resp0 = cl.getProfile().displayName
 resp1 = ki.getProfile().displayName
 resp2 = kk.getProfile().displayName
 resp3 = kc.getProfile().displayName
 resp4 = km.getProfile().displayName
 resp5 = k5.getProfile().displayName
+resp6 = k6.getProfile().displayName
 
 def backupData():
 	try:
@@ -160,7 +164,13 @@ def kick(grup, target):
                     try:
                         k5.kickoutFromGroup(grup, [target])
                     except:
-                        pass
+                        try:
+                            k6.kickoutFromGroup(grup, [target])
+                        except:
+                            try:
+                                cl.kickoutFromGroup(grup, [target])
+                            except:
+                                pass
 
 def cancel(grup, target):
     try:
@@ -178,7 +188,13 @@ def cancel(grup, target):
                     try:
                         k5.cancelGroupInvitation(grup, [target])
                     except:
-                        pass
+                        try:
+                            k6.cancelGroupInvitation(grup, [target])
+                        except:
+                            try:
+                                cl.cancelGroupInvitation(grup, [target])
+                            except:
+                                pass
 
 def invite(grup, target):
     try:
@@ -202,14 +218,18 @@ def invite(grup, target):
                         k5.inviteIntoGroup(grup, [target])
                     except:
                         try:
-                            cl.findAndAddContactsByMid(target)
-                            cl.inviteIntoGroup(grup, [target])
+                            k6.findAndAddContactsByMid(target)
+                            k6.inviteIntoGroup(grup, [target])
                         except:
-                            pass
+                            try:
+                                cl.findAndAddContactsByMid(target)
+                                cl.inviteIntoGroup(grup, [target])
+                            except:
+                                pass
 
 def backup(grup, target):
     try:
-        ki.inviteIntoGroup(grup, [Bmid,Cmid,Dmid,K5mid,mid])
+        ki.inviteIntoGroup(grup, [Bmid,Cmid,Dmid,K5mid,K6mid,mid])
         if target == Bmid:
             kk.acceptGroupInvitation(grup)
         if target == Cmid:
@@ -218,11 +238,13 @@ def backup(grup, target):
             km.acceptGroupInvitation(grup)
         if target == K5mid:
             k5.acceptGroupInvitation(grup)
+        if target == K6mid:
+            k6.acceptGroupInvitation(grup)
         if target == mid:
             cl.acceptGroupInvitation(grup)
     except:
         try:
-            kk.inviteIntoGroup(grup, [mid,Amid,Cmid,Dmid,K5mid])
+            kk.inviteIntoGroup(grup, [mid,Amid,Cmid,Dmid,K5mid,K6mid])
             if target == Amid:
                 ki.acceptGroupInvitation(grup)
             if target == Cmid:
@@ -231,11 +253,13 @@ def backup(grup, target):
                 km.acceptGroupInvitation(grup)
             if target == K5mid:
                 k5.acceptGroupInvitation(grup)
+            if target == K6mid:
+                k6.acceptGroupInvitation(grup)
             if target == mid:
                 cl.acceptGroupInvitation(grup)
         except:
             try:
-                kc.inviteIntoGroup(grup, [mid,Amid,Bmid,Dmid,K5mid])
+                kc.inviteIntoGroup(grup, [mid,Amid,Bmid,Dmid,K5mid,K6mid])
                 if target == Amid:
                     ki.acceptGroupInvitation(grup)
                 if target == Bmid:
@@ -244,11 +268,13 @@ def backup(grup, target):
                     km.acceptGroupInvitation(grup)
                 if target == K5mid:
                     k5.acceptGroupInvitation(grup)
+                if target == K6mid:
+                    k6.acceptGroupInvitation(grup)
                 if target == mid:
                     cl.acceptGroupInvitation(grup)
             except:
                 try:
-                    km.inviteIntoGroup(grup, [mid,Amid,Bmid,Cmid,K5mid])
+                    km.inviteIntoGroup(grup, [mid,Amid,Bmid,Cmid,K5mid,K6mid])
                     if target == Amid:
                         ki.acceptGroupInvitation(grup)
                     if target == Bmid:
@@ -257,11 +283,13 @@ def backup(grup, target):
                         kc.acceptGroupInvitation(grup)
                     if target == K5mid:
                         k5.acceptGroupInvitation(grup)
+                    if target == K6mid:
+                        k6.acceptGroupInvitation(grup)
                     if target == mid:
                         cl.acceptGroupInvitation(grup)
                 except:
                     try:
-                        k5.inviteIntoGroup(grup, [mid,Amid,Bmid,Cmid,Dmid])
+                        k5.inviteIntoGroup(grup, [mid,Amid,Bmid,Cmid,Dmid,K6mid])
                         if target == Amid:
                             ki.acceptGroupInvitation(grup)
                         if target == Bmid:
@@ -270,11 +298,13 @@ def backup(grup, target):
                             kc.acceptGroupInvitation(grup)
                         if target == Dmid:
                             km.acceptGroupInvitation(grup)
+                        if target == K6mid:
+                            k6.acceptGroupInvitation(grup)
                         if target == mid:
                             cl.acceptGroupInvitation(grup)
                     except:
                         try:
-                            cl.inviteIntoGroup(grup, [Amid,Bmid,Cmid,Dmid,K5mid])
+                            k6.inviteIntoGroup(grup, [Amid,Bmid,Cmid,Dmid,K5mid,mid])
                             if target == Amid:
                                 ki.acceptGroupInvitation(grup)
                             if target == Bmid:
@@ -285,8 +315,25 @@ def backup(grup, target):
                                 km.acceptGroupInvitation(grup)
                             if target == K5mid:
                                 k5.acceptGroupInvitation(grup)
+                            if target == mid:
+                                cl.acceptGroupInvitation(grup)
                         except:
-                            pass
+                            try:
+                                cl.inviteIntoGroup(grup, [Amid,Bmid,Cmid,Dmid,K5mid,K6mid])
+                                if target == Amid:
+                                    ki.acceptGroupInvitation(grup)
+                                if target == Bmid:
+                                    kk.acceptGroupInvitation(grup)
+                                if target == Cmid:
+                                    kc.acceptGroupInvitation(grup)
+                                if target == Dmid:
+                                    km.acceptGroupInvitation(grup)
+                                if target == K5mid:
+                                    k5.acceptGroupInvitation(grup)
+                                if target == K6mid:
+                                    k6.acceptGroupInvitation(grup)
+                            except:
+                                pass
 
 def lockqr(grup):
     try:
@@ -348,6 +395,11 @@ def logspeed():
 	return "「 Bots Speed 」\n • Took : %.3fms\n • Taken: %.5f" % (get_profile_took,get_profile_time)
 	get_profile_time_start = time.time()
 	get_profile = k5.getProfile()
+	get_profile_time = time.time() - get_profile_time_start
+	get_profile_took = time.time() - get_profile_time_start
+	return "「 Bots Speed 」\n • Took : %.3fms\n • Taken: %.5f" % (get_profile_took,get_profile_time)
+	get_profile_time_start = time.time()
+	get_profile = k6.getProfile()
 	get_profile_time = time.time() - get_profile_time_start
 	get_profile_took = time.time() - get_profile_time_start
 	return "「 Bots Speed 」\n • Took : %.3fms\n • Taken: %.5f" % (get_profile_took,get_profile_time)
@@ -430,6 +482,11 @@ def RECEIVE_MESSAGE(op):
 					del settings["sentinelPict"][K5mid]
 					k5.updateProfilePicture(path5)
 					k5.sendReplyMessage(reply,receiver,"「 Profile Picture 」\nSuccess Change Profile Picture")
+				if K6mid in settings["sentinelPict"]:
+					path6 = k6.downloadObjectMsg(msg.id)
+					del settings["sentinelPict"][K6mid]
+					k6.updateProfilePicture(path6)
+					k6.sendReplyMessage(reply,receiver,"「 Profile Picture 」\nSuccess Change Profile Picture")
 		if msg.contentType == 0:
 			if text is None:
 				return
@@ -458,6 +515,7 @@ def RECEIVE_MESSAGE(op):
 						kc.sendReplyMessage(reply,receiver,"「 {} 」".format(resp3))
 						km.sendReplyMessage(reply,receiver,"「 {} 」".format(resp4))
 						k5.sendReplyMessage(reply,receiver,"「 {} 」".format(resp5))
+						k6.sendReplyMessage(reply,receiver,"「 {} 」".format(resp6))
 				elif uwew == "sp":
 					if sender in creator or sender in owner or sender in admin or sender in staff:
 						ki.sendReplyMessage(reply,receiver,logspeed())
@@ -465,6 +523,7 @@ def RECEIVE_MESSAGE(op):
 						kc.sendReplyMessage(reply,receiver,logspeed())
 						km.sendReplyMessage(reply,receiver,logspeed())
 						k5.sendReplyMessage(reply,receiver,logspeed())
+						k6.sendReplyMessage(reply,receiver,logspeed())
 				elif uwew == "bye":
 					if sender in creator or sender in owner or sender in admin or sender in staff:
 						for bot in Botslist:
@@ -472,12 +531,13 @@ def RECEIVE_MESSAGE(op):
 				elif uwew == "ivb":
 					if sender in creator or sender in owner or sender in admin or sender in staff:
 						try:
-							cl.inviteIntoGroup(receiver, [Amid,Bmid,Cmid,Dmid,K5mid])
+							cl.inviteIntoGroup(receiver, [Amid,Bmid,Cmid,Dmid,K5mid,K6mid])
 							ki.acceptGroupInvitation(receiver)
 							kk.acceptGroupInvitation(receiver)
 							kc.acceptGroupInvitation(receiver)
 							km.acceptGroupInvitation(receiver)
 							k5.acceptGroupInvitation(receiver)
+							k6.acceptGroupInvitation(receiver)
 						except TalkException as talk_error:
 							if talk_error.code == 35:
 								G = cl.getGroup(receiver)
@@ -795,6 +855,15 @@ def RECEIVE_MESSAGE(op):
 						if has1 == "OK":sil1 = "OK.✔"
 						else:sil1 = "Down!"
 						k5.sendReplyMessage(reply, receiver, "「 Bots Status 」\n • Invite : {}\n • Kick : {}".format(sil1,sil))
+						try:k6.inviteIntoGroup(to, [K6mid]);has = "OK"
+						except:has = "NOT"
+						try:k6.kickoutFromGroup(to, [K6mid]);has1 = "OK"
+						except:has1 = "NOT"
+						if has == "OK":sil = "OK.✔"
+						else:sil = "Down!"
+						if has1 == "OK":sil1 = "OK.✔"
+						else:sil1 = "Down!"
+						k6.sendReplyMessage(reply, receiver, "「 Bots Status 」\n • Invite : {}\n • Kick : {}".format(sil1,sil))
 				elif uwew.startswith("ชื่อ0 "):
 					if sender in creator or sender in owner:
 						sep = text.split(" ")
@@ -861,6 +930,17 @@ def RECEIVE_MESSAGE(op):
 							k5.sendReplyMessage(reply,receiver,"「 Display Name 」\nDisplay Name Changed To {}".format(str(name)))
 					else:
 						k5.sendReplyMessage(reply,receiver,"「 Display Name 」\nAccess Limited For Owner Only -_-")
+				elif uwew.startswith("ชื่อ6 "):
+					if sender in creator or sender in owner:
+						sep = text.split(" ")
+						name = text.replace(sep[0] + " ","")
+						if len(name) <= 99999999:
+							dname6 = k6.getProfile()
+							dname6.displayName = name
+							k6.updateProfile(dname6)
+							k6.sendReplyMessage(reply,receiver,"「 Display Name 」\nDisplay Name Changed To {}".format(str(name)))
+					else:
+						k6.sendReplyMessage(reply,receiver,"「 Display Name 」\nAccess Limited For Owner Only -_-")
 				elif uwew.startswith("ชื่อทั้งหมด "):
 					if sender in creator or sender in owner:
 						sep = text.split(" ")
@@ -890,6 +970,10 @@ def RECEIVE_MESSAGE(op):
 							dname5.displayName = name
 							k5.updateProfile(dname5)
 							k5.sendReplyMessage(reply,receiver,"「 Display Name 」\nDisplay Name Changed To {}".format(str(name)))
+							dname6 = k6.getProfile()
+							dname6.displayName = name
+							k6.updateProfile(dname6)
+							k6.sendReplyMessage(reply,receiver,"「 Display Name 」\nDisplay Name Changed To {}".format(str(name)))
 					else:
 						for a in Botslist:
 							a.sendReplyMessage(reply,receiver,"「 Display Name 」\nAccess Limited For Owner Only -_-")
@@ -959,6 +1043,17 @@ def RECEIVE_MESSAGE(op):
 							k5.sendReplyMessage(reply,receiver,"「 Status Message 」\nStatus Message Changed To {}".format(str(name)))
 					else:
 						k5.sendReplyMessage(reply,receiver,"「 Status Message 」\nAccess Limited For Owner Only -_-")
+				elif uwew.startswith("ตัส6 "):
+					if sender in creator or sender in owner:
+						sep = text.split(" ")
+						name = text.replace(sep[0] + " ","")
+						if len(name) <= 99999999:
+							bio6 = k6.getProfile()
+							bio6.statusMessage = name
+							k6.updateProfile(bio6)
+							k6.sendReplyMessage(reply,receiver,"「 Status Message 」\nStatus Message Changed To {}".format(str(name)))
+					else:
+						k6.sendReplyMessage(reply,receiver,"「 Status Message 」\nAccess Limited For Owner Only -_-")
 				elif uwew.startswith("ตัสทั้งหมด "):
 					if sender in creator or sender in owner:
 						sep = text.split(" ")
@@ -988,6 +1083,10 @@ def RECEIVE_MESSAGE(op):
 							bio5.statusMessage = name
 							k5.updateProfile(bio5)
 							k5.sendReplyMessage(reply,receiver,"「 Status Message 」\nStatus Message Changed To {}".format(str(name)))
+							bio6 = k6.getProfile()
+							bio6.statusMessage = name
+							k6.updateProfile(bio6)
+							k6.sendReplyMessage(reply,receiver,"「 Status Message 」\nStatus Message Changed To {}".format(str(name)))
 					else:
 						for a in Botslist:
 							a.sendReplyMessage(reply,receiver,"「 Status Message 」\nAccess Limited For Owner Only -_-")
@@ -1012,6 +1111,9 @@ def RECEIVE_MESSAGE(op):
 						if spl == "5":
 							settings["sentinelPict"][K5mid] = True
 							k5.sendReplyMessage(reply,receiver,"「 Profile Picture 」\nPlease Send Picture You Want To Use")
+						if spl == "6":
+							settings["sentinelPict"][K6mid] = True
+							k6.sendReplyMessage(reply,receiver,"「 Profile Picture 」\nPlease Send Picture You Want To Use")
 						if spl == "รูป":
 							settings["sentinelPict"][mid] = True
 							settings["sentinelPict"][Amid] = True
@@ -1019,6 +1121,7 @@ def RECEIVE_MESSAGE(op):
 							settings["sentinelPict"][Cmid] = True
 							settings["sentinelPict"][Dmid] = True
 							settings["sentinelPict"][K5mid] = True
+							settings["sentinelPict"][K6mid] = True
 							for a in Botslist:
 								a.sendReplyMessage(reply,receiver,"「 Profile Picture 」\nPlease Send Picture You Want To Use")
 					else:
@@ -1071,20 +1174,18 @@ async def cerberusRun():
 							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
 								pass
 							else:
-								t3 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 								try:
-									t4 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t5 = threading.Thread(target=lockqr, args=(op.param1,)).start()
+									t3 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t4 = threading.Thread(target=lockqr, args=(op.param1,)).start()
 								except:
 									pass
 						if op.param3 in status["blacklist"]:
 							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
 								pass
 							else:
-								t6 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 								try:
-									t7 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t8 = threading.Thread(target=lockqr, args=(op.param1,)).start()
+									t5 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t6 = threading.Thread(target=lockqr, args=(op.param1,)).start()
 								except:
 									pass
 					if op.type == 13:
@@ -1092,30 +1193,28 @@ async def cerberusRun():
 							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
 								pass
 							else:
-								t9 = threading.Thread(target=blacklist, args=(op.param2,)).start()
+								t7 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 								try:
-									t10 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t11 = threading.Thread(target=cancel, args=(op.param1, op.param3)).start()
+									t8 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t9 = threading.Thread(target=cancel, args=(op.param1, op.param3)).start()
 								except:
 									pass
 						if op.param2 in status["blacklist"]:
 							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
 								pass
 							else:
-								t12 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 								try:
-									t13 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t14 = threading.Thread(target=cancel, args=(op.param1, op.param3)).start()
+									t10 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t11 = threading.Thread(target=cancel, args=(op.param1, op.param3)).start()
 								except:
 									pass
 						if op.param3 in status["blacklist"]:
 							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
 								pass
 							else:
-								t15 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 								try:
-									t16 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t17 = threading.Thread(target=cancel, args=(op.param1, op.param3)).start()
+									t12 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t13 = threading.Thread(target=cancel, args=(op.param1, op.param3)).start()
 								except:
 									pass
 						if mid in op.param3:
@@ -1166,27 +1265,30 @@ async def cerberusRun():
 									k5.acceptGroupInvitation(op.param1)
 									sendMention(op.param1,"Sorry @!,\nI Will Leave Because You Doesn't Have Access -_-",[op.param2])
 									k5.leaveGroup(op.param1)
+						if K6mid in op.param3:
+							if settings["autoJoin"] == True:
+								if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
+									k6.acceptGroupInvitation(op.param1)
+								else:
+									k6.acceptGroupInvitation(op.param1)
+									sendMention(op.param1,"Sorry @!,\nI Will Leave Because You Doesn't Have Access -_-",[op.param2])
+									k6.leaveGroup(op.param1)
 					if op.type == 17:
 						if op.param1 in status["lock"]:
 							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
 								pass
 							else:
-								t18 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 								try:
-									t19 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t20 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t21 = threading.Thread(target=cancel, args=(op.param1, op.param2)).start()
+									t14 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t15 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 								except:
 									pass
 						if op.param2 in status["blacklist"]:
 							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
 								pass
 							else:
-								t22 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 								try:
-									t23 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t24 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t25 = threading.Thread(target=cancel, args=(op.param1, op.param2)).start()
+									t16 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 								except:
 									pass
 					if op.type == 19:
@@ -1194,77 +1296,86 @@ async def cerberusRun():
 							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
 								pass
 							else:
-								t26 = threading.Thread(target=blacklist, args=(op.param2,)).start()
+								t17 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 								try:
-									t27 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t28 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
-									t29 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t18 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 								except:
 									pass
 						if op.param3 in mid:
 							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
 								pass
 							else:
-								t30 = threading.Thread(target=blacklist, args=(op.param2,)).start()
+								t19 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 								try:
-									t31 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t32 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
-									t33 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t20 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t21 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
+									t22 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 								except:
 									pass
 						if op.param3 in Amid:
 							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
 								pass
 							else:
-								t34 = threading.Thread(target=blacklist, args=(op.param2,)).start()
+								t23 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 								try:
-									t35 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t36 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
-									t37 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t24 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t25 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
+									t26 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 								except:
 									pass
 						if op.param3 in Bmid:
 							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
 								pass
 							else:
-								t38 = threading.Thread(target=blacklist, args=(op.param2,)).start()
+								t27 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 								try:
-									t39 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t40 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
-									t41 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t28 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t29 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
+									t30 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 								except:
 									pass
 						if op.param3 in Cmid:
 							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
 								pass
 							else:
-								t42 = threading.Thread(target=blacklist, args=(op.param2,)).start()
+								t31 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 								try:
-									t43 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t44 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
-									t45 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t32 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t33 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
+									t34 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 								except:
 									pass
 						if op.param3 in Dmid:
 							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
 								pass
 							else:
-								t46 = threading.Thread(target=blacklist, args=(op.param2,)).start()
+								t35 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 								try:
-									t47 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t48 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
-									t49 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t36 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t37 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
+									t38 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 								except:
 									pass
 						if op.param3 in K5mid:
 							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
 								pass
 							else:
-								t50 = threading.Thread(target=blacklist, args=(op.param2,)).start()
+								t39 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 								try:
-									t51 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t52 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
-									t53 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t40 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t41 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
+									t42 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+								except:
+									pass
+						if op.param3 in K6mid:
+							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
+								pass
+							else:
+								t43 = threading.Thread(target=blacklist, args=(op.param2,)).start()
+								try:
+									t44 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t45 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
+									t46 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 								except:
 									pass
 					if op.type == 32:
@@ -1272,22 +1383,19 @@ async def cerberusRun():
 							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
 								pass
 							else:
-								t54 = threading.Thread(target=blacklist, args=(op.param2,)).start()
+								t47 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 								try:
-									t55 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t56 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
-									t57 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t48 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 								except:
 									pass
 						if op.param3 in mid:
 							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
 								pass
 							else:
-								t58 = threading.Thread(target=blacklist, args=(op.param2,)).start()
+								t49 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 								try:
-									t59 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t60 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
-									t61 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t50 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t51 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
 								except:
 									pass
 						if op.param3 in Amid:
@@ -1296,53 +1404,58 @@ async def cerberusRun():
 							else:
 								t52 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 								try:
-									t63 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t64 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
-									t65 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t53 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t54 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
 								except:
 									pass
 						if op.param3 in Bmid:
 							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
 								pass
 							else:
-								t56 = threading.Thread(target=blacklist, args=(op.param2,)).start()
+								t55 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 								try:
-									t67 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t68 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
-									t69 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t56 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t57 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
 								except:
 									pass
 						if op.param3 in Cmid:
 							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
 								pass
 							else:
-								t70 = threading.Thread(target=blacklist, args=(op.param2,)).start()
+								t58 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 								try:
-									t71 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t72 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
-									t73 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t59 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t60 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
 								except:
 									pass
 						if op.param3 in Dmid:
 							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
 								pass
 							else:
-								t74 = threading.Thread(target=blacklist, args=(op.param2,)).start()
+								t61 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 								try:
-									t75 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t76 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
-									t77 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t62 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t63 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
 								except:
 									pass
 						if op.param3 in K5mid:
 							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
 								pass
 							else:
-								t78 = threading.Thread(target=blacklist, args=(op.param2,)).start()
+								t64 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 								try:
-									t79 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t80 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
-									t81 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t65 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t66 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
+								except:
+									pass
+						if op.param3 in K6mid:
+							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
+								pass
+							else:
+								t67 = threading.Thread(target=blacklist, args=(op.param2,)).start()
+								try:
+									t68 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t69 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
 								except:
 									pass
 					if op.type == 26:
@@ -1353,25 +1466,25 @@ async def cerberusRun():
 				pass
 			elif "log_out" in error.lower():
 				backupData()
-				time.sleep(6)
+				time.sleep(7)
 				python = sys.executable
 				os.execl(python, python, *sys.argv)
 			elif "ShouldSyncException" in error:
 				backupData()
 				logError(error)
-				time.sleep(6)
+				time.sleep(7)
 				python3 = sys.executable
 				os.execl(python3, python3, *sys.argv)
 			elif "TalkException(code=8, reason='LOG_OUT', parameterMap=None)" in error:
 				backupData()
 				logError(error)
-				time.sleep(6)
+				time.sleep(7)
 				python = sys.executable
 				os.execl(python, python, *sys.argv)
 			elif "TalkException(code=20, reason='[UNCAUGHT_INTERNAL_ERROR] [UNCAUGHT_INTERNAL_ERROR] Login from secondary user blocked by userHash + clientType 8cb91561b450b38ccf0119fc4f5e37a3MA', parameterMap=None)" in error:
 				backupData()
 				logError(error)
-				time.sleep(6)
+				time.sleep(7)
 				python = sys.executable
 				os.execl(python, python, *sys.argv)
 			else:
