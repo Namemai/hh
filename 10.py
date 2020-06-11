@@ -21,37 +21,37 @@ from datetime import datetime
 # Primary Token : LINE("primary",appName='IOS\t10.1.1\tIOS OS\t1')
 programStart = time.time()
 
-cl = LINE("runrsa1@gmail.com","Arm130635")
+cl = LINE("heran67839@tmail7.com","mai065558mai")
 print('==== UNIT หลัก READY ! ====')
 
-k1 = LINE("ruyxraxxx@gmail.com","Arm130635")
+k1 = LINE("yopesew509@qkerbl.com","mai065558mai")
 print('==== UNIT 1 READY ! ====')
 
-k2 = LINE("zna96817@gmail.com","Arm130635")
+k2 = LINE("tetey37791@nedrk.com","mai065558mai")
 print('==== UNIT 2 READY ! ====')
 
-k3 = LINE("a409371920@gmail.com","Arm130635")
+k3 = LINE("fajavop743@nsabdev.com","mai065558mai")
 print('==== UNIT 3 READY ! ====')
 
-k4 = LINE("a09371920@gmail.com","Arm130635")
+k4 = LINE("rehep31996@qkerbl.com","mai065558mai")
 print('==== UNIT 4 READY ! ====')
 
-k5 = LINE("a3093719@gmail.com","Arm130635")
+k5 = LINE("mihowi5359@qkerbl.com","mai065558mai")
 print('==== UNIT 5 READY ! ====')
 
-k6 = LINE("a09371922@gmail","Arm130635")
+k6 = LINE("wakehe9241@tmail7.com","mai065558mai")
 print('==== UNIT 6 READY ! ====')
 
-k7 = LINE("kuza11302@gmail.com","Arm130635")
+k7 = LINE(("jiwiho6012@tmail7.com","mai065558mai")
 print('==== UNIT 7 READY ! ====')
 
-k8 = LINE("kuza11302@gmail.com","Arm130635")
+k8 = LINE("dedowa4911@nsabdev.com","mai065558mai")
 print('==== UNIT 8 READY ! ====')
 
-k9 = LINE("kuza11302@gmail.com","Arm130635")
+k9 = LINE("gigaman399@tmail7.com","mai065558mai")
 print('==== UNIT 9 READY ! ====')
 
-k10 = LINE("kuza11302@gmail.com","Arm130635")
+k10 = LINE("riyino4854@lexu4g.com","mai065558mai")
 print('==== UNIT 10 READY ! ====')
 print ('\n\nALL UNIT READY !')
 
