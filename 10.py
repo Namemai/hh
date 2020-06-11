@@ -778,21 +778,9 @@ def RECEIVE_MESSAGE(op):
 						k10.sendReplyMessage(reply,receiver,logspeed())
 				elif uwew == "bye":
 					if sender in creator or sender in owner or sender in admin or sender in staff:
-						for cl in Bot1:
-							cl.leaveGroup(receiver)
-				elif uwew == "out":
-					if sender in creator or sender in owner or sender in admin or sender in staff:
-						for b10 in Bot10:
-							b10.leaveGroup(receiver)
-				elif uwew == "เล่น7":
-					if sender in creator or sender in owner or sender in admin or sender in staff:
-						for b7 in Bot7:
-							b7.leaveGroup(receiver)
-				elif uwew == "เล่น5":
-					if sender in creator or sender in owner or sender in admin or sender in staff:
-						for b5 in Bot5:
-							b5.leaveGroup(receiver)
-				elif uwew == "in":
+						for bot in Botslist:
+							bot.leaveGroup(receiver)
+				elif uwew == "ivb":
 					if sender in creator or sender in owner or sender in admin or sender in staff:
 						try:
 							cl.inviteIntoGroup(receiver, [K1mid,K2mid,K3mid,K4mid,K5mid,K6mid,K7mid,K8mid,K9mid,K10mid])
