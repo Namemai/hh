@@ -178,25 +178,25 @@ def kick(grup, target):
 
 def cancel(grup, target):
     try:
-        ki.cancelGroupInvitation(grup, [op.param2])
+        ki.cancelGroupInvitation(grup, [target])
     except:
         try:
-            kk.cancelGroupInvitation(grup, [op.param2])
+            kk.cancelGroupInvitation(grup, [target])
         except:
             try:
-                kc.cancelGroupInvitation(grup, [op.param2])
+                kc.cancelGroupInvitation(grup, [target])
             except:
                 try:
-                    km.cancelGroupInvitation(grup, [op.param2])
+                    km.cancelGroupInvitation(grup, [target])
                 except:
                     try:
-                        k5.cancelGroupInvitation(grup, [op.param2])
+                        k5.cancelGroupInvitation(grup, [target])
                     except:
                         try:
-                            k6.cancelGroupInvitation(grup, [op.param2])
+                            k6.cancelGroupInvitation(grup, [target])
                         except:
                             try:
-                                k7.cancelGroupInvitation(grup, [op.param2])
+                                k7.cancelGroupInvitation(grup, [target])
                             except:
                                 pass
 
@@ -237,7 +237,7 @@ def invite(grup, target):
 
 def backup(grup, target):
     try:
-        ki.inviteIntoGroup(grup, [mid,Bmid,Cmid,Dmid,K5mid,K6mid,K7mid])
+        ki.inviteIntoGroup(grup, [target])
         if target == Bmid:
             kk.acceptGroupInvitation(grup)
         if target == Cmid:
@@ -254,7 +254,7 @@ def backup(grup, target):
             cl.acceptGroupInvitation(grup)
     except:
         try:
-            kk.inviteIntoGroup(grup, [mid,Amid,Cmid,Dmid,K5mid,K6mid,K7mid])
+            kk.inviteIntoGroup(grup, [target])
             if target == Amid:
                 ki.acceptGroupInvitation(grup)
             if target == Cmid:
@@ -271,7 +271,7 @@ def backup(grup, target):
                 cl.acceptGroupInvitation(grup)
         except:
             try:
-                kc.inviteIntoGroup(grup, [mid,Amid,Bmid,Dmid,K5mid,K6mid,K7mid])
+                kc.inviteIntoGroup(grup, [target])
                 if target == Amid:
                     ki.acceptGroupInvitation(grup)
                 if target == Bmid:
@@ -288,7 +288,7 @@ def backup(grup, target):
                     cl.acceptGroupInvitation(grup)
             except:
                 try:
-                    km.inviteIntoGroup(grup, [mid,Amid,Bmid,Cmid,K5mid,K6mid,K7mid])
+                    km.inviteIntoGroup(grup, [target])
                     if target == Amid:
                         ki.acceptGroupInvitation(grup)
                     if target == Bmid:
@@ -305,7 +305,7 @@ def backup(grup, target):
                         cl.acceptGroupInvitation(grup)
                 except:
                     try:
-                        k5.inviteIntoGroup(grup, [mid,Amid,Bmid,Cmid,Dmid,K6mid,K7mid])
+                        k5.inviteIntoGroup(grup, [target])
                         if target == Amid:
                             ki.acceptGroupInvitation(grup)
                         if target == Bmid:
@@ -322,7 +322,7 @@ def backup(grup, target):
                             cl.acceptGroupInvitation(grup)
                     except:
                         try:
-                            k6.inviteIntoGroup(grup, [mid,Amid,Bmid,Cmid,Dmid,K5mid,K7mid])
+                            k6.inviteIntoGroup(grup, [target])
                             if target == Amid:
                                 ki.acceptGroupInvitation(grup)
                             if target == Bmid:
@@ -339,7 +339,7 @@ def backup(grup, target):
                                 cl.acceptGroupInvitation(grup)
                         except:
                             try:
-                                k7.inviteIntoGroup(grup, [mid,Amid,Bmid,Cmid,Dmid,K5mid,K6mid])
+                                k7.inviteIntoGroup(grup, [target])
                                 if target == Amid:
                                     ki.acceptGroupInvitation(grup)
                                 if target == Bmid:
@@ -1383,7 +1383,7 @@ async def cerberusRun():
 									t19 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 									t20 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 									t21 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t22 = threading.Thread(target=cancel, args=(op.param1, op.param2)).start()
+									t22 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 								except:
 									pass
 						if op.param2 in status["blacklist"]:
@@ -1395,7 +1395,7 @@ async def cerberusRun():
 									t24 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 									t25 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 									t26 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t27 = threading.Thread(target=cancel, args=(op.param1, op.param2)).start()
+									t27 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 								except:
 									pass
 					if op.type == 19:
