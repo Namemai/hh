@@ -356,7 +356,7 @@ def backup(grup, target):
                                     cl.acceptGroupInvitation(grup)
                             except:
                                 try:
-                                    cl.inviteIntoGroup(grup, [target])
+                                    cl.inviteIntoGroup(grup, [Amid,Bmid,Cmid,Dmid,K5mid,K6mid,K7mid])
                                     if target == Amid:
                                         ki.acceptGroupInvitation(grup)
                                     if target == Bmid:
