@@ -55,7 +55,7 @@ K7mid = k7.getProfile().mid
 K8mid = k8.getProfile().mid
 K9mid = k9.getProfile().mid
 K10mid = k10.getProfile().mid
-KAC10 = [k1,k2,k3,k4,k5,k6,k7,k8,k9,k10]
+KAC = [k1,k2,k3,k4,k5,k6,k7,k8,k9,k10]
 KAC7 = [k1,k2,k3,k4,k5,k6,k7]
 KAC5 = [k1,k2,k3,k4,k5]
 
@@ -792,48 +792,6 @@ def RECEIVE_MESSAGE(op):
 					if sender in creator or sender in owner or sender in admin or sender in staff:
 						for b5 in Bot5:
 							b5.leaveGroup(receiver)
-				elif uwew == "in7":
-					if sender in creator or sender in owner or sender in admin or sender in staff:
-						try:
-							cl.inviteIntoGroup(receiver, [K1mid,K2mid,K3mid,K4mid,K5mid,K6mid,K7mid])
-							k1.acceptGroupInvitation(receiver)
-							k2.acceptGroupInvitation(receiver)
-							k3.acceptGroupInvitation(receiver)
-							k4.acceptGroupInvitation(receiver)
-							k5.acceptGroupInvitation(receiver)
-							k6.acceptGroupInvitation(receiver)
-							k7.acceptGroupInvitation(receiver)
-						except TalkException as talk_error:
-							if talk_error.code == 35:
-								G = cl.getGroup(receiver)
-								G.preventedJoinByTicket = False
-								cl.updateGroup(G)
-								links = cl.reissueGroupTicket(receiver)
-								for bot7 in KAC7:
-									bot7.acceptGroupInvitationByTicketV2(receiver,links)
-								G = cl.getGroup(receiver)
-								G.preventedJoinByTicket = True
-								cl.updateGroup(G)
-				elif uwew == "in5":
-					if sender in creator or sender in owner or sender in admin or sender in staff:
-						try:
-							cl.inviteIntoGroup(receiver, [K1mid,K2mid,K3mid,K4mid,K5mid])
-							k1.acceptGroupInvitation(receiver)
-							k2.acceptGroupInvitation(receiver)
-							k3.acceptGroupInvitation(receiver)
-							k4.acceptGroupInvitation(receiver)
-							k5.acceptGroupInvitation(receiver)
-						except TalkException as talk_error:
-							if talk_error.code == 35:
-								G = cl.getGroup(receiver)
-								G.preventedJoinByTicket = False
-								cl.updateGroup(G)
-								links = cl.reissueGroupTicket(receiver)
-								for bot5 in KAC5:
-									bot5.acceptGroupInvitationByTicketV2(receiver,links)
-								G = cl.getGroup(receiver)
-								G.preventedJoinByTicket = True
-								cl.updateGroup(G)
 				elif uwew == "in":
 					if sender in creator or sender in owner or sender in admin or sender in staff:
 						try:
