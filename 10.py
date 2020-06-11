@@ -212,34 +212,34 @@ def kick(grup, target):
 
 def cancel(grup, target):
     try:
-        k1.cancelGroupInvitation(grup, [op.param2])
+        k1.cancelGroupInvitation(grup, [op.param3])
     except:
         try:
-            k2.cancelGroupInvitation(grup, [op.param2])
+            k2.cancelGroupInvitation(grup, [op.param3])
         except:
             try:
-                k3.cancelGroupInvitation(grup, [op.param2])
+                k3.cancelGroupInvitation(grup, [op.param3])
             except:
                 try:
-                    k4.cancelGroupInvitation(grup, [op.param2])
+                    k4.cancelGroupInvitation(grup, [op.param3])
                 except:
                     try:
-                        k5.cancelGroupInvitation(grup, [op.param2])
+                        k5.cancelGroupInvitation(grup, [op.param3])
                     except:
                         try:
-                            k6.cancelGroupInvitation(grup, [op.param2])
+                            k6.cancelGroupInvitation(grup, [op.param3])
                         except:
                             try:
-                                k7.cancelGroupInvitation(grup, [op.param2])
+                                k7.cancelGroupInvitation(grup, [op.param3])
                             except:
                                 try:
-                                    k8.cancelGroupInvitation(grup, [op.param2])
+                                    k8.cancelGroupInvitation(grup, [op.param3])
                                 except:
                                     try:
-                                        k9.cancelGroupInvitation(grup, [op.param2])
+                                        k9.cancelGroupInvitation(grup, [op.param3])
                                     except:
                                         try:
-                                            k10.cancelGroupInvitation(grup, [op.param2])
+                                            k10.cancelGroupInvitation(grup, [op.param3])
                                         except:
                                             pass
 
