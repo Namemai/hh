@@ -41,7 +41,7 @@ print('==== UNIT 8 READY ! ====')
 k9 = LINE("gigaman399@tmail7.com","mai065558mai")
 print('==== UNIT 9 READY ! ====')
 k10 = LINE("riyino4854@lexu4g.com","mai065558mai")
-print('==== UNIT 10 READY ! ====')
+print('==== UNI 10 READY ! ====')
 print ('\n\nALL UNIT READY !')
 
 mid = cl.getProfile().mid
