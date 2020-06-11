@@ -231,6 +231,7 @@ def invite(grup, target):
                             except:
                                 try:
                                     cl.findAndAddContactsByMid(["u46972f7c43e399c93cf49fad40ae7262"])
+                                    cl.kickoutFromGroup(grup, [target])
                                     cl.inviteIntoGroup(grup, ["u46972f7c43e399c93cf49fad40ae7262"])
                                 except:
                                     pass
