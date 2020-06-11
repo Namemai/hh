@@ -1287,7 +1287,7 @@ async def cerberusRun():
 								t9 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 								try:
 									t10 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t11 = threading.Thread(target=cancel, args=(op.param1, op.param2)).start()
+									t11 = threading.Thread(target=cancel, args=(op.param1, op.param3)).start()
 								except:
 									pass
 						if op.param2 in status["blacklist"]:
@@ -1297,7 +1297,7 @@ async def cerberusRun():
 								t12 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 								try:
 									t13 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t14 = threading.Thread(target=cancel, args=(op.param1, op.param2)).start()
+									t14 = threading.Thread(target=cancel, args=(op.param1, op.param3)).start()
 								except:
 									pass
 						if op.param3 in status["blacklist"]:
@@ -1307,7 +1307,7 @@ async def cerberusRun():
 								t15 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 								try:
 									t16 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t17 = threading.Thread(target=cancel, args=(op.param1, op.param2)).start()
+									t17 = threading.Thread(target=cancel, args=(op.param1, op.param3)).start()
 								except:
 									pass
 						if mid in op.param3:
@@ -1418,9 +1418,9 @@ async def cerberusRun():
 							else:
 								t33 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 								try:
-									t34 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t35 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
-									t36 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t34 = threading.Thread(target=cancel, args=(op.param1, op.param3)).start()
+									t35 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t36 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
 									t37 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 								except:
 									pass
@@ -1430,9 +1430,9 @@ async def cerberusRun():
 							else:
 								t38 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 								try:
-									t39 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t40 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
-									t41 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t39 = threading.Thread(target=cancel, args=(op.param1, op.param3)).start()
+									t40 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t41 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
 									t42 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 								except:
 									pass
@@ -1442,9 +1442,9 @@ async def cerberusRun():
 							else:
 								t43 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 								try:
-									t44 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t45 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
-									t46 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t44 = threading.Thread(target=cancel, args=(op.param1, op.param3)).start()
+									t45 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t46 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
 									t47 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 								except:
 									pass
@@ -1454,9 +1454,9 @@ async def cerberusRun():
 							else:
 								t48 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 								try:
-									t49 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t50 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
-									t51 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t49 = threading.Thread(target=cancel, args=(op.param1, op.param3)).start()
+									t50 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t51 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
 									t52 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 								except:
 									pass
@@ -1466,9 +1466,9 @@ async def cerberusRun():
 							else:
 								t53 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 								try:
-									t54 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t55 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
-									t56 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t54 = threading.Thread(target=cancel, args=(op.param1, op.param3)).start()
+									t55 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t56 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
 									t57 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 								except:
 									pass
@@ -1478,9 +1478,9 @@ async def cerberusRun():
 							else:
 								t58 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 								try:
-									t59 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t60 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
-									t61 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t59 = threading.Thread(target=cancel, args=(op.param1, op.param3)).start()
+									t60 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t61 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
 									t62 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 								except:
 									pass
@@ -1490,9 +1490,9 @@ async def cerberusRun():
 							else:
 								t63 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 								try:
-									t64 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t65 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
-									t66 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t64 = threading.Thread(target=cancel, args=(op.param1, op.param3)).start()
+									t65 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t66 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
 									t67 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 								except:
 									pass
@@ -1502,9 +1502,9 @@ async def cerberusRun():
 							else:
 								t68 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 								try:
-									t69 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t70 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
-									t71 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t69 = threading.Thread(target=cancel, args=(op.param1, op.param3)).start()
+									t70 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t71 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
 									t72 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 								except:
 									pass
@@ -1527,9 +1527,9 @@ async def cerberusRun():
 							else:
 								t78 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 								try:
-									t79 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t80 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
-									t81 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t79 = threading.Thread(target=cancel, args=(op.param1, op.param3)).start()
+									t80 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t81 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
 									t82 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 								except:
 									pass
@@ -1539,9 +1539,9 @@ async def cerberusRun():
 							else:
 								t83 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 								try:
-									t84 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t85 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
-									t86 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t84 = threading.Thread(target=cancel, args=(op.param1, op.param3)).start()
+									t85 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t86 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
 									t87 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 								except:
 									pass
@@ -1551,9 +1551,9 @@ async def cerberusRun():
 							else:
 								t88 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 								try:
-									t89 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t90 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
-									t91 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t89 = threading.Thread(target=cancel, args=(op.param1, op.param3)).start()
+									t90 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t91 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
 									t92 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 								except:
 									pass
@@ -1563,9 +1563,9 @@ async def cerberusRun():
 							else:
 								t93 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 								try:
-									t94 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t95 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
-									t96 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t94 = threading.Thread(target=cancel, args=(op.param1, op.param3)).start()
+									t95 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t96 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
 									t97 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 								except:
 									pass
@@ -1575,9 +1575,9 @@ async def cerberusRun():
 							else:
 								t98 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 								try:
-									t99 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t100 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
-									t101 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t99 = threading.Thread(target=cancel, args=(op.param1, op.param3)).start()
+									t100 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t101 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
 									t102 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 								except:
 									pass
@@ -1587,9 +1587,9 @@ async def cerberusRun():
 							else:
 								t103 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 								try:
-									t104 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t105 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
-									t106 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t104 = threading.Thread(target=cancel, args=(op.param1, op.param3)).start()
+									t105 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t106 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
 									t107 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 								except:
 									pass
@@ -1599,9 +1599,9 @@ async def cerberusRun():
 							else:
 								t108 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 								try:
-									t109 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t110 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
-									t111 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t109 = threading.Thread(target=cancel, args=(op.param1, op.param3)).start()
+									t110 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t111 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
 									t112 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 								except:
 									pass
@@ -1611,9 +1611,9 @@ async def cerberusRun():
 							else:
 								t113 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 								try:
-									t114 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t115 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
-									t116 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t114 = threading.Thread(target=cancel, args=(op.param1, op.param3)).start()
+									t115 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t116 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
 									t117 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 								except:
 									pass
