@@ -613,7 +613,7 @@ def RECEIVE_MESSAGE(op):
 				elif uwew == "cb":
 					if sender in creator or sender in owner or sender in admin or sender in staff:
 						if len(status["blacklist"]) > 0:
-							cl.sendReplyMessage(reply,receiver, "「ล้างดำที่เตะ {} บันทัด」".format(len(status["blacklist"])))
+							cl.sendReplyMessage(reply,receiver, "「ล้างดำ {} คน」".format(len(status["blacklist"])))
 							status["blacklist"].clear()
 						else:
 							cl.sendReplyMessage(reply,receiver,"「 Blacklist User -_- 」")
