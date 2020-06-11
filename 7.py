@@ -1407,7 +1407,7 @@ async def cerberusRun():
 								t28 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 								try:
 									t29 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t30 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
+									t30 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 									t31 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 									t32 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 								except:
@@ -1516,7 +1516,7 @@ async def cerberusRun():
 								t73 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 								try:
 									t74 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t75 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
+									t75 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 									t76 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 									t77 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 								except:
