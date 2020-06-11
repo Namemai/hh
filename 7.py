@@ -237,7 +237,7 @@ def invite(grup, target):
 
 def backup(grup, target):
     try:
-        ki.inviteIntoGroup(grup, [target])
+        ki.inviteIntoGroup(grup, [mid,Bmid,Cmid,Dmid,K5mid,K6mid,K7mid])
         if target == Bmid:
             kk.acceptGroupInvitation(grup)
         if target == Cmid:
@@ -254,7 +254,7 @@ def backup(grup, target):
             cl.acceptGroupInvitation(grup)
     except:
         try:
-            kk.inviteIntoGroup(grup, [target])
+            kk.inviteIntoGroup(grup, [Amid,mid,Cmid,Dmid,K5mid,K6mid,K7mid])
             if target == Amid:
                 ki.acceptGroupInvitation(grup)
             if target == Cmid:
@@ -271,7 +271,7 @@ def backup(grup, target):
                 cl.acceptGroupInvitation(grup)
         except:
             try:
-                kc.inviteIntoGroup(grup, [target])
+                kc.inviteIntoGroup(grup, [Amid,Bmid,mid,Dmid,K5mid,K6mid,K7mid])
                 if target == Amid:
                     ki.acceptGroupInvitation(grup)
                 if target == Bmid:
@@ -288,7 +288,7 @@ def backup(grup, target):
                     cl.acceptGroupInvitation(grup)
             except:
                 try:
-                    km.inviteIntoGroup(grup, [target])
+                    km.inviteIntoGroup(grup, [Amid,Bmid,Cmid,mid,K5mid,K6mid,K7mid])
                     if target == Amid:
                         ki.acceptGroupInvitation(grup)
                     if target == Bmid:
@@ -305,7 +305,7 @@ def backup(grup, target):
                         cl.acceptGroupInvitation(grup)
                 except:
                     try:
-                        k5.inviteIntoGroup(grup, [target])
+                        k5.inviteIntoGroup(grup, [Amid,Bmid,Cmid,Dmid,mid,K6mid,K7mid])
                         if target == Amid:
                             ki.acceptGroupInvitation(grup)
                         if target == Bmid:
@@ -322,7 +322,7 @@ def backup(grup, target):
                             cl.acceptGroupInvitation(grup)
                     except:
                         try:
-                            k6.inviteIntoGroup(grup, [target])
+                            k6.inviteIntoGroup(grup, [Amid,Bmid,Cmid,Dmid,K5mid,mid,K7mid])
                             if target == Amid:
                                 ki.acceptGroupInvitation(grup)
                             if target == Bmid:
@@ -339,7 +339,7 @@ def backup(grup, target):
                                 cl.acceptGroupInvitation(grup)
                         except:
                             try:
-                                k7.inviteIntoGroup(grup, [target])
+                                k7.inviteIntoGroup(grup, [Amid,Bmid,Cmid,Dmid,K5mid,K6mid,mid])
                                 if target == Amid:
                                     ki.acceptGroupInvitation(grup)
                                 if target == Bmid:
@@ -355,24 +355,7 @@ def backup(grup, target):
                                 if target == mid:
                                     cl.acceptGroupInvitation(grup)
                             except:
-                                try:
-                                    cl.inviteIntoGroup(grup, [Amid,Bmid,Cmid,Dmid,K5mid,K6mid,K7mid])
-                                    if target == Amid:
-                                        ki.acceptGroupInvitation(grup)
-                                    if target == Bmid:
-                                        kk.acceptGroupInvitation(grup)
-                                    if target == Cmid:
-                                        kc.acceptGroupInvitation(grup)
-                                    if target == Dmid:
-                                        km.acceptGroupInvitation(grup)
-                                    if target == K5mid:
-                                        k5.acceptGroupInvitation(grup)
-                                    if target == K6mid:
-                                        k6.acceptGroupInvitation(grup)
-                                    if target == K7mid:
-                                        k7.acceptGroupInvitation(grup)
-                                except:
-                                    pass
+                                pass
 
 def lockqr(grup):
     try:
