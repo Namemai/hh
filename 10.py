@@ -276,7 +276,7 @@ def invite(grup, target):
 
 def backup(grup, target):
     try:
-        k1.inviteIntoGroup(grup, [mid,K2mid,K3mid,K4mid,K5mid,K6mid,K7mid,K8mid,K9mid,K10mid])
+        k1.inviteIntoGroup(grup, [K2mid,K3mid,K4mid,K5mid,K6mid,K7mid,K8mid,K9mid,K10mid,mid])
         if target == K2mid:
             k2.acceptGroupInvitation(grup)
         if target == K3mid:
@@ -299,7 +299,7 @@ def backup(grup, target):
             cl.acceptGroupInvitation(grup)
     except:
         try:
-            k2.inviteIntoGroup(grup, [mid,K1mid,K3mid,K4mid,K5mid,K6mid,K7mid,K8mid,K9mid,K10mid])
+            k2.inviteIntoGroup(grup, [K1mid,K3mid,K4mid,K5mid,K6mid,K7mid,K8mid,K9mid,K10mid,mid])
             if target == K1mid:
                 k1.acceptGroupInvitation(grup)
             if target == K3mid:
@@ -322,7 +322,7 @@ def backup(grup, target):
                 cl.acceptGroupInvitation(grup)
         except:
             try:
-                k3.inviteIntoGroup(grup, [mid,K1mid,K2mid,K4mid,K5mid,K6mid,K7mid,K8mid,K9mid,K10mid])
+                k3.inviteIntoGroup(grup, [K1mid,K2mid,K4mid,K5mid,K6mid,K7mid,K8mid,K9mid,K10mid,mid])
                 if target == K1mid:
                     k1.acceptGroupInvitation(grup)
                 if target == K2mid:
@@ -345,7 +345,7 @@ def backup(grup, target):
                     cl.acceptGroupInvitation(grup)
             except:
                 try:
-                    k4.inviteIntoGroup(grup, [mid,K1mid,K2mid,K3mid,K5mid,K6mid,K7mid,K8mid,K9mid,K10mid])
+                    k4.inviteIntoGroup(grup, [K1mid,K2mid,K3mid,K5mid,K6mid,K7mid,K8mid,K9mid,K10mid,mid])
                     if target == K1mid:
                         k1.acceptGroupInvitation(grup)
                     if target == K2mid:
@@ -368,7 +368,7 @@ def backup(grup, target):
                         cl.acceptGroupInvitation(grup)
                 except:
                     try:
-                        k5.inviteIntoGroup(grup, [mid,K1mid,K2mid,K3mid,K4mid,K6mid,K7mid,K8mid,K9mid,K10mid])
+                        k5.inviteIntoGroup(grup, [K1mid,K2mid,K3mid,K4mid,K6mid,K7mid,K8mid,K9mid,K10mid,mid])
                         if target == K1mid:
                             k1.acceptGroupInvitation(grup)
                         if target == K2mid:
@@ -391,7 +391,7 @@ def backup(grup, target):
                             cl.acceptGroupInvitation(grup)
                     except:
                         try:
-                            k6.inviteIntoGroup(grup, [mid,K1mid,K2mid,K3mid,K4mid,K5mid,K7mid,K8mid,K9mid,K10mid])
+                            k6.inviteIntoGroup(grup, [K1mid,K2mid,K3mid,K4mid,K5mid,K7mid,K8mid,K9mid,K10mid,mid])
                             if target == K1mid:
                                 k1.acceptGroupInvitation(grup)
                             if target == K2mid:
@@ -414,7 +414,7 @@ def backup(grup, target):
                                 cl.acceptGroupInvitation(grup)
                         except:
                             try:
-                                k7.inviteIntoGroup(grup, [mid,K1mid,K2mid,K3mid,K4mid,K5mid,K6mid,K8mid,K9mid,K10mid])
+                                k7.inviteIntoGroup(grup, [K1mid,K2mid,K3mid,K4mid,K5mid,K6mid,K8mid,K9mid,K10mid,mid])
                                 if target == K1mid:
                                     k1.acceptGroupInvitation(grup)
                                 if target == K2mid:
@@ -437,7 +437,7 @@ def backup(grup, target):
                                     cl.acceptGroupInvitation(grup)
                             except:
                                 try:
-                                    k8.inviteIntoGroup(grup, [mid,K1mid,K2mid,K3mid,K4mid,K5mid,K6mid,K7mid,K9mid,K10mid])
+                                    k8.inviteIntoGroup(grup, [K1mid,K2mid,K3mid,K4mid,K5mid,K6mid,K7mid,K9mid,K10mid,mid])
                                     if target == K1mid:
                                         k1.acceptGroupInvitation(grup)
                                     if target == K2mid:
@@ -460,7 +460,7 @@ def backup(grup, target):
                                         cl.acceptGroupInvitation(grup)
                                 except:
                                     try:
-                                        k9.inviteIntoGroup(grup, [mid,K1mid,K2mid,K3mid,K4mid,K5mid,K6mid,K7mid,K8mid,K10mid])
+                                        k9.inviteIntoGroup(grup, [K1mid,K2mid,K3mid,K4mid,K5mid,K6mid,K7mid,K8mid,K10mid,mid])
                                         if target == K1mid:
                                             k1.acceptGroupInvitation(grup)
                                         if target == K2mid:
@@ -484,7 +484,7 @@ def backup(grup, target):
                                             cl.acceptGroupInvitation(grup)
                                     except:
                                         try:
-                                            k10.inviteIntoGroup(grup, [mid,K1mid,K2mid,K3mid,K4mid,K5mid,K6mid,K7mid,K8mid,K9mid])
+                                            k10.inviteIntoGroup(grup, [K1mid,K2mid,K3mid,K4mid,K5mid,K6mid,K7mid,K8mid,K9mid,mid])
                                             if target == K1mid:
                                                 k1.acceptGroupInvitation(grup)
                                             if target == K2mid:
