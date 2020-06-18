@@ -50,6 +50,14 @@ Dmid = km.getProfile().mid
 K5mid = k5.getProfile().mid
 K6mid = k6.getProfile().mid
 K7mid = k7.getProfile().mid
+print("BOT-0 = " + mid)
+print("BOT-1 = " + Amid)
+print("BOT-2 = " + Bmid)
+print("BOT-3 = " + Cmid)
+print("BOT-4 = " + Dmid)
+print("BOT-5 = " + K5mid)
+print("BOT-6 = " + K6mid)
+print("BOT-7 = " + K7mid)
 KAC = [ki,kk,kc,km,k5,k6,k7]
 
 loop = asyncio.get_event_loop()
